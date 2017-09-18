@@ -1,0 +1,32 @@
+.nav {
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px 20px 40px;
+    }
+
+    img {
+        width: 110px;
+    }
+
+    li {
+        list-style: none;
+        margin-right: 10px;
+
+        a {
+            padding: 5px;
+            text-decoration: none;
+            font-family: Cabin, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+    }
+}
+

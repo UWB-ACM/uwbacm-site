@@ -1,0 +1,143 @@
+.home-wrapper h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #4B2E83;
+  font-family: Cabin, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.home-wrapper p {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #757575; }
+.home-wrapper a {
+  display: flex;
+  margin-top: 20px;
+  color: #64B5F6; }
+.home-wrapper a:hover {
+  color: #4B2E83; }
+.home-wrapper .top-display {
+  display: flex;
+  justify-content: space-between;
+  height: 1000px;
+  max-height: 70vh;
+  min-height: 500px;
+  width: 100%; }
+  .home-wrapper .top-display > div {
+    width: 50%;
+    height: 100%; }
+  .home-wrapper .top-display .left {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .home-wrapper .top-display .left > div {
+      width: 95%;
+      max-width: 500px; }
+  .home-wrapper .top-display .right {
+    background: url("../images/home-code.jpg") no-repeat center center;
+    background-size: cover; }
+.home-wrapper .center-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0; }
+  .home-wrapper .center-section > div {
+    width: 95%;
+    max-width: 700px; }
+.home-wrapper .about-us {
+  background-color: #F5F5F5; }
+.home-wrapper .officers, .home-wrapper .blog {
+  padding: 120px 0;
+  background-color: #F5F5F5; }
+  .home-wrapper .officers h1, .home-wrapper .blog h1 {
+    text-align: center; }
+  .home-wrapper .officers > div, .home-wrapper .blog > div {
+    display: table;
+    margin: auto;
+    max-width: calc((300px * 4) + (40px * 4)); }
+  .home-wrapper .officers li > a, .home-wrapper .blog li > a {
+    display: flex;
+    margin-top: 0;
+    flex-direction: column; }
+  @media (max-width: 1375px) {
+    .home-wrapper .officers > div, .home-wrapper .blog > div {
+      max-width: calc((300px * 3) + (40px * 3)); } }
+  @media (max-width: 1035px) {
+    .home-wrapper .officers > div, .home-wrapper .blog > div {
+      max-width: calc((300px * 2) + (40px * 2)); } }
+  @media (max-width: 695px) {
+    .home-wrapper .officers > div, .home-wrapper .blog > div {
+      max-width: 340px; } }
+  .home-wrapper .officers .justify-wrapper, .home-wrapper .blog .justify-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin-top: 50px;
+    align-items: flex-start;
+    align-content: flex-start; }
+  .home-wrapper .officers .justify, .home-wrapper .blog .justify {
+    margin: 20px;
+    background-color: white;
+    width: 300px;
+    max-width: 300px;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    top: 0;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.09);
+    transition: all 0.2s ease-in; }
+  .home-wrapper .officers .avi, .home-wrapper .blog .avi {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .home-wrapper .officers .avi img, .home-wrapper .blog .avi img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .home-wrapper .officers .info, .home-wrapper .blog .info {
+    box-sizing: border-box;
+    padding: 18px; }
+  .home-wrapper .officers h2, .home-wrapper .blog h2 {
+    font-size: 1.3rem;
+    font-family: Cabin, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    opacity: 0.7; }
+  .home-wrapper .officers p, .home-wrapper .blog p {
+    font-size: 1.1rem;
+    color: #444;
+    margin: 10px 0; }
+  .home-wrapper .officers .social, .home-wrapper .blog .social {
+    display: flex;
+    flex-direction: row; }
+    .home-wrapper .officers .social a, .home-wrapper .officers .social span, .home-wrapper .blog .social a, .home-wrapper .blog .social span {
+      margin-right: 10px;
+      width: 27px;
+      height: 27px;
+      display: flex;
+      border-radius: 4px;
+      overflow: hidden; }
+    .home-wrapper .officers .social img, .home-wrapper .blog .social img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+.home-wrapper .blog .justify {
+  border-radius: 0; }
+  .home-wrapper .blog .justify:hover {
+    transition: all 0.1s ease-out;
+    top: -15px;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1); }
+.home-wrapper .events {
+  padding: 120px 0; }
+  .home-wrapper .events > div {
+    width: 95%;
+    max-width: 1000px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between; }
+    .home-wrapper .events > div iframe {
+      width: 100%; }
+    .home-wrapper .events > div .left {
+      width: 37%; }
+    .home-wrapper .events > div .right {
+      width: 60%; }
+
+/*# sourceMappingURL=index.css.map */

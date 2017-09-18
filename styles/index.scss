@@ -1,0 +1,205 @@
+.home-wrapper {
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        color: #4B2E83;
+        font-family: Cabin, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    p {
+        margin-top: 10px;
+        font-size: 1.5rem;
+        color: #757575;
+    }
+
+    a {
+        display: flex;
+        margin-top: 20px;
+        color: #64B5F6;
+    }
+    a:hover {
+        color: #4B2E83;
+    }
+
+    .top-display {
+        display: flex;
+        justify-content: space-between;
+        height: 1000px;
+        max-height: 70vh;
+        min-height: 500px;
+        width: 100%;
+
+        > div {
+            width: 50%;
+            height: 100%;
+        }
+
+        .left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            > div {
+                width: 95%;
+                max-width: 500px;
+            }
+        }
+
+        .right {
+            background: url("../images/home-code.jpg") no-repeat center center;
+            background-size: cover;
+        }
+    }
+
+    .center-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 150px 0;
+
+        > div {
+            width: 95%;
+            max-width: 700px;
+        }
+    }
+
+    .about-us {
+        background-color: #F5F5F5;
+    }
+
+    .officers, .blog {
+        padding: 120px 0;
+        background-color: #F5F5F5;
+
+        h1 {
+            text-align: center;
+        }
+
+        > div {
+            display: table;
+            margin: auto;
+            max-width: calc((300px * 4) + (40px * 4));
+        }
+        li > a {
+            display: flex;
+            margin-top: 0;
+            flex-direction: column;
+        }
+        @media (max-width: 1375px) {
+            > div {
+                max-width: calc((300px * 3) + (40px * 3));
+            }
+        }
+        @media (max-width: 1035px) {
+            > div {
+                max-width: calc((300px * 2) + (40px * 2));
+            }
+        }
+        @media (max-width: 695px) {
+            > div {
+                max-width: 340px;
+            }
+        }
+        .justify-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            width: auto;
+            margin-top: 50px;
+            align-items: flex-start;
+            align-content: flex-start;
+        }
+        .justify {
+            margin: 20px;
+            background-color: white;
+            width: 300px;
+            max-width: 300px;
+            position: relative;
+            border-radius: 4px;
+            overflow: hidden;
+            top: 0;
+            box-shadow: 0 20px 20px rgba(0, 0, 0, 0.09);
+            transition: all 0.2s ease-in;
+        }
+        .avi {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .info {
+            box-sizing: border-box;
+            padding: 18px;
+
+        }
+        h2 {
+            font-size: 1.3rem;
+            font-family: Cabin, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            opacity: 0.7;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #444;
+            margin: 10px 0;
+        }
+        .social {
+            display: flex;
+            flex-direction: row;
+
+            a, span {
+                margin-right: 10px;
+                width: 27px;
+                height: 27px;
+                display: flex;
+                border-radius: 4px;
+                overflow: hidden;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .blog .justify {
+        border-radius: 0;
+
+        &:hover {
+            transition: all 0.1s ease-out;
+            top: -15px;
+            box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    .events {
+        padding: 120px 0;
+        > div {
+            width: 95%;
+            max-width: 1000px;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+
+            iframe {
+                width: 100%;
+            }
+
+            .left {
+                width: 37%;
+
+            }
+
+            .right {
+                width: 60%;
+            }
+        }
+    }
+}
