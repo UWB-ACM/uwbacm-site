@@ -179,6 +179,43 @@
             }
         }
     }
+    .join hr{
+        border: 0;
+        height: 1px;
+        width: 100%;
+        background-color: rgba(0,0,0,0.1);
+        margin: 40px 0 50px;
+    }
+    .discord{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #7289da;
+        margin-top: 20px;
+        border-radius: 4px;
+        padding: 50px 0;
+        box-shadow: 0 20px 20px rgba(0,0,0,0.1);
+        
+        div{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        img{
+            width: 50px;
+            height: auto;
+        }
+        
+        h2{
+            color: white;
+            font-weight: 700;
+            font-size: 2rem;
+        }
+        img{
+            margin-top: 10px;
+        }
+    }
 
     .blog {
         padding: 100px 0;
@@ -225,7 +262,7 @@
             }
         }
     }
-
+    
     .events {
         padding: 120px 0;
         > div {
@@ -262,6 +299,12 @@
             .right{
                 margin-top: 50px;
                 width: 100% !important;
+            }
+        }
+        
+        .right{
+            .view-container-border{
+                background-color: #4B2E83;
             }
         }
     }
