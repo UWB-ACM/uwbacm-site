@@ -213,7 +213,7 @@
 	margin: 40px 0 50px;
 }
 
-.home-wrapper .discord {
+.home-wrapper .social-media {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -224,24 +224,28 @@
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
 }
 
-.home-wrapper .discord div {
+#facebook{
+	background-color: #3b5998 !important;
+}
+
+.home-wrapper .social-media div {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 }
 
-.home-wrapper .discord img {
+.home-wrapper .social-media  img {
 	width: 50px;
 	height: auto;
 }
 
-.home-wrapper .discord h2 {
+.home-wrapper .social-media  h2 {
 	color: white;
 	font-weight: 700;
 	font-size: 2rem;
 }
 
-.home-wrapper .discord img {
+.home-wrapper .social-media  img {
 	margin-top: 10px;
 }
 
