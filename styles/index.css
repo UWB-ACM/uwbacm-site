@@ -569,7 +569,9 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px 30px 0;
+  padding: 15px 15px 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -578,10 +580,11 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 300px;
+  width: 270px;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
-  border-top: 3px solid transparent;
+  border: 3px solid transparent;
+  border-bottom: none;
 }
 
 #officers .officer h3 {
@@ -597,26 +600,48 @@ h2 {
   color: #737373;
 }
 
-#officers .officer p {
+#officers .officer__hidden {
   visibility: none;
+  position: absolute;
+  padding: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: absolute;
   top: 100%;
-  padding: 20px;
   opacity: 0;
-  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-color: transparent;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
-  border-bottom: 3px solid #b3b3b3;
+  width: calc(100% + 6px);
+  border: 3px solid #b3b3b3;
+  border-top: none;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+#officers .officer__hidden a {
+  margin-top: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  opacity: 0.7;
+  overflow: hidden;
+  display: table;
+}
+
+#officers .officer__hidden img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #officers .officer__avi-container {
   -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
           box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   background-color: white;
   overflow: hidden;
@@ -635,7 +660,7 @@ h2 {
     z-index: 20;
     border-color: #b3b3b3;
   }
-  #officers .officer:hover p {
+  #officers .officer:hover .officer__hidden {
     visibility: visible;
     opacity: 1;
     background-color: white;
@@ -659,14 +684,14 @@ h2 {
     -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     background-color: white;
-    border-radius: 4px;
     margin-bottom: 20px;
     width: 95%;
     padding-left: 0;
     padding-right: 0;
+    border-radius: 10px;
     max-width: 500px;
   }
-  #officers .officer p {
+  #officers .officer .officer__hidden {
     border: none;
     visibility: visible;
     opacity: 1;
