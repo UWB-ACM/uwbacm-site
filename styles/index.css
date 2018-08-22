@@ -14,6 +14,7 @@ h2 {
   font-family: "Cabin", "Roboto", Arial, Helvetica, sans-serif;
   color: #444;
   font-size: 2rem;
+  text-align: center;
   font-weight: 600;
 }
 
@@ -30,6 +31,7 @@ h2 {
   font-family: "Cabin", "Roboto", Arial, Helvetica, sans-serif;
   color: white;
   font-size: 4rem;
+  text-align: center;
   font-weight: 600;
   text-shadow: 0 2px 40px black;
 }
@@ -38,6 +40,7 @@ h2 {
   font-family: "Cabin", "Roboto", Arial, Helvetica, sans-serif;
   color: white;
   font-size: 2rem;
+  text-align: center;
   font-weight: 600;
   opacity: 0.9;
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
@@ -170,6 +173,10 @@ h2 {
 
 #mission {
   padding: 100px 0;
+}
+
+#mission h2 {
+  text-align: left;
 }
 
 #mission__center {
@@ -479,6 +486,7 @@ h2 {
   font-family: "Cabin", "Roboto", Arial, Helvetica, sans-serif;
   color: #444;
   font-size: 1.4rem;
+  text-align: center;
   font-weight: 600;
 }
 
@@ -524,7 +532,6 @@ h2 {
   width: 95%;
   max-width: 1000px;
   margin: 0 auto 20px;
-  text-align: center;
 }
 
 #officers__list {

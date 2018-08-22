@@ -4,6 +4,7 @@ $globalBlue: #0093ff;
   font-family: "Cabin", "Roboto", Arial, Helvetica, sans-serif;
   color: $color;
   font-size: $size;
+  text-align: center;
   font-weight: 600;
 }
 @mixin para($fontSize, $lineHeight) {
@@ -124,6 +125,10 @@ h2 {
 
 #mission {
   padding: 100px 0;
+
+  h2 {
+    text-align: left;
+  }
 
   &__center {
     width: 95%;
@@ -303,7 +308,6 @@ h2 {
     width: 95%;
     max-width: 1000px;
     margin: 0 auto 20px;
-    text-align: center;
   }
   &__list {
     width: 100%;
