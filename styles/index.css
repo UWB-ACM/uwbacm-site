@@ -43,6 +43,19 @@ h2 {
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 800px) {
+  #top-fold {
+    height: 350px;
+  }
+  #top-fold h1,
+  #top-fold span {
+    font-size: 3rem;
+  }
+  #top-fold h2 {
+    font-size: 1.5rem;
+  }
+}
+
 #top-fold__center {
   width: 95%;
   max-width: 1000px;
@@ -208,6 +221,11 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#events__center {
+  position: relative;
+  z-index: 10;
 }
 
 #events__decorative-spans {
@@ -505,7 +523,8 @@ h2 {
 #officers h2 {
   width: 95%;
   max-width: 1000px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+  text-align: center;
 }
 
 #officers__list {
