@@ -683,6 +683,10 @@ h2 {
   max-width: 500px;
 }
 
+#join-acm h2 {
+  text-align: left;
+}
+
 #join-acm #mc-embedded-subscribe {
   cursor: pointer;
   background-color: #0093ff;
@@ -703,6 +707,10 @@ h2 {
   height: 600px;
   background: url(../images/social-background.jpg) no-repeat center center;
   background-size: cover;
+}
+
+#social-media h2 {
+  text-align: left;
 }
 
 #social-media__center {
@@ -762,6 +770,10 @@ h2 {
   padding: 200px 0;
   background: url(../images/contact-background.svg) no-repeat center center;
   background-size: cover;
+}
+
+#contact h2 {
+  text-align: left;
 }
 
 #contact__center {

@@ -414,6 +414,9 @@ h2 {
     width: 95%;
     max-width: 500px;
   }
+  h2 {
+    text-align: left;
+  }
   #mc-embedded-subscribe {
     cursor: pointer;
     background-color: $globalBlue;
@@ -437,6 +440,9 @@ h2 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  h2 {
+    text-align: left;
+  }
   &__center {
     width: 95%;
     max-width: 700px;
@@ -478,6 +484,9 @@ h2 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  h2 {
+    text-align: left;
+  }
   &__center {
     width: 95%;
     max-width: 700px;
