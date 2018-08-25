@@ -150,6 +150,9 @@ h2 {
     }
     img {
       width: 100%;
+      max-width: 300px;
+      display: table;
+      margin: auto;
     }
     p {
       @include para(1.25rem, 1.5rem);
