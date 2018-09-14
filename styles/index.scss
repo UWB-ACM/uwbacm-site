@@ -21,7 +21,7 @@ h2 {
   @include header(#444, 2rem);
 }
 #top-fold {
-  background: url(https://images.unsplash.com/photo-1477468572316-36979010099d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5952cbb9337a4fea09380091f6a90f5c&auto=format&fit=crop&w=2389&q=80)
+  background: url(https://images.unsplash.com/photo-1527234639945-70d78416bd7d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=721783d6df00ea979608158fd776675e&auto=format&fit=crop&w=1500&q=70)
     no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -39,8 +39,8 @@ h2 {
   }
   h2 {
     @include header(white, 2rem);
-    opacity: 0.9;
-    text-shadow: 0 2px 20px rgba(black, 0.2);
+    opacity: 0.95;
+    text-shadow: 0 2px 20px rgba(black, 1);
   }
   @media (max-width: 800px) {
     height: 350px;
@@ -62,6 +62,7 @@ h2 {
     width: 50px;
     opacity: 0.6;
     bottom: 40px;
+    filter: drop-shadow(0 2px 10px black);
     transform: translate(-50%, 0);
   }
   .flashing {
@@ -88,7 +89,12 @@ h2 {
 }
 
 #quick-nav {
-  margin-top: -20px;
+  position: absolute;
+  width: 100%;
+  bottom: 15px;
+  transform: translate(0, 100%);
+  z-index: 1000;
+  transition: background-color 0.2s ease-in-out;
 
   &__center {
     width: 95%;
@@ -103,7 +109,7 @@ h2 {
       background-color: white;
       box-shadow: 0 2px 10px rgba(black, 0.1);
       position: relative;
-      padding: 10px 15px;
+      padding: 5px 15px;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -120,6 +126,27 @@ h2 {
         max-height: 20px;
       }
     }
+  }
+}
+
+#quick-nav.scrolled {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  box-sizing: border-box;
+  transform: none;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(black, 0.1);
+  padding: 10px;
+  padding-bottom: 0;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  a {
+    box-shadow: none;
+    border: 2px solid lighten(black, 80%);
+    transition: all 0.1s ease-in-out;
   }
 }
 
@@ -483,6 +510,7 @@ h2 {
   .buttons {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 10px;
     a {
       margin-right: 15px;
@@ -492,11 +520,16 @@ h2 {
       padding: 10px 20px;
       display: flex;
       flex-direction: row;
+      margin-bottom: 15px;
       align-items: center;
-      svg {
+      svg,
+      img {
         width: 25px;
         margin-right: 5px;
         height: auto;
+      }
+      img {
+        border-radius: 5px;
       }
     }
   }
@@ -519,5 +552,10 @@ h2 {
   }
   p {
     @include para(1.1rem, 1.3rem);
+  }
+  a {
+    color: #0093ff;
+    border-bottom: 2px solid #0093ff;
+    padding-bottom: 1px;
   }
 }
