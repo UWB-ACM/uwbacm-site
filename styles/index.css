@@ -19,7 +19,7 @@ h2 {
 }
 
 #top-fold {
-  background: url(https://images.unsplash.com/photo-1527234639945-70d78416bd7d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=721783d6df00ea979608158fd776675e&auto=format&fit=crop&w=1500&q=70) no-repeat center center;
+  background: url(https://images.unsplash.com/photo-1527234639945-70d78416bd7d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=721783d6df00ea979608158fd776675e&auto=format&fit=crop&w=1500&q=70) no-repeat top center;
   background-size: cover;
   width: 100%;
   height: 500px;
@@ -49,6 +49,7 @@ h2 {
 @media (max-width: 800px) {
   #top-fold {
     height: 350px;
+    background-size: 220%;
   }
   #top-fold h1,
   #top-fold span {
