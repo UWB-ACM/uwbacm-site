@@ -13,7 +13,7 @@ function startShowingWords() {
       counter++;
       wait = 5;
       if (counter === 1) {
-        wait = 15;
+        wait = 25;
       }
     }
     if (wait > 0) {
