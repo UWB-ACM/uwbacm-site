@@ -303,8 +303,8 @@ h2 {
     padding: 20px;
     border-radius: 10px;
     border: 3px solid $globalBlue;
-    width: 350px;
-    min-width: 350px;
+    width: 370px;
+    min-width: 370px;
     margin-right: 30px;
     h4 {
       @include header(#444, 1.4rem);
@@ -333,7 +333,8 @@ h2 {
 }
 
 #officers {
-  background: url(../images/officers-background.jpg) no-repeat center center;
+  background: url(../images/backgrounds/officers-background.jpg) no-repeat
+    center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -495,7 +496,8 @@ h2 {
 #social-media {
   width: 100%;
   height: 600px;
-  background: url(../images/social-background.jpg) no-repeat center center;
+  background: url(../images/backgrounds/social-background.jpg) no-repeat center
+    center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -545,7 +547,8 @@ h2 {
 #contact {
   width: 100%;
   padding: 200px 0;
-  background: url(../images/contact-background.svg) no-repeat center center;
+  background: url(../images/backgrounds/contact-background.svg) no-repeat center
+    center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
