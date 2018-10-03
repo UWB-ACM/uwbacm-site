@@ -431,7 +431,7 @@ h2 {
       }
     }
     @media (min-width: 1081px) {
-      &:hover {
+      &:hover:not(.no-hover) {
         background-color: white;
         z-index: 20;
         border-color: lighten(black, 70%);

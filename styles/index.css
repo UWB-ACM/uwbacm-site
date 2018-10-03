@@ -704,12 +704,12 @@ h2 {
 }
 
 @media (min-width: 1081px) {
-  #officers .officer:hover {
+  #officers .officer:hover:not(.no-hover) {
     background-color: white;
     z-index: 20;
     border-color: #b3b3b3;
   }
-  #officers .officer:hover .officer__hidden {
+  #officers .officer:hover:not(.no-hover) .officer__hidden {
     visibility: visible;
     opacity: 1;
     background-color: white;
