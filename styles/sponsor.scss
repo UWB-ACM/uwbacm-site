@@ -1,0 +1,142 @@
+.read-section {
+	width: 100%;
+	height: auto;
+	padding: 100px 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	&--gray {
+		background-color: #eee;
+	}
+
+	&__center {
+		width: 95%;
+		max-width: 700px;
+		h3 {
+			margin-top: 0;
+			font-size: 2rem;
+			font-weight: bold;
+			color: lighten(black, 30%);
+			font-family: 'Cabin', Arial, Helvetica, sans-serif;
+			margin-bottom: 10px;
+		}
+		li {
+			list-style: disc;
+		}
+		ul {
+			margin: 10px 0;
+		}
+		p,
+		li {
+			font-size: 1.1rem;
+			line-height: 1.4rem;
+			color: #444;
+			font-family: 'Roboto', Arial, Helvetica, sans-serif;
+		}
+		a {
+			text-decoration: none;
+			border-bottom: 2px solid #7e57c2;
+			padding-bottom: 1px;
+			color: inherit;
+			&:hover {
+				color: #7e57c2;
+			}
+		}
+	}
+}
+
+.signature-event {
+	box-sizing: border-box;
+	width: 100%;
+	padding-left: 25px;
+	&__split {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 20px;
+
+		span {
+			font-weight: bold;
+			font-size: 1.1rem;
+			color: #7e57c2;
+		}
+	}
+}
+
+.pricing-table {
+	background-color: white;
+	width: 95%;
+	max-width: 100%;
+	border: 1px solid lighten(black, 90%);
+	border-collapse: collapse;
+
+	border-radius: 4px;
+	box-shadow: 0 2px 10px rgba(black, 0.1);
+	margin-top: 40px;
+
+	tbody,
+	tr,
+	th,
+	td {
+		border: 1px solid lighten(black, 90%);
+	}
+
+	th,
+	td {
+		padding: 15px;
+	}
+
+	th {
+		text-align: left;
+	}
+
+	&__header {
+		th:first-of-type {
+			padding: 20px 15px;
+			h2 {
+				font-size: 1.4rem;
+				font-weight: bold;
+				font-family: 'Cabin', 'Roboto', Arial, Helvetica, sans-serif;
+			}
+		}
+		th > div {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			span:first-of-type {
+				font-weight: 600;
+				font-size: 1.1rem;
+			}
+			span:last-of-type {
+				margin-top: 3px;
+				font-weight: 600;
+				color: #78909c;
+			}
+		}
+	}
+
+	&__footer {
+		text-align: center;
+		font-size: 0.9rem;
+		background-color: #f5f5f5;
+		td {
+			color: lighten(black, 40%) !important;
+		}
+	}
+
+	&__subtitle {
+		background-color: #546e7a;
+		td {
+			padding: 10px 15px;
+			span {
+				color: white !important;
+				font-weight: 600;
+			}
+		}
+	}
+}
