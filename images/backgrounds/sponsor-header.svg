@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="811px" height="98px" viewBox="0 0 811 98" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="JosefinSans-Bold, Josefin Sans" font-size="100" font-weight="bold" letter-spacing="-4.69999981">
+        <g id="Desktop-HD" transform="translate(-303.000000, -164.000000)">
+            <g id="Group" transform="translate(300.000000, 146.000000)">
+                <text id="Sponsor" fill="#FFFFFF">
+                    <tspan x="0.449999332" y="95">Sponsor</tspan>
+                </text>
+                <text id="UWBACM">
+                    <tspan x="377.999999" y="95" fill="#E6D9FF">UWB</tspan>
+                    <tspan x="604" y="95" fill="#FFFFFF">ACM</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
