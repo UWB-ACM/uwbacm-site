@@ -185,7 +185,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: scroll;
+  overflow-x: auto;
 }
 
 .pricing-table tbody,
