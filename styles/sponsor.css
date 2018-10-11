@@ -77,18 +77,32 @@
   background-color: #eee;
 }
 
+.read-section hr {
+  margin: 50px;
+  width: 95%;
+  max-width: 800px;
+  height: 1px;
+  display: table;
+  background-color: #999999;
+}
+
 .read-section__center {
   width: 95%;
   max-width: 700px;
 }
 
-.read-section__center h3 {
+.read-section__center h3,
+.read-section__center h4 {
   margin-top: 0;
   font-size: 2rem;
   font-weight: bold;
   color: #4d4d4d;
   font-family: 'Cabin', Arial, Helvetica, sans-serif;
   margin-bottom: 10px;
+}
+
+.read-section__center h4 {
+  font-size: 1.5rem;
 }
 
 .read-section__center li {
@@ -122,7 +136,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  padding-left: 25px;
 }
 
 .signature-event__split {
@@ -154,14 +167,25 @@
 
 .pricing-table {
   background-color: white;
-  width: 95%;
-  max-width: 900px;
-  border: 1px solid #e6e6e6;
+  width: 900px;
+  border: 2px solid #d9d9d9;
   border-collapse: collapse;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  min-width: 570px;
+  border-radius: 5px;
   margin-top: 40px;
+}
+
+.pricing-table__wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  max-width: 100vw;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
 }
 
 .pricing-table tbody,
@@ -173,6 +197,10 @@
 
 .pricing-table td:not(:first-of-type) {
   text-align: center;
+}
+
+.pricing-table td:first-of-type {
+  font-weight: bold;
 }
 
 .pricing-table th,
