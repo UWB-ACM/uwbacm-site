@@ -182,7 +182,7 @@ h2 {
 }
 
 @media (max-width: 1000px) {
-  #quick-nav a:not(:last-of-type) {
+  #quick-nav a:not(:last-of-type):not(#join-acm-link):not(#quick-nav__center__logo) {
     display: none;
   }
 }

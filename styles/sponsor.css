@@ -120,7 +120,7 @@
 .read-section {
   width: 100%;
   height: auto;
-  padding: 100px 0;
+  padding: 80px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,6 +190,45 @@
 
 .read-section__center a:hover {
   color: #7e57c2;
+}
+
+.read-section--hack-images {
+  padding: 0;
+  display: table;
+}
+
+.read-section--hack-images .read-section__center {
+  max-width: 1400px;
+  width: 95%;
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+}
+
+@media (max-width: 800px) {
+  .read-section--hack-images .read-section__center {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .read-section--hack-images .read-section__center {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+.read-section--hack-images .read-section__center img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 }
 
 .signature-event {
