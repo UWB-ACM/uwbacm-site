@@ -314,15 +314,19 @@
 
 .pricing-table th,
 .pricing-table td {
-  padding: 15px;
+  padding: 10px 15px;
 }
 
 .pricing-table th {
   text-align: left;
 }
 
+.pricing-table img {
+  width: 20px;
+}
+
 .pricing-table__header th:first-of-type {
-  padding: 20px 15px;
+  padding: 10px 15px;
 }
 
 .pricing-table__header th:first-of-type h2 {

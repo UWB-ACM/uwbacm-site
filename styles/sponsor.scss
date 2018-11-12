@@ -237,16 +237,20 @@
 
 	th,
 	td {
-		padding: 15px;
+		padding: 10px 15px;
 	}
 
 	th {
 		text-align: left;
 	}
 
+	img {
+		width: 20px;
+	}
+
 	&__header {
 		th:first-of-type {
-			padding: 20px 15px;
+			padding: 10px 15px;
 			h2 {
 				font-size: 1.4rem;
 				font-weight: bold;
