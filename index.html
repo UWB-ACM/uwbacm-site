@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700" rel="stylesheet" />
-		<link rel="stylesheet" href="./styles/reset.css?v=26" />
-		<link rel="stylesheet" href="./styles/index.css?v=26" />
-		<link rel="icon" type="image/x-icon" href="./favicon.ico" />
 
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80112402-6"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
+<head>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700" rel="stylesheet" />
+	<link rel="stylesheet" href="./styles/reset.css?v=26" />
+	<link rel="stylesheet" href="./styles/index.css?v=26" />
+	<link rel="icon" type="image/x-icon" href="./favicon.ico" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80112402-6"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 			function gtag() {
 				dataLayer.push(arguments);
 			}
@@ -18,606 +19,520 @@
 			gtag('config', 'UA-80112402-6');
 		</script>
 
-		<meta name="charset" content="UTF8" />
-		<meta
-			data-react-helmet="true"
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimal-ui"
-		/>
-		<meta name="mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-title" content="UWB ACM" />
-		<meta name="application-name" content="UWB ACM" />
-		<meta name="author" content="UWB ACM" />
-		<meta name="theme-color" content="#ffffff" />
-		<meta http-equiv="Accept-CH" content="DPR, Width, Viewport-Width" />
-		<meta
-			name="description"
-			content="UW Bothell Association for Computing Machinery's mission is to promote the advancement of technological awareness and provide educational opportunities for students."
-		/>
-		<meta data-react-helmet="true" name="twitter:site" content="uwbacm.com" />
-		<meta data-react-helmet="true" name="twitter:title" content="UWB ACM" />
-		<meta
-			name="twitter:description"
-			content="UW Bothell Association for Computing Machinery's mission is to promote the advancement of technological awareness and provide educational opportunities for students."
-		/>
-		<meta data-react-helmet="true" name="twitter:url" content="https://uwbacm.com/" />
-		<meta data-react-helmet="true" name="twitter:card" content="summary_large_image" />
-		<meta
-			data-react-helmet="true"
-			name="twitter:image"
-			content="https://uwbacm.com/images/logos/acm/acm-large-logo.jpg"
-		/>
-		<meta data-react-helmet="true" property="og:title" content="UWB ACM" />
-		<meta
-			data-react-helmet="true"
-			property="og:description"
-			content="UW Bothell Association for Computing Machinery's mission is to promote the advancement of technological awareness and provide educational opportunities for students."
-		/>
-		<meta data-react-helmet="true" property="og:type" content="website" />
-		<meta data-react-helmet="true" property="og:url" content="https://uwbacm.com/" />
-		<meta
-			data-react-helmet="true"
-			property="og:image"
-			content="https://uwbacm.com/images/logos/acm/acm-large-logo.jpg"
-		/>
-		<meta
-			data-react-helmet="true"
-			property="og:image:secure_url"
-			content="https://uwbacm.com/images/logos/acm/acm-large-logo.jpg"
-		/>
-		<title>UWB ACM</title>
-	</head>
+	<meta name="charset" content="UTF8" />
+	<meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-title" content="UWB ACM" />
+	<meta name="application-name" content="UWB ACM" />
+	<meta name="author" content="UWB ACM" />
+	<meta name="theme-color" content="#ffffff" />
+	<meta http-equiv="Accept-CH" content="DPR, Width, Viewport-Width" />
+	<meta name="description" content="UW Bothell Association for Computing Machinery's mission is to promote the advancement of technological awareness and provide educational opportunities for students." />
+	<meta data-react-helmet="true" name="twitter:site" content="uwbacm.com" />
+	<meta data-react-helmet="true" name="twitter:title" content="UWB ACM" />
+	<meta name="twitter:description" content="UW Bothell Association for Computing Machinery's mission is to promote the advancement of technological awareness and provide educational opportunities for students." />
+	<meta data-react-helmet="true" name="twitter:url" content="https://uwbacm.com/" />
+	<meta data-react-helmet="true" name="twitter:card" content="summary_large_image" />
+	<meta data-react-helmet="true" name="twitter:image" content="https://uwbacm.com/images/logos/acm/acm-large-logo.jpg" />
+	<meta data-react-helmet="true" property="og:title" content="UWB ACM" />
+	<meta data-react-helmet="true" property="og:description" content="UW Bothell Association for Computing Machinery's mission is to promote the advancement of technological awareness and provide educational opportunities for students." />
+	<meta data-react-helmet="true" property="og:type" content="website" />
+	<meta data-react-helmet="true" property="og:url" content="https://uwbacm.com/" />
+	<meta data-react-helmet="true" property="og:image" content="https://uwbacm.com/images/logos/acm/acm-large-logo.jpg" />
+	<meta data-react-helmet="true" property="og:image:secure_url" content="https://uwbacm.com/images/logos/acm/acm-large-logo.jpg" />
+	<title>UWB ACM</title>
+</head>
 
-	<body>
-		<div id="app">
-			<div id="top-fold" class="center-div">
-				<div id="top-fold__center">
-					<h1>We're <span id="changing-word">UWB ACM</span> <span class="flashing">|</span></h1>
-					<h2>and we prepare students for tomorrow's tech challenges.</h2>
-				</div>
-				<img id="top-fold__logo" src="./images/logos/acm/acm-white-transparent.svg" alt="ACM Logo" />
-				<div id="quick-nav" class="center-div">
-					<div id="quick-nav__center">
-						<a href="/" id="quick-nav__center__logo">
-							<img src="./images/logos/acm/acm-large-logo.jpg" alt="Our Mission" />
-						</a>
-						<a href="#mission">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								class="feather feather-award"
-							>
-								<circle cx="12" cy="8" r="7"></circle>
-								<polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-							</svg>
-							Mission
-						</a>
-						<a href="#events">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="#41e259"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								class="feather feather-calendar"
-							>
-								<rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-								<line x1="16" y1="2" x2="16" y2="6"></line>
-								<line x1="8" y1="2" x2="8" y2="6"></line>
-								<line x1="3" y1="10" x2="21" y2="10"></line>
-							</svg>
-							Events
-						</a>
-						<a href="#officers">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="#2d88ff"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								class="feather feather-users"
-							>
-								<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-								<circle cx="9" cy="7" r="4"></circle>
-								<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-								<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-							</svg>
-							Officers
-						</a>
-						<a href="#join-acm" id="join-acm-link">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="#f4417d"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								class="feather feather-heart"
-							>
-								<path
-									d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-								></path>
-							</svg>
-							Join ACM
-						</a>
-						<a href="#social-media">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="#f4b246"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								class="feather feather-linkedin"
-							>
-								<path
-									d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-								></path>
-								<rect x="2" y="9" width="4" height="12"></rect>
-								<circle cx="4" cy="4" r="2"></circle>
-							</svg>
-							Social
-						</a>
-						<a href="#contact">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="#6172fc"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								class="feather feather-mail"
-							>
-								<path
-									d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-								></path>
-								<polyline points="22,6 12,13 2,6"></polyline>
-							</svg>
-							Contact
-						</a>
-						<a href="./sponsor">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="#FB8C00"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								class="feather feather-star"
-							>
-								<polygon
-									points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-								></polygon>
-							</svg>
-							Sponsor
-						</a>
-					</div>
-				</div>
+<body>
+	<div id="app">
+		<div id="top-fold" class="center-div">
+			<div id="top-fold__center">
+				<h1>We're <span id="changing-word">UWB ACM</span> <span class="flashing">|</span></h1>
+				<h2>and we prepare students for tomorrow's tech challenges.</h2>
 			</div>
-			<div id="mission" class="center-div">
-				<div id="mission__center">
-					<div>
-						<h2>Our Mission</h2>
-						<p>
-							UW Bothell Association for Computing Machinery's mission is to promote the advancement of
-							technological awareness and provide educational opportunities for students of the University
-							of Washington, Bothell campus.
-						</p>
-					</div>
-					<div><img src="./images/logos/acm/acm-large-logo.jpg" alt="Our Mission" /></div>
-				</div>
-			</div>
-			<div id="events" class="center-div">
-				<iframe
-					src="https://calendar.google.com/calendar/embed?src=scu7cqfjgubq357bknnnpmsju4%40group.calendar.google.com&ctz=America%2FLos_Angeles"
-					style="border: 0"
-					width="800"
-					height="600"
-					frameborder="0"
-					scrolling="no"
-				></iframe>
-			</div>
-			<div id="officers" class="center-div">
-				<h2>Officers</h2>
-				<div id="officers__list">
-					<div class="row">
-						<div class="officer">
-							<div class="officer__avi-container">
-								<img src="./images/officers/avi-saam.jpg" alt="Saam's Avatar" />
-							</div>
-							<h3>Saam Amiri</h3>
-							<h4>Chair</h4>
-
-							<div class="officer__hidden">
-								<p>
-									Saam is a Senior studying Computer Science and Software Engineering. He enjoys
-									networking, motivating others and solving complex problems that scale.
-								</p>
-								<div class="officer__social">
-									<a class="social__linkedin" target="_blank" href="https://www.linkedin.com/in/saam-amiri/" title="Saam Amiri on LinkedIn">
-										<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
-									</a>
-									<a class="social__github" target="_blank" href="https://github.com/saamiam" title="SaamIAm on GitHub">
-										<img src="./images/logos/media/github-social.svg" alt="GitHub Logo" />
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="officer">
-							<div class="officer__avi-container">
-								<img src="./images/officers/avi-annie.jpg" alt="Annie's Avatar" />
-							</div>
-							<h3>Annie J Kehn</h3>
-							<h4>Vice Chair</h4>
-
-							<div class="officer__hidden">
-								<p>
-									Annie is a Senior studying Computer Science and Software Engineering. She is looking
-									forward to starting her career and wants to help her fellow CS students grow while
-									in school.
-								</p>
-								<div class="officer__social">
-									<a class="social__linkedin" target="_blank" href="https://www.linkedin.com/in/anniejkehn/" title="Annie Kehn on LinkedIn">
-										<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
-									</a>
-									<a class="social__github" target="_blank" href="https://github.com/akehn24" title="akehn24 on GitHub">
-										<img src="./images/logos/media/github-social.svg" alt="GitHub Logo" />
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="officer">
-							<div class="officer__avi-container">
-								<img src="./images/officers/avi-michael.jpg" alt="Michael's Avatar" />
-							</div>
-							<h3>Michael Vaschillo</h3>
-							<h4>Treasurer</h4>
-
-							<div class="officer__hidden">
-								<p>
-									Michael is a Senior studying Computer Science and Software Engineering. He is
-									excited to help engage students and reshape the CSS department to better prepare
-									students for industry.
-								</p>
-								<div class="officer__social">
-									<a target="_blank" href="https://www.linkedin.com/in/michael-vaschillo-4b6527135/" title="Michael Vaschillo on LinkedIn">
-										<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row row-odd">
-						<div class="officer">
-							<div class="officer__avi-container">
-								<img src="./images/officers/avi-sneha.jpg" alt="Sneha's Avatar" />
-							</div>
-							<h3>Sneha Ravichadran</h3>
-							<h4>Secretary</h4>
-
-							<div class="officer__hidden">
-								<p>
-									Sneha is a Junior studying Computer Science and Software Engineering. She is
-									passionate about AI and Machine Learning and wants to work towards helping others
-									with her coding skills.
-								</p>
-								<div class="officer__social">
-									<a class="social__linkedin" target="_blank" href="https://www.linkedin.com/in/sneharav/" title="Sneha Ravichadran on LinkedIn">
-										<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
-									</a>
-									<a class="social__github" target="_blank" href="https://github.com/ravsneha" title="ravsneha on GitHub">
-										<img src="./images/logos/media/github-social.svg" alt="GitHub Logo" />
-									</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="officer">
-							<div class="officer__avi-container">
-								<img src="./images/officers/avi-kash.jpg" alt="Kash's Avatar" />
-							</div>
-							<h3>Kash Goudarzi</h3>
-							<h4>Director of Technology</h4>
-							<div class="officer__hidden">
-								<p>
-									Kash is a senior studying computer science at UW Bothell. He handles all of the
-									technical stuff for UWB ACM. He is also the creator of newgrad.io
-								</p>
-								<div class="officer__social">
-									<a class="social__linkedin" target="_blank" href="https://www.linkedin.com/in/kashg/" title="Kash Goudarzi on LinkedIn">
-										<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
-									</a>
-									<a class="social__github" target="_blank" href="https://github.com/kash" title="Kash on GitHub">
-										<img src="./images/logos/media/github-social.svg" alt="GitHub Logo" />
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="officer">
-							<div class="officer__avi-container">
-								<img src="./images/officers/avi-gahl.jpg" alt="Gahl's Avatar" />
-							</div>
-							<h3>Gahl Goziker</h3>
-							<h4>Officer</h4>
-
-							<div class="officer__hidden">
-								<p>
-									Gahl is a Senior in the CSSE program at UWB. In his spare time, he enjoys playing
-									basketball and skiing.
-								</p>
-								<div class="officer__social">
-									<a class="social__linkedin" target="_blank" href="https://www.linkedin.com/in/gahl-goziker-198b1213b/" title="Gahl Goziker on LinkedIn">
-										<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
-									</a>
-									<a class="social__github" target="_blank" href="https://github.com/GGoziker" title="GGoziker on GitHub">
-										<img src="./images/logos/media/github-social.svg" alt="GitHub Logo" />
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="officer">
-							<div class="officer__avi-container">
-								<img src="./images/officers/avi-thomas.jpg" alt="Thomas's Avatar" />
-							</div>
-							<h3>Thomas Kercheval</h3>
-							<h4>Officer</h4>
-							<div class="officer__hidden">
-								<p>
-									Thomas is a Senior studying Computer Science and Software Engineering. His interests
-									include mathematics, software engineering, systems engineering, systems science, and
-									music.
-								</p>
-								<div class="officer__social">
-									<a class="social__linkedin" target="_blank" href="https://www.linkedin.com/in/thomas-kercheval/" title="Thomas Kercheval on LinkedIn">
-										<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
-									</a>
-									<a class="social__github" target="_blank" href="https://github.com/spacekatt" title="SpaceKatt on GitHub">
-										<img src="./images/logos/media/github-social.svg" alt="GitHub Logo" />
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="officer">
-							<div class="officer__avi-container">
-								<img src="./images/officers/avi-chris.jpg" alt="Chris's Avatar" />
-							</div>
-							<h3>Chris Johnston</h3>
-							<h4>Officer</h4>
-
-							<div class="officer__hidden">
-								<p>
-									Chris is a senior studying for his Bachelor's in Computer Science and Software
-									Engineering. In his free time he enjoys working on personal projects and collecting
-									mechanical keyboards.
-								</p>
-								<div class="officer__social">
-									<a class="social__linkedin" target="_blank" href="http://linkedin.com/in/chrisjohnstonuwb/" title="Chris Johnston on LinkedIn">
-										<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
-									</a>
-									<a class="social__github" target="_blank" href="https://github.com/Chris-Johnston" title="Chris-Johnston on GitHub">
-										<img src="./images/logos/media/github-social.svg" alt="GitHub Logo" />
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row row-odd">
-						<div class="officer">
-							<div class="officer__avi-container">
-								<img src="./images/officers/avi-brady.jpg" alt="Brady's Avatar" />
-							</div>
-							<h3>Brady Pascoe</h3>
-							<h4>Affiliate Officer</h4>
-
-							<div class="officer__hidden">
-								<p>
-									Brady is currently a student at UW-Bothell in the CSSE program. He also works as a
-									part-time programming tutor at Cascadia College.
-								</p>
-								<div class="officer__social">
-									<a class="social__linkedin" target="_blank" href="https://www.linkedin.com/in/brady-pascoe-3bba6b13a/" title="Brady Pascoe on LinkedIn">
-										<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
-									</a>
-									<a class="social__github" target="_blank" href="https://github.com/pas247" title="bpas247 on GitHub">
-										<img src="./images/logos/media/github-social.svg" alt="GitHub Logo" />
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="officer">
-							<div class="officer__avi-container">
-								<img src="./images/officers/avi-danielle.jpg" alt="Danielle's Avatar" />
-							</div>
-							<h3>Danielle Speroni</h3>
-							<h4>Affiliate Officer</h4>
-							<div class="officer__hidden">
-								<p>
-									Danielle is a Junior at UWB studying math. She is skilled in graphic design and
-									works on anything design-delated for UWB ACM.
-								</p>
-								<div class="officer__social">
-									<a class="social__linkedin" target="_blank" href="https://www.linkedin.com/in/danielle-speroni-455bb6155/" title="Danielle Speroni on LinkedIn">
-										<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
-									</a>
-								</div>
-							</div>
-						</div>
-						<!-- <div class="officer no-hover office-dont-show"></div> -->
-					</div>
-				</div>
-				<a target="_blank" href="https://goo.gl/forms/Xt3mg9rXPWkGDdx93">Apply to become an officer!</a>
-			</div>
-			<div id="join-acm" class="center-div">
-				<!-- Begin MailChimp Signup Form -->
-				<div id="join-acm__center">
-					<style type="text/css">
-						#mc_embed_signup {
-							background: #fff;
-							clear: left;
-							font: 14px Helvetica, Arial, sans-serif;
-							margin-top: 50px;
-							width: 100%;
-							padding: 0;
-						}
-
-						#mc_embed_signup form {
-							padding: 0;
-						}
-
-						#mc_embed_signup_scroll h2 {
-							margin-bottom: 0;
-						}
-
-						.mc-field-group input {
-							font-size: 1.2rem;
-							width: 100%;
-							padding: 8px 10px;
-							box-sizing: border-box;
-						}
-
-						#mc_embed_signup .button {
-							background-color: #4b2e83;
-							color: white;
-						}
-					</style>
-					<div id="mc_embed_signup">
-						<form
-							action="//uwbacm.us16.list-manage.com/subscribe/post?u=8773dffc3f528b0b18fd7aef8&amp;id=11b31196c4"
-							method="post"
-							id="mc-embedded-subscribe-form"
-							name="mc-embedded-subscribe-form"
-							class="validate"
-							target="_blank"
-							novalidate
-						>
-							<div id="mc_embed_signup_scroll">
-								<h2>Subscribe to our mailing list</h2>
-								<div class="mc-field-group">
-									<label for="mce-EMAIL">Email Address <span class="asterisk">*</span> </label>
-									<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" />
-								</div>
-								<div class="mc-field-group">
-									<label for="mce-FNAME">First Name <span class="asterisk">*</span> </label>
-									<input type="text" value="" name="FNAME" class="required" id="mce-FNAME" />
-								</div>
-								<div class="mc-field-group">
-									<label for="mce-LNAME">Last Name <span class="asterisk">*</span> </label>
-									<input type="text" value="" name="LNAME" class="required" id="mce-LNAME" />
-								</div>
-								<div id="mce-responses" class="clear">
-									<div class="response" id="mce-error-response" style="display:none"></div>
-									<div class="response" id="mce-success-response" style="display:none"></div>
-								</div>
-								<!--
-									real people should not fill this in and expect good things - do not remove this or risk form bot signups
-								-->
-								<div style="position: absolute; left: -5000px;" aria-hidden="true">
-									<input
-										type="text"
-										name="b_8773dffc3f528b0b18fd7aef8_11b31196c4"
-										tabindex="-1"
-										value=""
-									/>
-								</div>
-								<div class="clear">
-									<input
-										type="submit"
-										value="Subscribe"
-										name="subscribe"
-										id="mc-embedded-subscribe"
-										class="button"
-									/>
-								</div>
-							</div>
-						</form>
-					</div>
-					<script
-						type="text/javascript"
-						src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-					></script>
-					<script type="text/javascript">
-						(function($) {
-							window.fnames = new Array();
-							window.ftypes = new Array();
-							fnames[0] = 'EMAIL';
-							ftypes[0] = 'email';
-							fnames[1] = 'FNAME';
-							ftypes[1] = 'text';
-							fnames[2] = 'LNAME';
-							ftypes[2] = 'text';
-						})(jQuery);
-						var $mcj = jQuery.noConflict(true);
-					</script>
-				</div>
-				<!-- End mc_embed_signup -->
-			</div>
-			<div id="social-media" class="center-div">
-				<div id="social-media__center">
-					<h2>Social Media</h2>
-					<p>
-						To stay up to date with the latest events that UWB ACM is hosting, follow us on our social
-						media! We are active on Discord and LinkedIn. Discord is a great place to communicate with us,
-						get your questions answered, and get involved with the community.
-					</p>
-					<div class="buttons">
-						<a href="https://discord.gg/YBrxBTg" target="_blank">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 240">
-								<path
-									d="M104.4 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zM140.9 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z"
-								/>
-								<path
-									d="M189.5 20h-134C44.2 20 35 29.2 35 40.6v135.2c0 11.4 9.2 20.6 20.5 20.6h113.4l-5.3-18.5 12.8 11.9 12.1 11.2 21.5 19V40.6c0-11.4-9.2-20.6-20.5-20.6zm-38.6 130.6s-3.6-4.3-6.6-8.1c13.1-3.7 18.1-11.9 18.1-11.9-4.1 2.7-8 4.6-11.5 5.9-5 2.1-9.8 3.5-14.5 4.3-9.6 1.8-18.4 1.3-25.9-.1-5.7-1.1-10.6-2.7-14.7-4.3-2.3-.9-4.8-2-7.3-3.4-.3-.2-.6-.3-.9-.5-.2-.1-.3-.2-.4-.3-1.8-1-2.8-1.7-2.8-1.7s4.8 8 17.5 11.8c-3 3.8-6.7 8.3-6.7 8.3-22.1-.7-30.5-15.2-30.5-15.2 0-32.2 14.4-58.3 14.4-58.3 14.4-10.8 28.1-10.5 28.1-10.5l1 1.2c-18 5.2-26.3 13.1-26.3 13.1s2.2-1.2 5.9-2.9c10.7-4.7 19.2-6 22.7-6.3.6-.1 1.1-.2 1.7-.2 6.1-.8 13-1 20.2-.2 9.5 1.1 19.7 3.9 30.1 9.6 0 0-7.9-7.5-24.9-12.7l1.4-1.6s13.7-.3 28.1 10.5c0 0 14.4 26.1 14.4 58.3 0 0-8.5 14.5-30.6 15.2z"
-								/>
-							</svg>
-							Discord
-						</a>
-						<a href="https://www.linkedin.com/in/uwbacm/" target="_blank">
-							<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" /> LinkedIn
-						</a>
-					</div>
-				</div>
-			</div>
-			<div id="contact" class="center-div">
-				<div id="contact__center">
-					<h2>Contact</h2>
-					<p>
-						If you have any questions, please feel free to email us at
-						<a href="mailto:acmuwbothell@gmail.com">acmuwbothell@gmail.com</a>
-					</p>
+			<img id="top-fold__logo" src="./images/logos/acm/acm-white-transparent.svg" alt="ACM Logo" />
+			<div id="quick-nav" class="center-div">
+				<div id="quick-nav__center">
+					<a href="/" id="quick-nav__center__logo">
+						<img src="./images/logos/acm/acm-large-logo.jpg" alt="Our Mission" />
+					</a>
+					<a href="#mission">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+						 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award">
+							<circle cx="12" cy="8" r="7"></circle>
+							<polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+						</svg>
+						Mission
+					</a>
+					<a href="#events">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#41e259"
+						 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+							<rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+							<line x1="16" y1="2" x2="16" y2="6"></line>
+							<line x1="8" y1="2" x2="8" y2="6"></line>
+							<line x1="3" y1="10" x2="21" y2="10"></line>
+						</svg>
+						Events
+					</a>
+					<a href="#officers">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2d88ff"
+						 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users">
+							<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+							<circle cx="9" cy="7" r="4"></circle>
+							<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+							<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+						</svg>
+						Officers
+					</a>
+					<a href="#join-acm" id="join-acm-link">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f4417d"
+						 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+							<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+						</svg>
+						Join ACM
+					</a>
+					<a href="#social-media">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f4b246"
+						 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+							<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+							<rect x="2" y="9" width="4" height="12"></rect>
+							<circle cx="4" cy="4" r="2"></circle>
+						</svg>
+						Social
+					</a>
+					<a href="#contact">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6172fc"
+						 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+							<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+							<polyline points="22,6 12,13 2,6"></polyline>
+						</svg>
+						Contact
+					</a>
+					<a href="./sponsor">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FB8C00"
+						 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
+							<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+						</svg>
+						Sponsor
+					</a>
 				</div>
 			</div>
 		</div>
-	</body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="./scripts/index.js?v=22"></script>
+		<div id="mission" class="center-div">
+			<div id="mission__center">
+				<div>
+					<h2>Our Mission</h2>
+					<p>
+						UW Bothell Association for Computing Machinery's mission is to promote the advancement of
+						technological awareness and provide educational opportunities for students of the University
+						of Washington, Bothell campus.
+					</p>
+				</div>
+				<div><img src="./images/logos/acm/acm-large-logo.jpg" alt="Our Mission" /></div>
+			</div>
+		</div>
+		<div id="events" class="center-div">
+			<iframe src="https://calendar.google.com/calendar/embed?src=scu7cqfjgubq357bknnnpmsju4%40group.calendar.google.com&ctz=America%2FLos_Angeles"
+			 style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+		</div>
+		<div id="officers" class="center-div">
+			<h2>Officers</h2>
+			<div id="officers__list">
+				<div class="row">
+					<div class="officer">
+						<div class="officer__avi-container">
+							<img src="./images/officers/avi-saam.jpg" alt="Saam's Avatar" />
+						</div>
+						<h3>Saam Amiri</h3>
+						<h4>Chair</h4>
+
+						<div class="officer__hidden">
+							<p>
+								Saam is a Senior studying Computer Science and Software Engineering. He enjoys
+								networking, motivating others and solving complex problems that scale.
+							</p>
+							<div class="officer__social">
+								<a class="social__linkedin" target="_blank" href="https://www.linkedin.com/in/saam-amiri/" title="Saam Amiri on LinkedIn">
+									<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
+								</a>
+								<a class="social__github" target="_blank" href="https://github.com/saamiam" title="SaamIAm on GitHub">
+									<img src="./images/logos/media/github-social.svg" alt="GitHub Logo" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="officer">
+						<div class="officer__avi-container">
+							<img src="./images/officers/avi-annie.jpg" alt="Annie's Avatar" />
+						</div>
+						<h3>Annie J Kehn</h3>
+						<h4>Vice Chair</h4>
+
+						<div class="officer__hidden">
+							<p>
+								Annie is a Senior studying Computer Science and Software Engineering. She is looking
+								forward to starting her career and wants to help her fellow CS students grow while
+								in school.
+							</p>
+							<div class="officer__social">
+								<a class="social__linkedin" target="_blank" href="https://www.linkedin.com/in/anniejkehn/" title="Annie Kehn on LinkedIn">
+									<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
+								</a>
+								<a class="social__github" target="_blank" href="https://github.com/akehn24" title="akehn24 on GitHub">
+									<img src="./images/logos/media/github-social.svg" alt="GitHub Logo" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="officer">
+						<div class="officer__avi-container">
+							<img src="./images/officers/avi-michael.jpg" alt="Michael's Avatar" />
+						</div>
+						<h3>Michael Vaschillo</h3>
+						<h4>Treasurer</h4>
+
+						<div class="officer__hidden">
+							<p>
+								Michael is a Senior studying Computer Science and Software Engineering. He is
+								excited to help engage students and reshape the CSS department to better prepare
+								students for industry.
+							</p>
+							<div class="officer__social">
+								<a target="_blank" href="https://www.linkedin.com/in/michael-vaschillo-4b6527135/" title="Michael Vaschillo on LinkedIn">
+									<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row row-odd">
+					<div class="officer">
+						<div class="officer__avi-container">
+							<img src="./images/officers/avi-sneha.jpg" alt="Sneha's Avatar" />
+						</div>
+						<h3>Sneha Ravichadran</h3>
+						<h4>Secretary</h4>
+
+						<div class="officer__hidden">
+							<p>
+								Sneha is a Junior studying Computer Science and Software Engineering. She is
+								passionate about AI and Machine Learning and wants to work towards helping others
+								with her coding skills.
+							</p>
+							<div class="officer__social">
+								<a class="social__linkedin" target="_blank" href="https://www.linkedin.com/in/sneharav/" title="Sneha Ravichadran on LinkedIn">
+									<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
+								</a>
+								<a class="social__github" target="_blank" href="https://github.com/ravsneha" title="ravsneha on GitHub">
+									<img src="./images/logos/media/github-social.svg" alt="GitHub Logo" />
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="officer">
+						<div class="officer__avi-container">
+							<img src="./images/officers/avi-kash.jpg" alt="Kash's Avatar" />
+						</div>
+						<h3>Kash Goudarzi</h3>
+						<h4>Director of Technology</h4>
+						<div class="officer__hidden">
+							<p>
+								Kash is a senior studying computer science at UW Bothell. He handles all of the
+								technical stuff for UWB ACM. He is also the creator of newgrad.io
+							</p>
+							<div class="officer__social">
+								<a class="social__linkedin" target="_blank" href="https://www.linkedin.com/in/kashg/" title="Kash Goudarzi on LinkedIn">
+									<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
+								</a>
+								<a class="social__github" target="_blank" href="https://github.com/kash" title="Kash on GitHub">
+									<img src="./images/logos/media/github-social.svg" alt="GitHub Logo" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="officer">
+						<div class="officer__avi-container">
+							<img src="./images/officers/avi-gahl.jpg" alt="Gahl's Avatar" />
+						</div>
+						<h3>Gahl Goziker</h3>
+						<h4>Officer</h4>
+
+						<div class="officer__hidden">
+							<p>
+								Gahl is a Senior in the CSSE program at UWB. In his spare time, he enjoys playing
+								basketball and skiing.
+							</p>
+							<div class="officer__social">
+								<a class="social__linkedin" target="_blank" href="https://www.linkedin.com/in/gahl-goziker-198b1213b/" title="Gahl Goziker on LinkedIn">
+									<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
+								</a>
+								<a class="social__github" target="_blank" href="https://github.com/GGoziker" title="GGoziker on GitHub">
+									<img src="./images/logos/media/github-social.svg" alt="GitHub Logo" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="officer">
+						<div class="officer__avi-container">
+							<img src="./images/officers/avi-thomas.jpg" alt="Thomas's Avatar" />
+						</div>
+						<h3>Thomas Kercheval</h3>
+						<h4>Officer</h4>
+						<div class="officer__hidden">
+							<p>
+								Thomas is a Senior studying Computer Science and Software Engineering. His interests
+								include mathematics, software engineering, systems engineering, systems science, and
+								music.
+							</p>
+							<div class="officer__social">
+								<a class="social__linkedin" target="_blank" href="https://www.linkedin.com/in/thomas-kercheval/" title="Thomas Kercheval on LinkedIn">
+									<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
+								</a>
+								<a class="social__github" target="_blank" href="https://github.com/spacekatt" title="SpaceKatt on GitHub">
+									<img src="./images/logos/media/github-social.svg" alt="GitHub Logo" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="officer">
+						<div class="officer__avi-container">
+							<img src="./images/officers/avi-chris.jpg" alt="Chris's Avatar" />
+						</div>
+						<h3>Chris Johnston</h3>
+						<h4>Officer</h4>
+
+						<div class="officer__hidden">
+							<p>
+								Chris is a senior studying for his Bachelor's in Computer Science and Software
+								Engineering. In his free time he enjoys working on personal projects and collecting
+								mechanical keyboards.
+							</p>
+							<div class="officer__social">
+								<a class="social__linkedin" target="_blank" href="http://linkedin.com/in/chrisjohnstonuwb/" title="Chris Johnston on LinkedIn">
+									<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
+								</a>
+								<a class="social__github" target="_blank" href="https://github.com/Chris-Johnston" title="Chris-Johnston on GitHub">
+									<img src="./images/logos/media/github-social.svg" alt="GitHub Logo" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row row-odd">
+					<div class="officer">
+						<div class="officer__avi-container">
+							<img src="./images/officers/avi-billy.jpg" alt="Phuc's Avatar" />
+						</div>
+						<h3>Phuc Huynh</h3>
+						<h4>Officer</h4>
+
+						<div class="officer__hidden">
+							<p>
+								Phuc is a Junior studying Compuer Software Engineering.
+								He's interested in software engineering, machine learning, and AI.
+								In his spare time, he enjoys hiking and playing piano.
+							</p>
+							<div class="officer__social">
+								<a class="social__linkedin" target="_blank" href="https://www.linkedin.com/in/phuchuynhvu" title="Phuc Huynh on LinkedIn">
+									<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
+								</a>
+								<a class="social__github" target="_blank" href="https://github.com/Phuc15" title="Phuc15 on GitHub">
+									<img src="./images/logos/media/github-social.svg" alt="GitHub Logo" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="officer">
+						<div class="officer__avi-container">
+							<img src="./images/officers/avi-prat.jpg" alt="Prat's Avatar" />
+						</div>
+						<h3>Prathyusha Pillari</h3>
+						<h4>Officer</h4>
+						<div class="officer__hidden">
+							<p>
+								Prathyusha (Prat) is a Junior at UWB studying Computer Science and Software Engineering.
+								She is also the founding president of the UWB chapter of Her Campus Media.
+							</p>
+							<div class="officer__social">
+								<a class="social__linkedin" target="_blank" href="https://www.linkedin.com/in/prathyusha-pillari-0b2114b7/"
+								 title="Prathyusha Pillari on LinkedIn">
+									<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
+								</a>
+								<a class="social__github" target="_blank" href="https://github.com/pratpill" title="pratpill on GitHub">
+									<img src="./images/logos/media/github-social.svg" alt="GitHub Logo" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="officer">
+						<div class="officer__avi-container">
+							<img src="./images/officers/avi-brady.jpg" alt="Brady's Avatar" />
+						</div>
+						<h3>Brady Pascoe</h3>
+						<h4>Affiliate Officer</h4>
+
+						<div class="officer__hidden">
+							<p>
+								Brady is currently a student at UW-Bothell in the CSSE program. He also works as a
+								part-time programming tutor at Cascadia College.
+							</p>
+							<div class="officer__social">
+								<a class="social__linkedin" target="_blank" href="https://www.linkedin.com/in/brady-pascoe-3bba6b13a/" title="Brady Pascoe on LinkedIn">
+									<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
+								</a>
+								<a class="social__github" target="_blank" href="https://github.com/pas247" title="bpas247 on GitHub">
+									<img src="./images/logos/media/github-social.svg" alt="GitHub Logo" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="officer">
+						<div class="officer__avi-container">
+							<img src="./images/officers/avi-danielle.jpg" alt="Danielle's Avatar" />
+						</div>
+						<h3>Danielle Speroni</h3>
+						<h4>Affiliate Officer</h4>
+						<div class="officer__hidden">
+							<p>
+								Danielle is a Junior at UWB studying math. She is skilled in graphic design and
+								works on anything design-delated for UWB ACM.
+							</p>
+							<div class="officer__social">
+								<a class="social__linkedin" target="_blank" href="https://www.linkedin.com/in/danielle-speroni-455bb6155/"
+								 title="Danielle Speroni on LinkedIn">
+									<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="officer no-hover office-dont-show"></div>
+				</div>
+			</div>
+			<a target="_blank" href="https://goo.gl/forms/Xt3mg9rXPWkGDdx93">Apply to become an officer!</a>
+		</div>
+		<div id="join-acm" class="center-div">
+			<!-- Begin MailChimp Signup Form -->
+			<div id="join-acm__center">
+				<style type="text/css">
+					#mc_embed_signup {
+						background: #fff;
+						clear: left;
+						font: 14px Helvetica, Arial, sans-serif;
+						margin-top: 50px;
+						width: 100%;
+						padding: 0;
+					}
+
+					#mc_embed_signup form {
+						padding: 0;
+					}
+
+					#mc_embed_signup_scroll h2 {
+						margin-bottom: 0;
+					}
+
+					.mc-field-group input {
+						font-size: 1.2rem;
+						width: 100%;
+						padding: 8px 10px;
+						box-sizing: border-box;
+					}
+
+					#mc_embed_signup .button {
+						background-color: #4b2e83;
+						color: white;
+					}
+				</style>
+				<div id="mc_embed_signup">
+					<form action="//uwbacm.us16.list-manage.com/subscribe/post?u=8773dffc3f528b0b18fd7aef8&amp;id=11b31196c4" method="post"
+					 id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<div id="mc_embed_signup_scroll">
+							<h2>Subscribe to our mailing list</h2>
+							<div class="mc-field-group">
+								<label for="mce-EMAIL">Email Address <span class="asterisk">*</span> </label>
+								<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" />
+							</div>
+							<div class="mc-field-group">
+								<label for="mce-FNAME">First Name <span class="asterisk">*</span> </label>
+								<input type="text" value="" name="FNAME" class="required" id="mce-FNAME" />
+							</div>
+							<div class="mc-field-group">
+								<label for="mce-LNAME">Last Name <span class="asterisk">*</span> </label>
+								<input type="text" value="" name="LNAME" class="required" id="mce-LNAME" />
+							</div>
+							<div id="mce-responses" class="clear">
+								<div class="response" id="mce-error-response" style="display:none"></div>
+								<div class="response" id="mce-success-response" style="display:none"></div>
+							</div>
+							<!--
+									real people should not fill this in and expect good things - do not remove this or risk form bot signups
+								-->
+							<div style="position: absolute; left: -5000px;" aria-hidden="true">
+								<input type="text" name="b_8773dffc3f528b0b18fd7aef8_11b31196c4" tabindex="-1" value="" />
+							</div>
+							<div class="clear">
+								<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" />
+							</div>
+						</div>
+					</form>
+				</div>
+				<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+				<script type="text/javascript">
+					(function ($) {
+						window.fnames = new Array();
+						window.ftypes = new Array();
+						fnames[0] = 'EMAIL';
+						ftypes[0] = 'email';
+						fnames[1] = 'FNAME';
+						ftypes[1] = 'text';
+						fnames[2] = 'LNAME';
+						ftypes[2] = 'text';
+					})(jQuery);
+					var $mcj = jQuery.noConflict(true);
+				</script>
+			</div>
+			<!-- End mc_embed_signup -->
+		</div>
+		<div id="social-media" class="center-div">
+			<div id="social-media__center">
+				<h2>Social Media</h2>
+				<p>
+					To stay up to date with the latest events that UWB ACM is hosting, follow us on our social
+					media! We are active on Discord and LinkedIn. Discord is a great place to communicate with us,
+					get your questions answered, and get involved with the community.
+				</p>
+				<div class="buttons">
+					<a href="https://discord.gg/YBrxBTg" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 240">
+							<path d="M104.4 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zM140.9 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z" />
+							<path d="M189.5 20h-134C44.2 20 35 29.2 35 40.6v135.2c0 11.4 9.2 20.6 20.5 20.6h113.4l-5.3-18.5 12.8 11.9 12.1 11.2 21.5 19V40.6c0-11.4-9.2-20.6-20.5-20.6zm-38.6 130.6s-3.6-4.3-6.6-8.1c13.1-3.7 18.1-11.9 18.1-11.9-4.1 2.7-8 4.6-11.5 5.9-5 2.1-9.8 3.5-14.5 4.3-9.6 1.8-18.4 1.3-25.9-.1-5.7-1.1-10.6-2.7-14.7-4.3-2.3-.9-4.8-2-7.3-3.4-.3-.2-.6-.3-.9-.5-.2-.1-.3-.2-.4-.3-1.8-1-2.8-1.7-2.8-1.7s4.8 8 17.5 11.8c-3 3.8-6.7 8.3-6.7 8.3-22.1-.7-30.5-15.2-30.5-15.2 0-32.2 14.4-58.3 14.4-58.3 14.4-10.8 28.1-10.5 28.1-10.5l1 1.2c-18 5.2-26.3 13.1-26.3 13.1s2.2-1.2 5.9-2.9c10.7-4.7 19.2-6 22.7-6.3.6-.1 1.1-.2 1.7-.2 6.1-.8 13-1 20.2-.2 9.5 1.1 19.7 3.9 30.1 9.6 0 0-7.9-7.5-24.9-12.7l1.4-1.6s13.7-.3 28.1 10.5c0 0 14.4 26.1 14.4 58.3 0 0-8.5 14.5-30.6 15.2z" />
+						</svg>
+						Discord
+					</a>
+					<a href="https://www.linkedin.com/in/uwbacm/" target="_blank">
+						<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" /> LinkedIn
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="contact" class="center-div">
+			<div id="contact__center">
+				<h2>Contact</h2>
+				<p>
+					If you have any questions, please feel free to email us at
+					<a href="mailto:acmuwbothell@gmail.com">acmuwbothell@gmail.com</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./scripts/index.js?v=22"></script>
+
 </html>
