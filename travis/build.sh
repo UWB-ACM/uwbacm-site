@@ -5,6 +5,8 @@
 
 # !!! THIS MAY BE DESTRUCTIVE IF RUN IN YOUR DEV ENVIRONMENT !!!
 
+echo "Running Travis CI build script."
+
 # prevent people from making stupid mistakes
 if [ $TRAVIS == "true" ]
 then

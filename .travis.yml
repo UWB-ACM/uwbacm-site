@@ -10,7 +10,7 @@ branches:
   - gh-pages
 deploy:
   provider: script
-  skip_cleanup: false
   script: "./travis/build.sh"
+  skip_cleanup: false
   on:
     branch: master
