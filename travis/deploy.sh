@@ -31,7 +31,9 @@ then
     # commit this to the gh-pages branch
     git status
     git add .
+    git status
     git commit -m "Travis #$TRAVIS_BUILD_NUMBER"
+    echo "Pushing."
     git push origin gh-pages
     echo "Done."
 else
