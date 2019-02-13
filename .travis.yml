@@ -1,5 +1,7 @@
 language: node_js # required, we are using Gulpfile to compile css
 sudo: required
+script:
+  - echo "Don't have to do anything"
 node_js:
   - '6.1'
 # deploy on all branches but gh-pages
