@@ -11,6 +11,7 @@ echo "Running Travis CI deploy script."
 if [ $TRAVIS == "true" ]
 then
     set -e
+    npm install
     gulp
     # checkout gh-pages branch and remove all existing files
     # into the directory ../gh_pages
