@@ -10,7 +10,7 @@ echo "Running Travis CI deploy script."
 # prevent people from making stupid mistakes
 if [ $TRAVIS == "true" ]
 then
-    set -e
+    set -e    
     # checkout gh-pages branch and remove all existing files
     # into the directory ../gh_pages
     git clone --branch gh-pages https://${GH_TOKEN}@github.com/Chris-Johnston/uwbacm-site.git ../gh_pages
@@ -31,6 +31,7 @@ then
     git add -A .
     git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
     git push origin gh-pages
+    echo "Done."
 else
     echo "This script should not be run outside of Travis CI!"
 fi
