@@ -6,3 +6,6 @@ gulp.task('sass', function(){
     .pipe(sass())
     .pipe(gulp.dest('styles'))
 });
+
+gulp.task('default',
+    gulp.series(['sass']));
