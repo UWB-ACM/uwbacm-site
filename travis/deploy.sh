@@ -10,7 +10,8 @@ echo "Running Travis CI deploy script."
 # prevent people from making stupid mistakes
 if [ $TRAVIS == "true" ]
 then
-    set -e    
+    set -e
+    gulp
     # checkout gh-pages branch and remove all existing files
     # into the directory ../gh_pages
     git clone --branch gh-pages https://${GH_TOKEN}@github.com/Chris-Johnston/uwbacm-site.git ../gh_pages
