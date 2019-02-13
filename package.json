@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/uwb-acm/uwbacm-site/issues"
   },
-  "homepage": "https://github.com/uwb-acm/uwbacm-site#readme"
+  "homepage": "https://github.com/uwb-acm/uwbacm-site#readme",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "scss": "^4.0.2"
+  }
 }
