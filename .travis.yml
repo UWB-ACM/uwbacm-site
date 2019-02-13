@@ -4,6 +4,9 @@ script: # build the scss
   - "./travis/build.sh"
 node_js:
   - '6.1'
+before_install:
+  - chmod +x ./travis/deploy.sh
+  - chmod +x ./travis/build.sh
 # deploy on all branches but gh-pages
 branches:
   except:
