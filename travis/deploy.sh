@@ -5,7 +5,7 @@
 
 # !!! THIS MAY BE DESTRUCTIVE IF RUN IN YOUR DEV ENVIRONMENT !!!
 
-echo "Running Travis CI build script."
+echo "Running Travis CI deploy script."
 
 # prevent people from making stupid mistakes
 if [ $TRAVIS == "true" ]
@@ -27,7 +27,6 @@ then
     # commit this to the gh-pages branch
     git status
     git add -A .
-    git status
     git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
     git push --quiet origin gh-pages
 else
