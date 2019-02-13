@@ -30,8 +30,8 @@ then
 
     # commit this to the gh-pages branch
     git status
-    git add -A .
-    git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
+    git add .
+    git commit -m "Travis #$TRAVIS_BUILD_NUMBER"
     git push origin gh-pages
     echo "Done."
 else
