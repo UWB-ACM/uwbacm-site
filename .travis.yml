@@ -1,7 +1,7 @@
 language: node_js # required, we are using Gulpfile to compile css
 sudo: required
-script:
-  - echo "Don't have to do anything" >> dummyfile
+script: # build the scss
+  - "./travis/build.sh"
 node_js:
   - '6.1'
 # deploy on all branches but gh-pages
@@ -10,7 +10,7 @@ branches:
   - gh-pages
 deploy:
   provider: script
-  script: "./travis/build.sh"
+  script: "./travis/deploy.sh"
   skip_cleanup: false
   on:
     branch: master
