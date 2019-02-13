@@ -21,6 +21,8 @@ then
     cd -R ../uwbacm-site/* .
     cp ../uwbacm-site/.travis.yml .
 
+    echo "Copied files."
+
     git config user.email ${GH_EMAIL}
     git config user.name "Travis CI / UWB-ACM"
 
@@ -28,7 +30,7 @@ then
     git status
     git add -A .
     git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
-    git push --quiet origin gh-pages
+    git push origin gh-pages
 else
     echo "This script should not be run outside of Travis CI!"
 fi
