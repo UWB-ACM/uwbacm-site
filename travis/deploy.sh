@@ -15,7 +15,6 @@ then
     # into the directory ../gh_pages
     git clone --branch gh-pages https://${GH_TOKEN}@github.com/Chris-Johnston/uwbacm-site.git ../gh_pages
     cd ../gh_pages
-    git checkout gh-pages
     rm -rf *
 
     # copy the built files from the original branch into the output
