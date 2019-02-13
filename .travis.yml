@@ -2,9 +2,6 @@ language: node_js # required, we are using Gulpfile to compile css
 sudo: required
 node_js:
   - '6.1'
-before_install:
-  - gem install bundler
-  - bundle check || bundle install
 # deploy on all branches but gh-pages
 branches:
   except:
