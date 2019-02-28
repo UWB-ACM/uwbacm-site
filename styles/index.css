@@ -316,7 +316,11 @@ a#quick-nav__center__logo {
 #officers > a {
   display: table;
   margin-top: 20px;
+<<<<<<< HEAD
   margin-bottom: 70px;
+=======
+  margin-bottom: 20px;
+>>>>>>> 41dd7953fd7a0627052be3c867f13c00d69a8cb7
   border-radius: 4px;
   -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
@@ -430,6 +434,10 @@ a#quick-nav__center__logo {
   opacity: 0.7;
   overflow: hidden;
   display: table;
+}
+
+#officers .officer__hidden .officer__social a {
+  display: inline-block;
 }
 
 #officers .officer__hidden img {
