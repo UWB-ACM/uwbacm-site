@@ -1,4 +1,4 @@
-# uwbacm-site
+# uwbacm-site [![Build Status](https://travis-ci.com/UWB-ACM/uwbacm-site.svg?branch=master)](https://travis-ci.com/UWB-ACM/uwbacm-site)
 Homepage website for the University of Washington Bothell chapter of the Assocation for Computing Machinery.
 
 ## How to build SASS
