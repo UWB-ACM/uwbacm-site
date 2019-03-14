@@ -389,3 +389,7 @@ a#quick-nav__center__logo {
     color: #0093ff;
     border-bottom: 2px solid #0093ff;
     padding-bottom: 1px; }
+
+.test-rule {
+  /* test that css compiles correctly */
+  color: red; }
