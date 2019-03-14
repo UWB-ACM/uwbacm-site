@@ -22,7 +22,6 @@ then
     # copy the built files from the original branch into the output
     cp -R ../uwbacm-site/* .
     cp ../uwbacm-site/.travis.yml .
-    cp ../uwbacm-site/.gitignore .
 
     echo "Copied files."
 
