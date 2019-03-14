@@ -5,62 +5,50 @@ a, abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, c
   font: inherit;
   vertical-align: baseline;
   font-family: 'Titillium Web', helvetica, roboto, arial, sans-serif;
-  color: #444;
-}
+  color: #444; }
 
 input {
-  -webkit-border-radius: 0;
-}
+  -webkit-border-radius: 0; }
 
 article, aside, details, figcaption, figure, footer, header, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
 body, html {
   height: 100%;
   width: 100%;
   position: relative;
-  display: table;
-}
+  display: table; }
 
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
 blockquote:after, blockquote:before, q:after, q:before {
   content: '';
-  content: none;
-}
+  content: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 :focus {
-  outline: 0 !important;
-}
+  outline: 0 !important; }
 
 button {
   cursor: pointer;
   border: 0;
   background-color: transparent;
-  -webkit-tap-highlight-color: transparent;
-}
+  -webkit-tap-highlight-color: transparent; }
 
 a {
   text-decoration: none;
   color: #444;
-  font-family: roboto, sans-serif;
-}
+  font-family: roboto, sans-serif; }
 
 input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px #fff inset;
-}
+  -webkit-box-shadow: 0 0 0 1000px #fff inset; }
 
 #app {
   postition: relative;
@@ -69,6 +57,4 @@ input:-webkit-autofill {
   display: table;
   padding: 0;
   margin: 0;
-  min-height: 100%;
-}
-/*# sourceMappingURL=reset.css.map */
+  min-height: 100%; }
