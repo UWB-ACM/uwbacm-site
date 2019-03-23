@@ -1,5 +1,7 @@
 .idea/
 
+# ignore .css, these are built from scss
+*.css
 .sass-cache/
 *.css.map
 *.sass.map

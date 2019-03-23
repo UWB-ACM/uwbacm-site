@@ -31,6 +31,8 @@ then
     # commit this to the gh-pages branch
     git status
     git add .
+    # forcibly add css files, despite being ignored
+    git add --force styles/*.css
     git status
     git commit -m "Travis #$TRAVIS_BUILD_NUMBER"
     echo "Pushing."
