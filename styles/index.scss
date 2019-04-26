@@ -386,6 +386,7 @@ a#quick-nav__center__logo {
 	}
 }
 
+//mailchimp
 #join-acm {
 	padding: 70px 0 50px;
 	&__center {
@@ -405,6 +406,11 @@ a#quick-nav__center__logo {
 		border-radius: 3px;
 		margin-top: 10px;
 	}
+	
+	#mc_embed_signup {
+		background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;
+	}
+
 	.mc-field-group {
 		margin-top: 15px;
 	}
