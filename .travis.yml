@@ -11,7 +11,7 @@ script:
   - yarn test --coverage
 before_deploy:
   - yarn build
-  - cp production/**
+  - cp production/** build
 deploy:
   local_dir: 'build/'
   provider: pages
