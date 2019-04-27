@@ -1,11 +1,12 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import Favicon from '../images/logos/favicons/favicon.ico';
 
 const Head = () => (
     <Helmet>
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700" rel="stylesheet" />
-		<link rel="icon" type="image/x-icon" href="./favicon.ico" />
+		<link rel="icon" type="image/x-icon" href={Favicon} />
 
 		<meta name="charset" content="UTF8" />
 		<meta
