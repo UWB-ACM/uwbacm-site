@@ -5,14 +5,13 @@ notifications:
   email:
     on_failure: change
     on_success: never
-before_install:
-  - cd uwbacm-site-rewrite
 install:
   - yarn install
 script:
   - yarn test --coverage
 before_deploy:
   - yarn build
+  - cp production/**
 deploy:
   local_dir: 'build/'
   provider: pages

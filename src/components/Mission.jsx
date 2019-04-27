@@ -1,4 +1,5 @@
 import React from 'react';
+import AcmLargeLogo from '../images/logos/acm/acm-large-logo.jpg';
 
 const Mission = () => (
 	<div id="mission" className="center-div">
@@ -12,7 +13,7 @@ const Mission = () => (
 				</p>
 			</div>
 			<div>
-				<img src="./images/logos/acm/acm-large-logo.jpg" alt="Our Mission" />
+				<img src={AcmLargeLogo} alt="Our Mission" />
 			</div>
 		</div>
 	</div>

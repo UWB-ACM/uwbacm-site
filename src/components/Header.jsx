@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import AcmLargeLogo from '../images/logos/acm/acm-large-logo.jpg';
+import AcmTransparentLogo from '../images/logos/acm/acm-white-transparent.svg';
 
 const Header = () => (
 	<div id="top-fold" className="center-div">
@@ -9,11 +11,11 @@ const Header = () => (
 			</h1>
 			<h2>and we prepare students for tomorrow's tech challenges.</h2>
 		</div>
-		<img id="top-fold__logo" src="./images/logos/acm/acm-white-transparent.svg" alt="ACM Logo" /> -->
+		<img id="top-fold__logo" src={AcmTransparentLogo} alt="ACM Logo" /> -->
 		<div id="quick-nav" className="center-div">
 			<div id="quick-nav__center">
 				<a href="/" id="quick-nav__center__logo">
-					<img src="./images/logos/acm/acm-large-logo.jpg" alt="Our Mission" />
+					<img src={AcmLargeLogo} alt="Our Mission" />
 				</a>
 				<a href="#mission">
 					<svg

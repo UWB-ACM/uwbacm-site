@@ -1,25 +1,35 @@
 {
-    "name": "uwbacm-site",
-    "version": "1.0.0",
-    "description": "Site for UWB ACM",
-    "main": "gulpfile.js",
-    "scripts": {
-      "test": "gulp"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/UWB-ACM/uwbacm-site.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/uwb-acm/uwbacm-site/issues"
-    },
-    "homepage": "https://github.com/uwb-acm/uwbacm-site#readme",
-    "dependencies": {
-      "gulp": "^4.0.0",
-      "gulp-sass": "^4.0.2",
-      "sass": "^1.17.0"
-    }
+  "name": "uwbacm-site-rewrite",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "node-sass": "^4.11.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-ga": "^2.5.7",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
-  
+}

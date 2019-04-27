@@ -26,7 +26,7 @@ const SocialMedia = () => (
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" /> LinkedIn
+					<img src={require("../images/logos/media/linkedin-social.svg")} alt="LinkedIn logo" /> LinkedIn
 				</a>
 			</div>
 		</div>

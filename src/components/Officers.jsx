@@ -3,7 +3,7 @@ import React from 'react';
 const Officer = ({name, position, desc, img, linkedIn, github}) => (
 	<div className="officer">
 		<div className="officer__avi-container">
-			<img src={`./images/officers/${img}.jpg`} alt={`${name}'s Avatar`} />
+			<img src={require(`../images/officers/${img}.jpg`)} alt={`${name}'s Avatar`} />
 		</div>
 		<h3>{name}</h3>
 		<h4>{position}</h4>
@@ -19,7 +19,7 @@ const Officer = ({name, position, desc, img, linkedIn, github}) => (
 					href={`https://www.linkedin.com/in/${linkedIn}/`}
 					title={`${name} on LinkedIn`}
 				>
-					<img src="./images/logos/media/linkedin-social.svg" alt="LinkedIn logo" />
+					<img src={require("../images/logos/media/linkedin-social.svg")} alt="LinkedIn logo" />
 				</a>
 				{github && 
 					<a 
@@ -29,7 +29,7 @@ const Officer = ({name, position, desc, img, linkedIn, github}) => (
 						href={`https://github.com/${github}`} 
 						title={`${github} on GitHub`}
 					>
-						<img src="./images/logos/media/github-social.svg" alt="GitHub Logo" />
+						<img src={require("../images/logos/media/github-social.svg")} alt="GitHub Logo" />
 					</a>				
 				}
 			</div>
