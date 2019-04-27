@@ -2,8 +2,9 @@ import React from 'react';
 
 const Form = () => (
 	<div id="join-acm" className="center-div">
+		{/* TODO: Re-implement using Formik */}
 		{/* Begin Mailchimp Signup htmlForm */}
-		<link href="//cdn-images.mailchimp.com/embedcode/classNameic-10_7.css" rel="stylesheet" type="text/css" />
+		{/* <link href="//cdn-images.mailchimp.com/embedcode/classNameic-10_7.css" rel="stylesheet" type="text/css" />
 		<div id="mc_embed_signup">
 			<form
 				action="https://uwbacm.us16.list-manage.com/subscribe/post?u=8773dffc3f528b0b18fd7aef8&id=11b31196c4"
@@ -41,9 +42,9 @@ const Form = () => (
 					<div id="mce-responses" className="clear">
 						<div className="response" id="mce-error-response" style={{display: 'none'}} />
 						<div className="response" id="mce-success-response" style={{display: 'none'}} />
-					</div>{' '}
+					</div>{' '} */}
 					{/* real people should not fill this in and expect good things - do not remove this or risk htmlForm bot signups */}
-					<div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
+					{/* <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
 						<input type="text" name="b_8773dffc3f528b0b18fd7aef8_11b31196c4" tabIndex="-1" value="" />
 					</div>
 					<div className="clear">
@@ -57,7 +58,7 @@ const Form = () => (
 					</div>
 				</div>
 			</form>
-		</div>
+		</div> */}
 		{/* End mc_embed_signup */}
 	</div>
 );

@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ReactGA from 'react-ga';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import "./styles/reset.scss";
-import "./styles/index.scss";
+
+/* Google Analytics Stuff */
+ReactGA.initialize('UA-80112402-6');
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
