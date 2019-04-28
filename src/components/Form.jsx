@@ -1,7 +1,41 @@
 import React from 'react';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
 
-const Form = () => (
+const SignUpSchema = Yup.object().shape({
+	email: Yup.string()
+	  .email('Invalid email address')
+	  .required('Required'),
+	firstName: Yup.string()
+	  .min(2, 'Must be longer than 2 characters')
+	  .max(20, 'Nice try, nobody has a first name that long')
+	  .required('Required'),
+	lastName: Yup.string()
+	  .min(2, 'Must be longer than 2 characters')
+	  .max(20, 'Nice try, nobody has a last name that long')
+	  .required('Required'),
+  });
+  
+const Signup = () => (
 	<div id="join-acm" className="center-div">
+		<Formik
+			validationSchema={SignUpSchema}
+		>
+			{(isSubmitting) => (
+				<Form>
+					<Field type="email" name="email" placeHolder="Email Address" />
+					<ErrorMessage name="email" component="div" />
+					
+					<Field name="firstName" placeHolder="First Name" />
+					<ErrorMessage name="firstName" component="div" />
+
+					<Field name="lastName" placeHolder="Last Name" />
+					<ErrorMessage name="lastName" component="div" />
+
+					<button type="submit" disabled={isSubmitting}>Submit</button>
+				</Form>
+			)}
+		</Formik>
 		{/* TODO: Re-implement using Formik */}
 		{/* Begin Mailchimp Signup htmlForm */}
 		{/* <link href="//cdn-images.mailchimp.com/embedcode/classNameic-10_7.css" rel="stylesheet" type="text/css" />
@@ -63,4 +97,4 @@ const Form = () => (
 	</div>
 );
 
-export default Form;
+export default Signup;
