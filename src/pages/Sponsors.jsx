@@ -1,9 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { Link } from 'react-router-dom';
-import Check from './images/others/check.svg';
-import './styles/reset.scss';
-import './styles/sponsor.scss';
+import Check from '../images/others/check.svg';
+import '../styles/reset.scss';
+import '../styles/sponsor.scss';
 
 const Sponsors = () => (
 <>
