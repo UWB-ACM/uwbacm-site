@@ -25,9 +25,9 @@ const ChangingWord = () => {
 	return <span id="changing-word">{topWords[curWordIndex].slice(0, wordCounter)}</span>
 }
 
-const NavItem = ({ title, link, logo, ...props }) => (
+const NavItem = ({ title, link, ...props }) => (
 	<a href={`#${link}`} {...props}>
-		<img src={require(`../images/header/${logo}.svg`)} />
+		<img src={require(`../images/header/${link}.svg`)} />
 		{title}
 	</a>
 )
@@ -49,32 +49,26 @@ const Header = () => (
 				<NavItem
 					title='Mission'
 					link='mission'
-					logo='mission'
 				/>
 				<NavItem
 					title='Events'
 					link='events'
-					logo='events'
 				/>
 				<NavItem
 					title='Officers'
 					link='officers'
-					logo='officers'
 				/>
 				<NavItem
 					title='Join ACM'
-					logo='join-acm'
 					link='join-acm'
 					id='join-acm-link'
 				/>
 				<NavItem
 					title='Social'
-					logo='social-media'
 					link='social-media'
 				/>
 				<NavItem 
 					title='Contact'
-					logo='contact'
 					link='contact'
 				/>
 				<Link to="./sponsors">
