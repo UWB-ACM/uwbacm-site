@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import Favicon from '../images/logos/favicons/favicon.ico';
 
 const Head = () => (
-    <Helmet>
+	<Helmet>
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700" rel="stylesheet" />
 		<link rel="icon" type="image/x-icon" href={Favicon} />
@@ -57,7 +57,7 @@ const Head = () => (
 			content="https://uwbacm.com/images/logos/acm/acm-large-logo.jpg"
 		/>
 		<title>UWB ACM</title>
-    </Helmet>
+	</Helmet>
 );
 
 export default Head;

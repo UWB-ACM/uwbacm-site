@@ -9,20 +9,20 @@ import Contact from '../components/Contact';
 import Form from '../components/Form';
 import Head from '../components/Head';
 
-import "../styles/reset.scss";
-import "../styles/index.scss";
+import '../styles/reset.scss';
+import '../styles/index.scss';
 
 const Home = () => (
-  <div id="app">
-    <Head />
-    <Header />
-    <Mission />
-    <Events />
-    <Officers />
-    <Form />
-    <SocialMedia />
-    <Contact />
-  </div>
+	<div id="app">
+		<Head />
+		<Header />
+		<Mission />
+		<Events />
+		<Officers />
+		<Form />
+		<SocialMedia />
+		<Contact />
+	</div>
 );
 
 export default Home;

@@ -8,9 +8,7 @@ const Officer = ({name, position, desc, img, linkedIn, github}) => (
 		<h3>{name}</h3>
 		<h4>{position}</h4>
 		<div className="officer__hidden">
-			<p>
-				{desc}
-			</p>
+			<p>{desc}</p>
 			<div className="officer__social">
 				<a
 					className="social__linkedin"
@@ -19,19 +17,19 @@ const Officer = ({name, position, desc, img, linkedIn, github}) => (
 					href={`https://www.linkedin.com/in/${linkedIn}/`}
 					title={`${name} on LinkedIn`}
 				>
-					<img src={require("../images/logos/media/linkedin-social.svg")} alt="LinkedIn logo" />
+					<img src={require('../images/logos/media/linkedin-social.svg')} alt="LinkedIn logo" />
 				</a>
-				{github && 
-					<a 
-						className="social__github" 
+				{github && (
+					<a
+						className="social__github"
 						target="_blank"
-						rel="noopener noreferrer" 
-						href={`https://github.com/${github}`} 
+						rel="noopener noreferrer"
+						href={`https://github.com/${github}`}
 						title={`${github} on GitHub`}
 					>
-						<img src={require("../images/logos/media/github-social.svg")} alt="GitHub Logo" />
-					</a>				
-				}
+						<img src={require('../images/logos/media/github-social.svg')} alt="GitHub Logo" />
+					</a>
+				)}
 			</div>
 		</div>
 	</div>
@@ -40,16 +38,12 @@ const Officer = ({name, position, desc, img, linkedIn, github}) => (
 const Officers = () => (
 	<div id="officers" className="center-div">
 		<h2>Officers</h2>
-		<a 
-			target="_blank" 
-			rel="noopener noreferrer"
-			href="https://goo.gl/forms/Xt3mg9rXPWkGDdx93"
-		>
+		<a target="_blank" rel="noopener noreferrer" href="https://goo.gl/forms/Xt3mg9rXPWkGDdx93">
 			Apply to become an officer!
 		</a>
 		<div id="officers__list">
 			<div className="row">
-				<Officer 
+				<Officer
 					name="Saam Amiri"
 					position="Chair"
 					desc="Saam is a Senior studying Computer Science and Software Engineering. He enjoys networking,
@@ -58,7 +52,7 @@ const Officers = () => (
 					linkedIn="saam-amiri"
 					github="saamiam"
 				/>
-				<Officer 
+				<Officer
 					name="Annie J Kehn"
 					position="Vice Chair"
 					desc="Annie is a Senior studying Computer Science and Software Engineering. She is looking forward
@@ -67,7 +61,7 @@ const Officers = () => (
 					linkedIn="anniejkehn"
 					github="akehn24"
 				/>
-				<Officer 
+				<Officer
 					name="Michael Vaschillo"
 					position="Treasurer"
 					desc="Michael is a Senior studying Computer Science and Software Engineering. He is excited to
@@ -77,7 +71,7 @@ const Officers = () => (
 				/>
 			</div>
 			<div className="row row-odd">
-				<Officer 
+				<Officer
 					name="Sneha Ravichadran"
 					position="Treasurer"
 					desc="Sneha is a Junior studying Computer Science and Software Engineering. She is passionate
@@ -87,7 +81,7 @@ const Officers = () => (
 					linkedIn="sneharav"
 					github="ravsneha"
 				/>
-				<Officer 
+				<Officer
 					name="Michele Chao"
 					position="Web Developer"
 					desc="Michele is a sophomore studying Interactive Media Design at UW Bothell. She's interested in
@@ -96,9 +90,9 @@ const Officers = () => (
 					linkedIn="michele-chao-68b86a141"
 					github="michelechao"
 				/>
-			</div> 
+			</div>
 			<div className="row">
-				<Officer 
+				<Officer
 					name="Prathyusha Pillari"
 					position="Officer"
 					desc="Prathyusha (Prat) is a Junior at UWB studying Computer Science and Software Engineering. She
@@ -107,7 +101,7 @@ const Officers = () => (
 					linkedIn="prathyusha-pillari-0b2114b7"
 					github="pratpill"
 				/>
-				<Officer 
+				<Officer
 					name="Phuc Huynh"
 					position="Officer"
 					desc="Phuc is a Junior studying Computer Software Engineering. He's interested in software
@@ -117,7 +111,7 @@ const Officers = () => (
 					linkedIn="phuchuynhvu"
 					github="Phuc15"
 				/>
-				<Officer 
+				<Officer
 					name="Xinyu Wang"
 					position="Officer"
 					desc="Xinyu is a Junior studying Computer Science and Software Engineering. She is interested in
@@ -128,7 +122,7 @@ const Officers = () => (
 				/>
 			</div>
 			<div className="row row-odd">
-				<Officer 
+				<Officer
 					name="Lizzy Presland"
 					position="Officer"
 					desc="Lizzy is a Junior studying Computer Science and Software Engineering. She is interested in
@@ -137,7 +131,7 @@ const Officers = () => (
 					linkedIn="etcadinfinitum"
 					github="etcadinfinitum"
 				/>
-				<Officer 
+				<Officer
 					name="Hannah Sokol"
 					position="Officer"
 					desc="Hannah is a Junior studying Computer Science and Software Engineering. She is interested in
@@ -148,7 +142,7 @@ const Officers = () => (
 				/>
 			</div>
 			<div className="row">
-				<Officer 
+				<Officer
 					name="Hyeun Belle Kim"
 					position="Officer"
 					desc="Belle is a Junior studying Computer Science and Software Engineering. She is interested in
@@ -156,7 +150,7 @@ const Officers = () => (
 					img="avi-belle"
 					linkedIn="hyeun-belle-kim-2a5812151"
 				/>
-				<Officer 
+				<Officer
 					name="Delaney Desmond"
 					position="Officer"
 					desc="Delaney is a Senior studying Computer Science and Software Engineering, graduating December
@@ -166,7 +160,7 @@ const Officers = () => (
 					linkedIn="delaneydesmond"
 					github="delaney-desmond"
 				/>
-				<Officer 
+				<Officer
 					name="Danielle Speroni"
 					position="Affiliate Officer"
 					desc="Danielle is a Junior at UWB studying math. She is skilled in graphic design and works on
@@ -176,7 +170,7 @@ const Officers = () => (
 				/>
 			</div>
 			<div className="row row-odd">
-				<Officer 
+				<Officer
 					name="Brady Pascoe"
 					position="Affiliate Officer"
 					desc="Brady is currently a student at UW-Bothell in the CSSE program. He also works as a part-time

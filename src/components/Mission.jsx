@@ -7,9 +7,8 @@ const Mission = () => (
 			<div>
 				<h2>Our Mission</h2>
 				<p>
-					UW Bothell Association for Computing Machinery's mission is to promote the advancement of
-					technological awareness and provide educational opportunities for students of the University of
-					Washington, Bothell campus.
+					UW Bothell Association for Computing Machinery's mission is to promote the advancement of technological
+					awareness and provide educational opportunities for students of the University of Washington, Bothell campus.
 				</p>
 			</div>
 			<div>

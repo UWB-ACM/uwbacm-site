@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, {useState, useEffect} from 'react';
+import {Link} from 'react-router-dom';
 import AcmLargeLogo from '../images/logos/acm/acm-large-logo.jpg';
 import AcmTransparentLogo from '../images/logos/acm/acm-white-transparent.svg';
 
-const topWords = ["UWB ACM", "visionaries", "diverse", "proactive"];
+const topWords = ['UWB ACM', 'visionaries', 'diverse', 'proactive'];
 
 const ChangingWord = () => {
 	const [curWordIndex, setWordIndex] = useState(0);
@@ -12,25 +12,24 @@ const ChangingWord = () => {
 		let timer = setTimeout(() => {
 			if (wordCounter < topWords[curWordIndex].length) {
 				setWordCounter(wordCounter + 1);
-			}
-			else {
+			} else {
 				setWordIndex(curWordIndex + 1 < topWords.length ? curWordIndex + 1 : 0);
 				setWordCounter(0);
 			}
 		}, 500);
 		return () => {
 			clearTimeout(timer);
-		}
+		};
 	});
-	return <span id="changing-word">{topWords[curWordIndex].slice(0, wordCounter)}</span>
-}
+	return <span id="changing-word">{topWords[curWordIndex].slice(0, wordCounter)}</span>;
+};
 
-const NavItem = ({ title, link, ...props }) => (
+const NavItem = ({title, link, ...props}) => (
 	<a href={`#${link}`} {...props}>
 		<img src={require(`../images/header/${link}.svg`)} />
 		{title}
 	</a>
-)
+);
 
 const Header = () => (
 	<div id="top-fold" className="center-div">
@@ -46,31 +45,12 @@ const Header = () => (
 				<a href="/" id="quick-nav__center__logo">
 					<img src={AcmLargeLogo} alt="Our Mission" />
 				</a>
-				<NavItem
-					title='Mission'
-					link='mission'
-				/>
-				<NavItem
-					title='Events'
-					link='events'
-				/>
-				<NavItem
-					title='Officers'
-					link='officers'
-				/>
-				<NavItem
-					title='Join ACM'
-					link='join-acm'
-					id='join-acm-link'
-				/>
-				<NavItem
-					title='Social'
-					link='social-media'
-				/>
-				<NavItem 
-					title='Contact'
-					link='contact'
-				/>
+				<NavItem title="Mission" link="mission" />
+				<NavItem title="Events" link="events" />
+				<NavItem title="Officers" link="officers" />
+				<NavItem title="Join ACM" link="join-acm" id="join-acm-link" />
+				<NavItem title="Social" link="social-media" />
+				<NavItem title="Contact" link="contact" />
 				<Link to="./sponsors">
 					<img src={require(`../images/header/sponsors.svg`)} />
 					Sponsor
