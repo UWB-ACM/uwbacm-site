@@ -31,7 +31,7 @@ const Signup = () => {
 	const [hasSubmitted, hasSubmittedHandler] = useState(false);
 
 	return (
-	<Container>
+	<Container id='join-acm'>
 		<Row>
 			<h2>Subscribe to our mailing list</h2>
 		</Row>
@@ -64,7 +64,7 @@ const Signup = () => {
 					isValid,
 					errors,
 				}) => (
-					<Form noValidate onSubmit={handleSubmit}>
+					<Form noValidate onSubmit={handleSubmit} >
 						<Form.Row>
 							<Form.Group as={Col} md="3" controlId="email">
 								<Form.Label>Email</Form.Label>
