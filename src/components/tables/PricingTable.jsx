@@ -26,6 +26,14 @@ export const PricingTableRow = ({header, columnContent}) => (
 	</tr>
 );
 
+export const PricingTableSubtitle = ({children}) => (
+	<tr className="pricing-table__subtitle">
+		<td colSpan="5">
+			<span>{children}</span>
+		</td>
+	</tr>
+);
+
 export const CheckMark = <img src={Check} alt="Check Mark" />;
 
 const PricingTable = ({children}) => (
@@ -41,5 +49,6 @@ const PricingTable = ({children}) => (
 
 PricingTable.Row = PricingTableRow;
 PricingTable.Header = PricingTableHeader;
+PricingTable.Subtitle = PricingTableSubtitle;
 
 export default PricingTable;

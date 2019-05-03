@@ -27,11 +27,7 @@ const HackathonSponsorshipTable = () => (
 				}
 			]}
 		/>
-		<tr className="pricing-table__subtitle">
-			<td colSpan="5">
-				<span>Recruitment</span>
-			</td>
-		</tr>
+		<PricingTable.Subtitle>Recruitment</PricingTable.Subtitle>
 		<PricingTable.Row
 			header="Distribute Recruiting Material"
 			columnContent={[CheckMark, CheckMark, CheckMark, CheckMark]}
@@ -39,22 +35,16 @@ const HackathonSponsorshipTable = () => (
 		<PricingTable.Row header="Access Resumes" columnContent={['', CheckMark, CheckMark, CheckMark]} />
 		<PricingTable.Row header="Send Recruiters" columnContent={['', CheckMark, CheckMark, CheckMark]} />
 		<PricingTable.Row header="Table at Workshop" columnContent={['', 'Half', 'Full', '2-Full']} />
-		<tr className="pricing-table__subtitle">
-			<td colSpan="5">
-				<span>Branding</span>
-			</td>
-		</tr>
+
+		<PricingTable.Subtitle>Branding</PricingTable.Subtitle>
 		<PricingTable.Row header="Handout Swag" columnContent={[CheckMark, CheckMark, CheckMark, CheckMark]} />
 		<PricingTable.Row header="Logo on Website" columnContent={['Small', 'Small', 'Medium', 'Large']} />
 		<PricingTable.Row header="Logo on T-Shirt" columnContent={['', 'Small', 'Medium', 'Large']} />
 		<PricingTable.Row header="Logo on Advertisement" columnContent={['', '', 'Medium', 'Large']} />
 		<PricingTable.Row header="Host a Meal" columnContent={['', '', '1 Meal', '2 Meals']} />
 		<PricingTable.Row header="Speak at Ceremony" columnContent={['', '', '', CheckMark]} />
-		<tr className="pricing-table__subtitle">
-			<td colSpan="5">
-				<span>General</span>
-			</td>
-		</tr>
+
+		<PricingTable.Subtitle>General</PricingTable.Subtitle>
 		<PricingTable.Row header="Provide Prizes" columnContent={[CheckMark, CheckMark, CheckMark, CheckMark]} />
 		<PricingTable.Row header="Provide Mentor" columnContent={[CheckMark, CheckMark, CheckMark, CheckMark]} />
 		<PricingTable.Row header="Promote API & Product Demos" columnContent={['', CheckMark, CheckMark, CheckMark]} />
