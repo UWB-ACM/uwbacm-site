@@ -31,7 +31,18 @@ const NavItem = ({title, link, ...props}) => (
 	</a>
 );
 
-const Header = () => (
+const Nav = ({children, pageY, offset}) => (
+	<div id="quick-nav" className={'center-div ' + (pageY - offset > 0 ? 'scrolled' : '')}>
+		<div id="quick-nav__center">
+			<a href="/" id="quick-nav__center__logo">
+				<img src={AcmLargeLogo} alt="Our Mission" />
+			</a>
+			{children}
+		</div>
+	</div>
+);
+
+const Header = ({pageY}) => (
 	<div id="top-fold" className="center-div">
 		<div id="top-fold__center">
 			<h1>
@@ -40,23 +51,18 @@ const Header = () => (
 			<h2>and we prepare students for tomorrow's tech challenges.</h2>
 		</div>
 		<img id="top-fold__logo" src={AcmTransparentLogo} alt="ACM Logo" /> -->
-		<div id="quick-nav" className="center-div">
-			<div id="quick-nav__center">
-				<a href="/" id="quick-nav__center__logo">
-					<img src={AcmLargeLogo} alt="Our Mission" />
-				</a>
-				<NavItem title="Mission" link="mission" />
-				<NavItem title="Events" link="events" />
-				<NavItem title="Officers" link="officers" />
-				<NavItem title="Join ACM" link="join-acm" id="join-acm-link" />
-				<NavItem title="Social" link="social-media" />
-				<NavItem title="Contact" link="contact" />
-				<Link to="./sponsors">
-					<img src={require(`../images/header/sponsors.svg`)} />
-					Sponsor
-				</Link>
-			</div>
-		</div>
+		<Nav pageY={pageY} offset={750}>
+			<NavItem title="Mission" link="mission" />
+			<NavItem title="Events" link="events" />
+			<NavItem title="Officers" link="officers" />
+			<NavItem title="Join ACM" link="join-acm" id="join-acm-link" />
+			<NavItem title="Social" link="social-media" />
+			<NavItem title="Contact" link="contact" />
+			<Link to="./sponsors">
+				<img src={require(`../images/header/sponsors.svg`)} />
+				Sponsor
+			</Link>
+		</Nav>
 	</div>
 );
 

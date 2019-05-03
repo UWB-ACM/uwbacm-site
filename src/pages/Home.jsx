@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import Header from '../components/Header';
 import Mission from '../components/Mission';
@@ -12,17 +12,20 @@ import Head from '../components/Head';
 import '../styles/reset.scss';
 import '../styles/index.scss';
 
-const Home = () => (
-	<div id="app">
-		<Head />
-		<Header />
-		<Mission />
-		<Events />
-		<Officers />
-		<Form />
-		<SocialMedia />
-		<Contact />
-	</div>
-);
+const Home = () => {
+	const [pageY, setPageY] = useState(0);
+	return (
+		<div id="app" onWheel={(e) => setPageY(e.pageY)}>
+			<Head />
+			<Header pageY={pageY} />
+			<Mission />
+			<Events />
+			<Officers />
+			<Form />
+			<SocialMedia />
+			<Contact />
+		</div>
+	);
+};
 
 export default Home;
