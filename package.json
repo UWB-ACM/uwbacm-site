@@ -1,6 +1,7 @@
 {
-	"name": "uwbacm-site-rewrite",
-	"version": "0.1.0",
+	"name": "uwbacm-site",
+	"version": "1.0.0",
+	"description": "Site for UWB ACM",
 	"private": true,
 	"dependencies": {
 		"bootstrap": "^4.3.1",
