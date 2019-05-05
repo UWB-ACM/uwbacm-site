@@ -20,8 +20,8 @@ export const PricingTableHeader = ({entries}) => (
 export const PricingTableRow = ({header, columnContent}) => (
 	<tr>
 		<td>{header}</td>
-		{columnContent.map((column) => (
-			<td>{column}</td>
+		{columnContent.map((column, i) => (
+			<td key={i}>{column}</td>
 		))}
 	</tr>
 );
@@ -39,10 +39,12 @@ export const CheckMark = <img src={Check} alt="Check Mark" />;
 const PricingTable = ({children}) => (
 	<div className="pricing-table__wrapper">
 		<table className="pricing-table">
-			<tbody>{children}</tbody>
-			<tr className="pricing-table__footer">
-				<td colSpan="5">Please contact us to arrange a customized sponsorship package</td>
-			</tr>
+			<tbody>
+				{children}
+				<tr className="pricing-table__footer">
+					<td colSpan="5">Please contact us to arrange a customized sponsorship package</td>
+				</tr>
+			</tbody>
 		</table>
 	</div>
 );
