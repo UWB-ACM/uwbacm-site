@@ -9,11 +9,7 @@ const Head = () => (
 		<link rel="icon" type="image/x-icon" href={Favicon} />
 
 		<meta name="charset" content="UTF8" />
-		<meta
-			data-react-helmet="true"
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimal-ui"
-		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
 		<meta name="mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-title" content="UWB ACM" />
@@ -25,37 +21,24 @@ const Head = () => (
 			name="description"
 			content="UW Bothell Association for Computing Machinery's mission is to promote the advancement of technological awareness and provide educational opportunities for students."
 		/>
-		<meta data-react-helmet="true" name="twitter:site" content="uwbacm.com" />
-		<meta data-react-helmet="true" name="twitter:title" content="UWB ACM" />
+		<meta name="twitter:site" content="uwbacm.com" />
+		<meta name="twitter:title" content="UWB ACM" />
 		<meta
 			name="twitter:description"
 			content="UW Bothell Association for Computing Machinery's mission is to promote the advancement of technological awareness and provide educational opportunities for students."
 		/>
-		<meta data-react-helmet="true" name="twitter:url" content="https://uwbacm.com/" />
-		<meta data-react-helmet="true" name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:url" content="https://uwbacm.com/" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:image" content="https://uwbacm.com/images/logos/acm/acm-large-logo.jpg" />
+		<meta property="og:title" content="UWB ACM" />
 		<meta
-			data-react-helmet="true"
-			name="twitter:image"
-			content="https://uwbacm.com/images/logos/acm/acm-large-logo.jpg"
-		/>
-		<meta data-react-helmet="true" property="og:title" content="UWB ACM" />
-		<meta
-			data-react-helmet="true"
 			property="og:description"
 			content="UW Bothell Association for Computing Machinery's mission is to promote the advancement of technological awareness and provide educational opportunities for students."
 		/>
-		<meta data-react-helmet="true" property="og:type" content="website" />
-		<meta data-react-helmet="true" property="og:url" content="https://uwbacm.com/" />
-		<meta
-			data-react-helmet="true"
-			property="og:image"
-			content="https://uwbacm.com/images/logos/acm/acm-large-logo.jpg"
-		/>
-		<meta
-			data-react-helmet="true"
-			property="og:image:secure_url"
-			content="https://uwbacm.com/images/logos/acm/acm-large-logo.jpg"
-		/>
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://uwbacm.com/" />
+		<meta property="og:image" content="https://uwbacm.com/images/logos/acm/acm-large-logo.jpg" />
+		<meta property="og:image:secure_url" content="https://uwbacm.com/images/logos/acm/acm-large-logo.jpg" />
 		<title>UWB ACM</title>
 	</Helmet>
 );
