@@ -412,10 +412,11 @@ a#quick-nav__center__logo {
 		height: 0px;
 	}
 
-	#mc_embed_signup {
-		background:#fff; 
-		clear:left; 
-		font:14px Helvetica,Arial,sans-serif;		
+	#mc_embed_signup{
+		background:#fff;
+		clear:left;
+		font:14px Helvetica,Arial,sans-serif;
+		width:700px;
 	}
 
 	#mc_embed_signup.button {
@@ -425,6 +426,7 @@ a#quick-nav__center__logo {
 
 	.mc-field-group {
 		margin-top: 15px;
+		padding: 0px;
 	}
 }
 
