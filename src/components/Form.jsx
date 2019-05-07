@@ -41,7 +41,7 @@ const Signup = () => {
 					});
 				}}
 			>
-				{({handleSubmit, handleChange, handleBlur, values, touched, isValid, errors}) => (
+				{({handleSubmit, errors}) => (
 					<div id="mc_embed_signup">
 						<form
 							id="mc-embedded-subscribe-form"
