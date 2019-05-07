@@ -387,6 +387,7 @@ a#quick-nav__center__logo {
 }
 
 //mailchimp
+
 #join-acm {
 	padding: 70px 0 50px;
 	&__center {
@@ -401,14 +402,25 @@ a#quick-nav__center__logo {
 		background-color: $globalBlue;
 		color: white;
 		font-size: 1rem;
-		padding: 14px 20px;
 		border: 0;
 		border-radius: 3px;
 		margin-top: 10px;
 	}
 	
+	#mc_embed_signup .button {
+		line-height: 0px;
+		height: 0px;
+	}
+
 	#mc_embed_signup {
-		background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;
+		background:#fff; 
+		clear:left; 
+		font:14px Helvetica,Arial,sans-serif;		
+	}
+
+	#mc_embed_signup.button {
+		line-height: 0px;
+		height: 0px;
 	}
 
 	.mc-field-group {
