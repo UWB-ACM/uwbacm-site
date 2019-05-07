@@ -310,7 +310,7 @@ a#quick-nav__center__logo {
   padding: 70px 0 50px; }
   #join-acm__center {
     width: 95%;
-    max-width: 500px; }
+    max-width: 800px; }
   #join-acm h2 {
     text-align: left; }
   #join-acm #mc-embedded-subscribe {
@@ -328,13 +328,12 @@ a#quick-nav__center__logo {
     background: #fff;
     clear: left;
     font: 14px Helvetica,Arial,sans-serif;
-    width: 700px; }
+    width: 800px; }
   #join-acm #mc_embed_signup.button {
     line-height: 0px;
     height: 0px; }
   #join-acm .mc-field-group {
-    margin-top: 15px;
-    padding: 0px; }
+    margin-top: 15px; }
 
 #social-media {
   width: 100%;
