@@ -387,11 +387,12 @@ a#quick-nav__center__logo {
 }
 
 //mailchimp
+
 #join-acm {
 	padding: 70px 0 50px;
 	&__center {
 		width: 95%;
-		max-width: 500px;
+		max-width: 800px;
 	}
 	h2 {
 		text-align: left;
@@ -401,14 +402,21 @@ a#quick-nav__center__logo {
 		background-color: $globalBlue;
 		color: white;
 		font-size: 1rem;
-		padding: 14px 20px;
 		border: 0;
 		border-radius: 3px;
 		margin-top: 10px;
 	}
-	
+
+	#mc_embed_signup .button {
+		line-height: 0px;
+		padding: 22px;
+	}
+
 	#mc_embed_signup {
-		background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;
+		background: #fff;
+		clear: left;
+		font: 14px Helvetica, Arial, sans-serif;
+		width: 800px;
 	}
 
 	.mc-field-group {
@@ -491,16 +499,13 @@ a#quick-nav__center__logo {
 	}
 }
 
-
-.test-rule
-{
+.test-rule {
 	/* test that css compiles correctly */
 	color: red;
 }
 
-#mc_embed_signup
-{
-	background: #fff; 
-	clear: left; 
-	font: 14px Helvetica,Arial,sans-serif; 
+#mc_embed_signup {
+	background: #fff;
+	clear: left;
+	font: 14px Helvetica, Arial, sans-serif;
 }

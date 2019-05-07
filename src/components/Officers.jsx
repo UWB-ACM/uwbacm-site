@@ -72,14 +72,12 @@ const Officers = () => (
 			</div>
 			<div className="row row-odd">
 				<Officer
-					name="Sneha Ravichadran"
-					position="Treasurer"
-					desc="Sneha is a Junior studying Computer Science and Software Engineering. She is passionate
-					about AI and Machine Learning and wants to work towards helping others with her coding
-					skills."
-					img="avi-sneha"
-					linkedIn="sneharav"
-					github="ravsneha"
+					name="Hyeun Belle Kim"
+					position="Secretary"
+					desc="Belle is a Junior studying Computer Science and Software Engineering. She is interested in
+					Program Management and is also the founding Vice Chair of IxDA UWB Chapter."
+					img="avi-belle"
+					linkedIn="hyeun-belle-kim-2a5812151"
 				/>
 				<Officer
 					name="Michele Chao"
@@ -143,14 +141,6 @@ const Officers = () => (
 			</div>
 			<div className="row">
 				<Officer
-					name="Hyeun Belle Kim"
-					position="Officer"
-					desc="Belle is a Junior studying Computer Science and Software Engineering. She is interested in
-					Program Management and is also the founding Vice Chair of IxDA UWB Chapter."
-					img="avi-belle"
-					linkedIn="hyeun-belle-kim-2a5812151"
-				/>
-				<Officer
 					name="Delaney Desmond"
 					position="Officer"
 					desc="Delaney is a Senior studying Computer Science and Software Engineering, graduating December
@@ -161,16 +151,6 @@ const Officers = () => (
 					github="delaney-desmond"
 				/>
 				<Officer
-					name="Danielle Speroni"
-					position="Affiliate Officer"
-					desc="Danielle is a Junior at UWB studying math. She is skilled in graphic design and works on
-					anything design-related for UWB ACM."
-					img="avi-danielle"
-					linkedIn="danielle-speroni-455bb6155"
-				/>
-			</div>
-			<div className="row row-odd">
-				<Officer
 					name="Brady Pascoe"
 					position="Affiliate Officer"
 					desc="Brady is currently a student at UW-Bothell in the CSSE program. He also works as a part-time
@@ -179,9 +159,9 @@ const Officers = () => (
 					linkedIn="brady-pascoe-3bba6b13a"
 					github="bpas247"
 				/>
-				<div className="officer no-hover office-dont-show" />
 			</div>
 		</div>
+		<div className="officer no-hover office-dont-show" />
 	</div>
 );
 
