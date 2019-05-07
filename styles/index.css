@@ -323,15 +323,12 @@ a#quick-nav__center__logo {
     margin-top: 10px; }
   #join-acm #mc_embed_signup .button {
     line-height: 0px;
-    height: 0px; }
+    padding: 22px; }
   #join-acm #mc_embed_signup {
     background: #fff;
     clear: left;
     font: 14px Helvetica,Arial,sans-serif;
     width: 800px; }
-  #join-acm #mc_embed_signup.button {
-    line-height: 0px;
-    height: 0px; }
   #join-acm .mc-field-group {
     margin-top: 15px; }
 
