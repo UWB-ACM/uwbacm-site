@@ -15,13 +15,14 @@
 		"yup": "^0.27.0"
 	},
 	"devDependencies": {
+		"copyfiles": "^2.1.0",
 		"husky": "^2.1.0",
 		"prettier": "^1.17.0",
 		"pretty-quick": "^1.10.0"
 	},
 	"scripts": {
 		"start": "react-scripts start",
-		"build": "react-scripts build",
+		"build": "react-scripts build && copyfiles -f production/** build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"format": "prettier --write \"{src,__{tests,mocks}__}/**/*.jsx\""

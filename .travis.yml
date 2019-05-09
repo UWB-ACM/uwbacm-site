@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "node"
+  - 'node'
 notifications:
   email:
     on_failure: change
@@ -11,13 +11,11 @@ script:
   - yarn test --coverage
 before_deploy:
   - yarn build
-  - cp production/** build
 deploy:
   local_dir: 'build/'
   provider: pages
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN 
+  github-token: $GITHUB_TOKEN
   keep-history: true
-  target-branch: build
   on:
     branch: master
