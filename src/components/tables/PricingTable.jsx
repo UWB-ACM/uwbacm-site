@@ -1,7 +1,9 @@
 import React from 'react';
 import Check from '../../images/others/check.svg';
 
-export const PricingTableHeader = ({entries}) => (
+export const CheckMark = <img src={Check} alt="Check Mark" />;
+
+const PricingTableHeader = ({entries}) => (
 	<tr className="pricing-table__header">
 		<th>
 			<h2>Sponsor Tiers</h2>
@@ -17,7 +19,7 @@ export const PricingTableHeader = ({entries}) => (
 	</tr>
 );
 
-export const PricingTableRow = ({header, columnContent}) => (
+const PricingTableRow = ({header, columnContent}) => (
 	<tr>
 		<td>{header}</td>
 		{columnContent.map((column, i) => (
@@ -26,15 +28,13 @@ export const PricingTableRow = ({header, columnContent}) => (
 	</tr>
 );
 
-export const PricingTableSubtitle = ({children}) => (
+const PricingTableSubtitle = ({children}) => (
 	<tr className="pricing-table__subtitle">
 		<td colSpan="5">
 			<span>{children}</span>
 		</td>
 	</tr>
 );
-
-export const CheckMark = <img src={Check} alt="Check Mark" />;
 
 const PricingTable = ({children}) => (
 	<div className="pricing-table__wrapper">
