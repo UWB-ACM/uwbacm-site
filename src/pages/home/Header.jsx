@@ -31,8 +31,8 @@ const NavItem = ({title, link, ...props}) => (
 	</a>
 );
 
-const Nav = ({children, pageY, offset}) => (
-	<div id="quick-nav" className={'center-div ' + (pageY - offset > 0 ? 'scrolled' : '')}>
+const Nav = ({children, scrolled}) => (
+	<div id="quick-nav" className={'center-div ' + (scrolled ? 'scrolled' : '')}>
 		<div id="quick-nav__center">
 			<a href="/" id="quick-nav__center__logo">
 				<img src={AcmLargeLogo} alt="Our Mission" />
@@ -42,8 +42,8 @@ const Nav = ({children, pageY, offset}) => (
 	</div>
 );
 
-const Header = ({pageY}) => (
-	<div id="top-fold" className="center-div">
+const Header = React.forwardRef(({scrolled}, ref) => (
+	<div id="top-fold" className="center-div" ref={ref}>
 		<div id="top-fold__center">
 			<h1>
 				We're <ChangingWord /> <span className="flashing">|</span>
@@ -51,7 +51,7 @@ const Header = ({pageY}) => (
 			<h2>and we prepare students for tomorrow's tech challenges.</h2>
 		</div>
 		<img id="top-fold__logo" src={AcmTransparentLogo} alt="ACM Logo" /> -->
-		<Nav pageY={pageY} offset={750}>
+		<Nav scrolled={scrolled}>
 			<NavItem title="Mission" link="mission" />
 			<NavItem title="Events" link="events" />
 			<NavItem title="Officers" link="officers" />
@@ -64,6 +64,6 @@ const Header = ({pageY}) => (
 			</Link>
 		</Nav>
 	</div>
-);
+));
 
 export default Header;
