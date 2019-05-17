@@ -18,7 +18,7 @@ const SocialMedia = () => (
 					Discord
 				</a>
 				<a href="https://www.linkedin.com/in/uwbacm/" target="_blank" rel="noopener noreferrer">
-					<img src={require('../images/logos/media/linkedin-social.svg')} alt="LinkedIn logo" /> LinkedIn
+					<img src={require('../../images/logos/media/linkedin-social.svg')} alt="LinkedIn logo" /> LinkedIn
 				</a>
 			</div>
 		</div>

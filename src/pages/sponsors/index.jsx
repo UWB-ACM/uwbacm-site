@@ -1,10 +1,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import {Link} from 'react-router-dom';
-import '../styles/reset.scss';
-import '../styles/sponsor.scss';
-import HackathonSponsorshipTable from '../components/tables/HackathonSponsorshipTable';
-import SeedSponsorshipTable from '../components/tables/SeedSponsorshipTable';
+import '../../styles/reset.scss';
+import '../../styles/sponsor.scss';
+import HackathonSponsorshipTable from '../home/tables/HackathonSponsorshipTable';
+import SeedSponsorshipTable from '../home/tables/SeedSponsorshipTable';
 
 const ReadSection = ({table, gray, className, children}) => {
 	let prefix = 'read-section';
@@ -104,12 +104,12 @@ const Sponsors = () => (
 					</p>
 				</ReadSection>
 				<ReadSection className="read-section--hack-images" gray>
-					<img src={require('../images/sponsor/hackathon_1.jpg')} alt="" />
-					<img src={require('../images/sponsor/hackathon_2.jpg')} alt="" />
-					<img src={require('../images/sponsor/hackathon_3.jpg')} alt="" />
-					<img src={require('../images/sponsor/hackathon_4.jpg')} alt="" />
-					<img src={require('../images/sponsor/hackathon_5.jpg')} alt="" />
-					<img src={require('../images/sponsor/hackathon_6.jpg')} alt="" />
+					<img src={require('../../images/sponsor/hackathon_1.jpg')} alt="" />
+					<img src={require('../../images/sponsor/hackathon_2.jpg')} alt="" />
+					<img src={require('../../images/sponsor/hackathon_3.jpg')} alt="" />
+					<img src={require('../../images/sponsor/hackathon_4.jpg')} alt="" />
+					<img src={require('../../images/sponsor/hackathon_5.jpg')} alt="" />
+					<img src={require('../../images/sponsor/hackathon_6.jpg')} alt="" />
 				</ReadSection>
 
 				<ReadSection gray table={<HackathonSponsorshipTable />}>

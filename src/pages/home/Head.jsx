@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Favicon from '../images/logos/favicons/favicon.ico';
+import Favicon from '../../images/logos/favicons/favicon.ico';
 
 const Head = () => (
 	<Helmet>

@@ -1,5 +1,5 @@
 import React from 'react';
-import AcmLargeLogo from '../images/logos/acm/acm-large-logo.jpg';
+import AcmLargeLogo from '../../images/logos/acm/acm-large-logo.jpg';
 
 const Mission = () => (
 	<div id="mission" className="center-div">

@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
-import Home from './pages/Home';
-import Sponsors from './pages/Sponsors';
+import Home from './pages/home/index';
+import Sponsors from './pages/sponsors/index';
 
 const Routes = () => (
 	<Router>

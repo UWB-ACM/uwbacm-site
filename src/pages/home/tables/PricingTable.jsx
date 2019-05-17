@@ -1,5 +1,5 @@
 import React from 'react';
-import Check from '../../images/others/check.svg';
+import Check from '../../../images/others/check.svg';
 
 export const CheckMark = <img src={Check} alt="Check Mark" />;
 

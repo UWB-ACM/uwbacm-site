@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
-import AcmLargeLogo from '../images/logos/acm/acm-large-logo.jpg';
-import AcmTransparentLogo from '../images/logos/acm/acm-white-transparent.svg';
+import AcmLargeLogo from '../../images/logos/acm/acm-large-logo.jpg';
+import AcmTransparentLogo from '../../images/logos/acm/acm-white-transparent.svg';
 
 const topWords = ['UWB ACM', 'visionaries', 'diverse', 'proactive'];
 
@@ -26,7 +26,7 @@ const ChangingWord = () => {
 
 const NavItem = ({title, link, ...props}) => (
 	<a href={`#${link}`} {...props}>
-		<img src={require(`../images/header/${link}.svg`)} />
+		<img src={require(`../../images/header/${link}.svg`)} />
 		{title}
 	</a>
 );
@@ -59,7 +59,7 @@ const Header = ({pageY}) => (
 			<NavItem title="Social" link="social-media" />
 			<NavItem title="Contact" link="contact" />
 			<Link to="./sponsors">
-				<img src={require(`../images/header/sponsors.svg`)} />
+				<img src={require(`../../images/header/sponsors.svg`)} />
 				Sponsor
 			</Link>
 		</Nav>
