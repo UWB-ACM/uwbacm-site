@@ -1,181 +1,26 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import {Link} from 'react-router-dom';
+
 import '../../styles/reset.scss';
 import '../../styles/sponsor.scss';
-import HackathonSponsorshipTable from '../home/tables/HackathonSponsorshipTable';
-import SeedSponsorshipTable from '../home/tables/SeedSponsorshipTable';
 
-const ReadSection = ({table, gray, className, children}) => {
-	let prefix = 'read-section';
-	return (
-		<div className={`${prefix} ${className} ${gray ? `${prefix}--gray` : ''}`}>
-			<div className="read-section__center">{children}</div>
-			{table ? table : null}
-		</div>
-	);
-};
+import Head from './Head';
+import ScrollButton from './ScrollButton';
+import ReadSections from './ReadSections';
 
 const Sponsors = () => (
 	<>
-		<Helmet>
-			<meta charset="UTF-8" />
-			<meta
-				name="viewport"
-				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-			/>
-			<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-			<link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700|Roboto" rel="stylesheet" />
-			<link rel="icon" type="image/x-icon" href="./favicon.ico" />
-			<title>UWB ACM - Sponsor</title>
-		</Helmet>
-		<>
-			<div id="app">
-				<button id="return-top" onClick={(e) => window.scrollTo(0, 0)}>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="#607D8B"
-						strokeWidth="2"
-						strokeLinecap="round"
-						strokeLinejoin="round"
-						className="feather feather-arrow-up"
-					>
-						<line x1="12" y1="19" x2="12" y2="5" />
-						<polyline points="5 12 12 5 19 12" />
-					</svg>
-				</button>
-				<div className="header">
-					<div>
-						<h1>Sponsor UWB ACM</h1>
-						<Link to="/">← Back Home</Link>
-					</div>
+		<Head />
+		<div id="app">
+			<ScrollButton />
+			<div className="header">
+				<div>
+					<h1>Sponsor UWB ACM</h1>
+					<Link to="/">← Back Home</Link>
 				</div>
-				<ReadSection>
-					<h3>About UWB ACM</h3>
-					<p>
-						The University of Washington Bothell Association for Computing Machinery Chapter is the largest
-						STEM-oriented student organization on the UWB campus. Last year, we hosted over 30 events (including a 100+
-						person Hackathon) and have contributed to multiple university projects such as the redesigning of the
-						Computer Science Labs. Our primary mission is to prepare students both educationally and professionally for
-						their transition into the tech industry. <br />
-						<br />
-						This year our goal is to continue to grow by hosting over 70 events and directly connecting students with
-						you, their future employers. We hope to establish relationships between your company and our talented
-						students. <br />
-						<br />
-						For more information about our organization email us at:
-						<br />
-						<a href="mailto:acmuwbothell@gmail.com">acmuwbothell@gmail.com</a>
-					</p>
-				</ReadSection>
-
-				<ReadSection className="uwb-acm-need" gray>
-					<h3>What the UWB ACM Needs</h3>
-					<p>
-						With the chapter’s growth, we are seeking additional financial support from companies. <br />
-						<br />
-						You can help fuel the next generation of technology leaders through financial contributions and mentorship.
-						To understand how this relationship can benefit both our students and your organization, please continue.
-					</p>
-				</ReadSection>
-
-				<ReadSection>
-					<h3>How to Sponsor</h3>
-					<p>
-						Please contact us at <a href="mailto:acmuwbothell@gmail.com">acmuwbothell@gmail.com</a> if you are
-						interested in sponsoring UWB ACM.
-					</p>
-				</ReadSection>
-
-				<ReadSection>
-					<h3>Types of Sponsorships</h3>
-					<p>
-						This section describes the different levels of sponsorship your company can give and their associated
-						benefits. <br />
-						<br />
-						Our team has carefully selected each sponsorship tier to accurately represent what we need to accomplish our
-						goals. However, we will be happy to work with you to build a package tailored for your organization. To get
-						started please email us at:
-						<a href="mailto:acmuwbothell@gmail.com">acmuwbothell@gmail.com</a>.
-					</p>
-				</ReadSection>
-				<ReadSection className="read-section--hack-images" gray>
-					<img src={require('../../images/sponsor/hackathon_1.jpg')} alt="" />
-					<img src={require('../../images/sponsor/hackathon_2.jpg')} alt="" />
-					<img src={require('../../images/sponsor/hackathon_3.jpg')} alt="" />
-					<img src={require('../../images/sponsor/hackathon_4.jpg')} alt="" />
-					<img src={require('../../images/sponsor/hackathon_5.jpg')} alt="" />
-					<img src={require('../../images/sponsor/hackathon_6.jpg')} alt="" />
-				</ReadSection>
-
-				<ReadSection gray table={<HackathonSponsorshipTable />}>
-					<h4>Signature Event Sponsorship: Hackathon</h4>
-					<p>
-						Become part of our Spring Annual Hackathon, a 14+ hour event where students can demonstrate their talent and
-						creativity by developing impressive projects in one day. Last year, we saw over 100 students and 20
-						volunteers participate. These students learned how to leverage open source tools and online API’s to
-						collaborate on innovative projects. <br />
-						<br />
-						By sponsoring UWB ACM’s signature event, your company will have the ability to interact directly with
-						students. <br />
-						<br />
-						<a target="_blank" rel="noopener noreferrer" href="https://www.uwb.edu/news/june-2018/hackathon">
-							View last year’s hackathon
-						</a>
-					</p>
-				</ReadSection>
-
-				<ReadSection className="event-sponsorship">
-					<h3>Event Sponsorships</h3>
-					<p>
-						UWB ACM offers workshops on a variety of topics. Contributing to one of these workshops is a great way to
-						connect with students that are passionate in a specific area. Your support can also foster future interest
-						in this topic across the University. <br />
-						<br />
-						Benefits for event sponsorships vary on a case-by-case basis depending on the style of the event. In
-						general, they will consist of:
-					</p>
-					<ul>
-						<li>Logo placement on all event advertisements</li>
-						<li>Providing input on workshop curriculum</li>
-						<li>Bringing in a guest lecturer</li>
-						<li>Additional custom benefits</li>
-					</ul>
-					<p>The following is carefully selected list of our events that best suit an event sponsorship.</p>
-					<div className="signature-event">
-						<div className="signature-event__split">
-							<span>Cracking the Coding Interview Workshop</span> <span>$2,000</span>
-						</div>
-						<p>
-							The Weekly CTCI Workshop is an opportunity for students to collaborate with one another to solve technical
-							questions in a mock interview fashion. Students can use this opportunity to prepare for their upcoming
-							technical interviews.
-						</p>
-						<div className="signature-event__split">
-							<span>Internet of Things Crash Course</span> <span>$1,000</span>
-						</div>
-						<p>
-							The Weekly IoT Crash Course is an opportunity for students to gain experience with embedded systems
-							through hands on learning with micro controllers, sensors, motors and connectivity to eventually build
-							their own final project.
-						</p>
-					</div>
-				</ReadSection>
-
-				<ReadSection gray table={<SeedSponsorshipTable />}>
-					<h3>Seed Sponsorships</h3>
-					<p>
-						This year the ACM is hosting over 75 events and although our team has made extensive plans for the year,
-						there is still much that we would like to do. By becoming a Seed Sponsor, you are helping our organization
-						grow in new and exciting ways.
-					</p>
-				</ReadSection>
 			</div>
-		</>
+			<ReadSections />
+		</div>
 	</>
 );
 
