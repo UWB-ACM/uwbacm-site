@@ -1,5 +1,5 @@
 import React from 'react';
-import PricingTable, {CheckMark} from './PricingTable';
+import PricingTable, {CheckMark} from './interface/PricingTable';
 
 const HackathonSponsorshipTable = () => (
 	<PricingTable>

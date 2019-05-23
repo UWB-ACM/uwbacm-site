@@ -1,32 +1,8 @@
 import React from 'react';
-import Check from '../../../images/others/check.svg';
+import PricingTableHeader from './PricingTableHeader';
+import PricingTableRow from './PricingTableRow';
 
-export const CheckMark = <img src={Check} alt="Check Mark" />;
-
-const PricingTableHeader = ({entries}) => (
-	<tr className="pricing-table__header">
-		<th>
-			<h2>Sponsor Tiers</h2>
-		</th>
-		{entries.map((entry, i) => (
-			<th key={i}>
-				<div>
-					<span style={{color: entry.color}}>{entry.name}</span>
-					<span>{`$${entry.price}`}</span>
-				</div>
-			</th>
-		))}
-	</tr>
-);
-
-const PricingTableRow = ({header, columnContent}) => (
-	<tr>
-		<td>{header}</td>
-		{columnContent.map((column, i) => (
-			<td key={i}>{column}</td>
-		))}
-	</tr>
-);
+export const CheckMark = <img src={require('../../../../images/others/check.svg')} alt="Check Mark" />;
 
 const PricingTableSubtitle = ({children}) => (
 	<tr className="pricing-table__subtitle">
