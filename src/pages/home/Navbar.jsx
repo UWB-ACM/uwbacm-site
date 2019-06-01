@@ -1,6 +1,5 @@
-import React, {useState, useEffect, useContext} from 'react';
+import React, {useState, useEffect} from 'react';
 import AcmLargeLogo from '../../images/logos/acm/acm-large-logo.jpg';
-import ScrollContext from './contexts/ScrollContext';
 
 const NavbarItem = ({title, link, ...props}) => (
 	<a href={`#${link}`} {...props}>
@@ -9,9 +8,7 @@ const NavbarItem = ({title, link, ...props}) => (
 	</a>
 );
 
-const Navbar = ({children}) => {
-	const headerRef = useContext(ScrollContext);
-
+const Navbar = ({children, headerRef}) => {
 	const [scrolled, setScrolled] = useState(false);
 
 	// This is an imperitave solution for this,
