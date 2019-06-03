@@ -1,7 +1,7 @@
 import React from 'react';
 
-import HackathonSponsorshipTable from '../home/tables/HackathonSponsorshipTable';
-import SeedSponsorshipTable from '../home/tables/SeedSponsorshipTable';
+import HackathonSponsorshipTable from './tables/HackathonSponsorshipTable';
+import SeedSponsorshipTable from './tables/SeedSponsorshipTable';
 import ReadSection from './ReadSection';
 
 const ReadSections = () => (
