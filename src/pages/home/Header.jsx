@@ -36,7 +36,7 @@ const Header = ({scrolled}) => {
 				</h1>
 				<h2>and we prepare students for tomorrow's tech challenges.</h2>
 			</div>
-			<img id="top-fold__logo" src={AcmTransparentLogo} alt="ACM Logo" /> -->
+			<img id="top-fold__logo" src={AcmTransparentLogo} alt="ACM Logo" />
 			<Navbar scrolled={scrolled} headerRef={headerRef}>
 				<Navbar.Item title="Mission" link="mission" />
 				<Navbar.Item title="Events" link="events" />
