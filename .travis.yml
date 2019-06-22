@@ -1,19 +1,21 @@
-language: node_js # required, we are using Gulpfile to compile css
-sudo: required
-script: # build the scss
-  - "./travis/build.sh"
+language: node_js
 node_js:
-  - '6.1'
-before_install:
-  - npm i -g gulp
-# deploy on all branches but gh-pages
-branches:
-  except:
-  - gh-pages
+  - 'node'
+notifications:
+  email:
+    on_failure: change
+    on_success: never
+install:
+  - yarn install
+script:
+  - yarn test --coverage
+before_deploy:
+  - yarn build
 deploy:
-  provider: script
-  script:
-    - "./travis/deploy.sh"
-  skip_cleanup: false
+  local_dir: 'build/'
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
   on:
     branch: master

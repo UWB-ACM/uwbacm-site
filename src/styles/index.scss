@@ -406,17 +406,17 @@ a#quick-nav__center__logo {
 		border-radius: 3px;
 		margin-top: 10px;
 	}
-	
+
 	#mc_embed_signup .button {
 		line-height: 0px;
 		padding: 22px;
 	}
 
-	#mc_embed_signup{
-		background:#fff;
-		clear:left;
-		font:14px Helvetica,Arial,sans-serif;
-		width:800px;
+	#mc_embed_signup {
+		background: #fff;
+		clear: left;
+		font: 14px Helvetica, Arial, sans-serif;
+		width: 800px;
 	}
 
 	.mc-field-group {
@@ -499,9 +499,13 @@ a#quick-nav__center__logo {
 	}
 }
 
-
-.test-rule
-{
+.test-rule {
 	/* test that css compiles correctly */
 	color: red;
+}
+
+#mc_embed_signup {
+	background: #fff;
+	clear: left;
+	font: 14px Helvetica, Arial, sans-serif;
 }
