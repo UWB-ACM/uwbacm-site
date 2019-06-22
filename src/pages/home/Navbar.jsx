@@ -3,7 +3,7 @@ import AcmLargeLogo from '../../images/logos/acm/acm-large-logo.jpg';
 
 const NavbarItem = ({title, link, ...props}) => (
 	<a href={`#${link}`} {...props}>
-		<img src={require(`../../images/header/${link}.svg`)} />
+		<img src={require(`../../images/header/${link}.svg`)} alt={`${link} logo`} />
 		{title}
 	</a>
 );

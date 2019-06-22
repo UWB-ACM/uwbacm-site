@@ -45,7 +45,7 @@ const Header = ({scrolled}) => {
 				<Navbar.Item title="Social" link="social-media" />
 				<Navbar.Item title="Contact" link="contact" />
 				<Link to="./sponsors">
-					<img src={require(`../../images/header/sponsors.svg`)} />
+					<img src={require(`../../images/header/sponsors.svg`)} alt="Sponsors Link" />
 					Sponsor
 				</Link>
 			</Navbar>

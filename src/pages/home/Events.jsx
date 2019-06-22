@@ -9,6 +9,7 @@ const Events = () => (
 			height="600"
 			frameBorder="0"
 			scrolling="no"
+			title="Events Calendar"
 		/>
 	</div>
 );
