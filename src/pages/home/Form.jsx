@@ -26,8 +26,8 @@ const Signup = () => {
 				validateOnChange
 				initialValues={{
 					EMAIL: 'email@email.com',
-					FNAME: 'FirstName',
-					LNAME: 'LastName'
+					FNAME: 'First Name',
+					LNAME: 'Last Name'
 				}}
 				validationSchema={SignUpSchema}
 				onSubmit={(values) => {
@@ -52,13 +52,13 @@ const Signup = () => {
 							onSubmit={handleSubmit}
 						>
 							<div id="mc_embed_signup_scroll">
-								<h2>Subscribe</h2>
+								<h2>Subscribe to Our Events Newsletter</h2>
 								<div className="indicates-required">
-									<span className="asterisk">*</span>indicates required
+									<span className="asterisk">*</span> required
 								</div>
 								<div className="mc-field-group">
 									<label htmlFor="mce-EMAIL">
-										Email Address
+										Email
 										<span className="asterisk">*</span>
 									</label>
 									<Field type="email" name="EMAIL" className="required email" id="mce-EMAIL" />
