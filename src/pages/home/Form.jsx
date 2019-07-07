@@ -24,10 +24,11 @@ const Signup = () => {
 			<link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css" />
 			<Formik
 				validateOnChange
+				/* Users have to erase and then fill in these forms, so they have been cleaned and replaced with default value CSS*/
 				initialValues={{
-					EMAIL: 'email@email.com',
-					FNAME: 'First Name',
-					LNAME: 'Last Name'
+					EMAIL: '',
+					FNAME: '',
+					LNAME: ''
 				}}
 				validationSchema={SignUpSchema}
 				onSubmit={(values) => {
