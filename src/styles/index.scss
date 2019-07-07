@@ -22,8 +22,7 @@ h2 {
 }
 
 #top-fold {
-	background: url(https://images.unsplash.com/photo-1527234639945-70d78416bd7d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=721783d6df00ea979608158fd776675e&auto=format&fit=crop&w=1500&q=70)
-		no-repeat;
+	background: url(../images/backgrounds/space-background.jpg) no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -76,7 +75,7 @@ h2 {
 		left: -10px;
 		top: -6px;
 		opacity: 1;
-		animation: flash 1.3s infinite;
+		animation: flash 1.2s infinite;
 	}
 	@keyframes flash {
 		from {
