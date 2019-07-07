@@ -62,21 +62,21 @@ const Signup = () => {
 										Email
 										<span className="asterisk">*</span>
 									</label>
-									<Field type="email" name="EMAIL" className="required email" id="mce-EMAIL" />
+									<Field type="email" name="EMAIL" className="required email" id="mce-EMAIL" placeholder="Email" />
 								</div>
 								<div className="mc-field-group">
 									<label htmlFor="mce-FNAME">
 										First Name
 										<span className="asterisk">*</span>
 									</label>
-									<Field type="text" name="FNAME" className="required" id="mce-FNAME" />
+									<Field type="text" name="FNAME" className="required" id="mce-FNAME" placeholder="e.g. Anish" />
 								</div>
 								<div className="mc-field-group">
 									<label htmlFor="mce-LNAME">
 										Last Name
 										<span className="asterisk">*</span>
 									</label>
-									<Field type="text" name="LNAME" className="required" id="mce-LNAME" />
+									<Field type="text" name="LNAME" className="required" id="mce-LNAME" placeholder="Last Name" />
 								</div>
 								{/* real people should not fill this in and expect good things - do not remove this or risk form bot signups 
 								----------------
