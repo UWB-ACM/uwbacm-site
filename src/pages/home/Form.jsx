@@ -77,14 +77,17 @@ const Signup = () => {
 									</label>
 									<Field type="text" name="LNAME" className="required" id="mce-LNAME" />
 								</div>
-								{/* real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
+								{/* real people should not fill this in and expect good things - do not remove this or risk form bot signups 
+								----------------
+								*/}
 								<div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
 									<input type="text" name="b_8773dffc3f528b0b18fd7aef8_11b31196c4" tabIndex="-1" defaultValue="" />
 								</div>
 								<div className="clear">
 									<input
 										type="submit"
-										defaultValue="Subscribe"
+										// defaultValue="Subscribe"
+										value="Subscribe"
 										name="subscribe"
 										id="mc-embedded-subscribe"
 										className="button"

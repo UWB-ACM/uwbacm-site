@@ -1,4 +1,5 @@
 # uwbacm-site [![Build Status](https://travis-ci.com/UWB-ACM/uwbacm-site.svg?branch=master)](https://travis-ci.com/UWB-ACM/uwbacm-site)
+
 Homepage website for the University of Washington Bothell chapter of the Assocation for Computing Machinery.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -6,6 +7,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Installs the dependencies that will allow the app to run in development mode on your local machine.
+
+To run `npm` you will be required to install nodejs on your machine. You can install it from [here](https://nodejs.org/en/download/)
 
 ### `npm start`
 
