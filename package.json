@@ -16,7 +16,7 @@
 		"yup": "^0.27.0"
 	},
 	"devDependencies": {
-		"copyfiles": "^2.1.0",
+		"copyfiles": "^2.1.1",
 		"husky": "^3.0.0",
 		"prettier": "^1.17.0",
 		"pretty-quick": "^1.10.0"
