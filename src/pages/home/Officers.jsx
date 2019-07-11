@@ -42,54 +42,48 @@ const Officers = () => (
 			Apply to become an officer!
 		</a>
 		<div id="officers__list">
+			{/* Row 1  */}
 			<div className="row">
 				<Officer
-					name="Saam Amiri"
+					name="Hannah Sokol"
 					position="Chair"
-					desc="Saam is a Senior studying Computer Science and Software Engineering. He enjoys networking,
-							motivating others and solving complex problems that scale."
-					img="avi-saam"
-					linkedIn="saam-amiri"
-					github="saamiam"
+					desc="Hannah is a Junior studying Computer Science and Software Engineering. She is interested in
+					Cybersecurity and is also a member of the UW Women's Water Polo Team."
+					img="avi-hannah"
+					linkedIn="hannahksokol"
+					github="hsokol8"
 				/>
 				<Officer
-					name="Annie J Kehn"
+					name="Phuc Huynh"
 					position="Vice Chair"
-					desc="Annie is a Senior studying Computer Science and Software Engineering. She is looking forward
-					to starting her career and wants to help her fellow CS students grow while in school."
-					img="avi-annie"
-					linkedIn="anniejkehn"
-					github="akehn24"
+					desc="Phuc is a Junior studying Computer Software Engineering. He's interested in 
+					software engineering, machine learning, and AI. In his spare time, he enjoys hiking and playing
+					piano."
+					img="avi-billy"
+					linkedIn="phuchuynhvu"
+					github="Phuc15"
 				/>
 				<Officer
-					name="Michael Vaschillo"
-					position="Treasurer"
-					desc="Michael is a Senior studying Computer Science and Software Engineering. He is excited to
-					help engage students and reshape the CSS department to better prepare students for industry."
-					img="avi-michael"
-					linkedIn="michael-vaschillo-4b6527135"
+					name="Lizzy Presland"
+					position="Chief Technology Officer"
+					desc="Lizzy is a Junior studying Computer Science and Software Engineering. She is interested in 
+					interdisciplinary research and creative applications of CS paradigms."
+					img="avi-lizzy"
+					linkedIn="etcadinfinitum"
+					github="etcadinfinitum"
 				/>
 			</div>
+			{/* Row 2s  */}
 			<div className="row row-odd">
-				<Officer
-					name="Hyeun Belle Kim"
-					position="Secretary"
-					desc="Belle is a Junior studying Computer Science and Software Engineering. She is interested in
-					Program Management and is also the founding Vice Chair of IxDA UWB Chapter."
-					img="avi-belle"
-					linkedIn="hyeun-belle-kim-2a5812151"
-				/>
 				<Officer
 					name="Michele Chao"
 					position="Web Developer"
 					desc="Michele is a sophomore studying Interactive Media Design at UW Bothell. She's interested in
-					integrating UX/UI design with her minor, geography.."
+					integrating UX/UI design with her minor, geography."
 					img="avi-michele"
 					linkedIn="michele-chao-68b86a141"
 					github="michelechao"
 				/>
-			</div>
-			<div className="row">
 				<Officer
 					name="Prathyusha Pillari"
 					position="Officer"
@@ -99,47 +93,26 @@ const Officers = () => (
 					linkedIn="prathyusha-pillari-0b2114b7"
 					github="pratpill"
 				/>
-				<Officer
-					name="Phuc Huynh"
-					position="Officer"
-					desc="Phuc is a Junior studying Computer Software Engineering. He's interested in software
-					engineering, machine learning, and AI. In his spare time, he enjoys hiking and playing
-					piano."
-					img="avi-billy"
-					linkedIn="phuchuynhvu"
-					github="Phuc15"
-				/>
-				<Officer
-					name="Xinyu Wang"
-					position="Officer"
-					desc="Xinyu is a Junior studying Computer Science and Software Engineering. She is interested in
-					Artificial Intelligent, algorithms, and playing all kinds of sports."
-					img="avi-xinyu"
-					linkedIn="xinyu-wang-354b08171"
-					github="xinyuhwang"
-				/>
 			</div>
-			<div className="row row-odd">
-				<Officer
-					name="Lizzy Presland"
-					position="Officer"
-					desc="Lizzy is a Junior studying Computer Science and Software Engineering. She is interested in
-					interdisciplinary research and creative applications of CS paradigms."
-					img="avi-lizzy"
-					linkedIn="etcadinfinitum"
-					github="etcadinfinitum"
-				/>
-				<Officer
-					name="Hannah Sokol"
-					position="Officer"
-					desc="Hannah is a Junior studying Computer Science and Software Engineering. She is interested in
-					Cybersecurity and is also a member of the UW Women's Water Polo Team."
-					img="avi-hannah"
-					linkedIn="hannahksokol"
-					github="hsokol8"
-				/>
-			</div>
+			{/* Row 3  */}
 			<div className="row">
+				{/* <Officer
+					name=""
+					position="Officer"
+					desc=""
+					img=""
+					linkedIn=""
+					github=""
+				/> */}
+				<Officer
+					name="Patrick O'Brien"
+					position="Direction Strategist"
+					desc="Patrick is a Junior at UWB studying Applied Computing and Interactive Media Design. In his 
+					spare time he enjoys working towards a greater understanding of our universe."
+					img="pat"
+					linkedIn="patj"
+					github="cforcomputer"
+				/>
 				<Officer
 					name="Delaney Desmond"
 					position="Officer"
@@ -150,7 +123,27 @@ const Officers = () => (
 					linkedIn="delaneydesmond"
 					github="delaney-desmond"
 				/>
+			</div>
+			{/* <div className="row row-odd">
 				<Officer
+					name=""
+					position="Officer"
+					desc=""
+					img=""
+					linkedIn=""
+					github=""
+				/> */}
+			{/* <Officer
+					name=""
+					position="Officer"
+					desc=""
+					img=""
+					linkedIn=""
+					github=""
+				/>
+			</div> */}
+			<div className="row">
+				{/* <Officer
 					name="Brady Pascoe"
 					position="Affiliate Officer"
 					desc="Brady is currently a student at UW-Bothell in the CSSE program. He also works as a part-time
@@ -158,7 +151,7 @@ const Officers = () => (
 					img="avi-brady"
 					linkedIn="brady-pascoe-3bba6b13a"
 					github="bpas247"
-				/>
+				/> */}
 			</div>
 		</div>
 		<div className="officer no-hover office-dont-show" />
