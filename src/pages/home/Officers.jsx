@@ -57,7 +57,7 @@ const Officers = () => (
 					name="Phuc Huynh"
 					position="Vice Chair"
 					desc="Phuc is a Junior studying Computer Software Engineering. He's interested in 
-					software engineering, machine learning, and AI. In his spare time, he enjoys hiking and playing
+					software engineering, machine learning, and AI. In his spare time, he enjoys hiking and playing 
 					piano."
 					img="avi-billy"
 					linkedIn="phuchuynhvu"
@@ -87,7 +87,7 @@ const Officers = () => (
 				<Officer
 					name="Prathyusha Pillari"
 					position="Officer"
-					desc="Prathyusha (Prat) is a Junior at UWB studying Computer Science and Software Engineering. She
+					desc="Prathyusha (Prat) is a Junior at UWB studying Computer Science and Software Engineering. She 
 					is also the founding president of the UWB chapter of Her Campus Media."
 					img="avi-prat"
 					linkedIn="prathyusha-pillari-0b2114b7"
