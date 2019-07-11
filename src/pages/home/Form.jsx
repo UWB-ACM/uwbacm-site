@@ -87,7 +87,6 @@ const Signup = () => {
 								<div className="clear">
 									<input
 										type="submit"
-										// defaultValue="Subscribe"
 										value="Subscribe"
 										name="subscribe"
 										id="mc-embedded-subscribe"
