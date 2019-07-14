@@ -43,14 +43,21 @@ const Signup = () => {
 				}}
 			>
 				{({handleSubmit, errors}) => {
-					const decoratedErrors = errors && {...errors};
-					Object.keys(decoratedErrors).forEach((key) => {
-						decoratedErrors[key] = (
-							<div key={key} className="response">
-								{decoratedErrors[key]}
-							</div>
+					// This essentially decorates the incoming error messages
+					// so that it can be referenced later inside render.
+					const decoratedErrors =
+						errors &&
+						Object.entries(errors).reduce(
+							(acc, [key, val]) => ({
+								...acc,
+								[key]: (
+									<div key={key} className="response">
+										{val}
+									</div>
+								)
+							}),
+							{}
 						);
-					});
 
 					return (
 						<div id="mc_embed_signup">
