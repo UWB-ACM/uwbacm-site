@@ -80,24 +80,25 @@ const Signup = () => {
 											<span className="asterisk">*</span>
 										</label>
 										<Field type="email" name="EMAIL" className="required email" id="mce-EMAIL" placeholder="Email" />
+										{errors && decoratedErrors['EMAIL']}
 									</div>
 									<div className="mc-field-group">
 										<label htmlFor="mce-FNAME">
 											First Name
 											<span className="asterisk">*</span>
 										</label>
-										<Field type="text" name="FNAME" className="required" id="mce-FNAME" placeholder="e.g. Anish" />
+										<Field type="text" name="FNAME" className="required fname" id="mce-FNAME" placeholder="e.g Anish" />
+										{errors && decoratedErrors['FNAME']}
 									</div>
 									<div className="mc-field-group">
 										<label htmlFor="mce-LNAME">
 											Last Name
 											<span className="asterisk">*</span>
 										</label>
-										<Field type="text" name="LNAME" className="required" id="mce-LNAME" placeholder="Last Name" />
+										<Field type="text" name="LNAME" className="required lname" id="mce-LNAME" placeholder="Last Name" />
+										{errors && decoratedErrors['LNAME']}
 									</div>
-									{/* real people should not fill this in and expect good things - do not remove this or risk form bot signups 
-								----------------
-								*/}
+									{/* real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
 									<div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
 										<input type="text" name="b_8773dffc3f528b0b18fd7aef8_11b31196c4" tabIndex="-1" defaultValue="" />
 									</div>
@@ -111,15 +112,7 @@ const Signup = () => {
 										/>
 									</div>
 									<div id="mce-responses" className="clear">
-										<div className="mc-field-group">
-											<label htmlFor="mce-EMAIL">
-												Email
-												<span className="asterisk">*</span>
-											</label>
-											<Field type="email" name="EMAIL" className="required email" id="mce-EMAIL" placeholder="Email" />
-											{errors && decoratedErrors['EMAIL']}
-										</div>
-										{hasSubmitted && <div className="response">Form has been submitted!</div>}
+										{hasSubmitted && <div className="response">You have been subscribed!</div>}
 									</div>
 								</div>
 							</form>
