@@ -96,17 +96,10 @@ const Officers = () => (
 			</div>
 			{/* Row 3  */}
 			<div className="row">
-				{/* <Officer
-					name=""
-					position="Officer"
-					desc=""
-					img=""
-					linkedIn=""
-					github=""
-				/> */}
+				{/* Officer went here/> */}
 				<Officer
 					name="Patrick O'Brien"
-					position="Direction Strategist"
+					position="Content Strategist"
 					desc="Patrick is a Junior at UWB studying Applied Computing and Interactive Media Design. In his 
 					spare time he enjoys working towards a greater understanding of our universe."
 					img="pat"

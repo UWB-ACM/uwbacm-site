@@ -94,12 +94,36 @@ const Signup = () => {
 									/>
 								</div>
 								<div id="mce-responses" className="clear">
-									{errors &&
-										Object.entries(errors).map(([key, val], i) => (
-											<div key={i} className="response">
-												{key}: {val}
+									{/* Brady fix implementation testing */}
+									{({handleSubmit, errors}) => {
+										const decoratedErrors = errors && {...errors};
+										Object.keys(decoratedErrors).forEach((key) => {
+											decoratedErrors[key] = (
+												<div key={key} className="response">
+													{decoratedErrors[key]}
+												</div>
+											);
+										});
+										return (
+											///....
+											<div className="mc-field-group">
+												<label htmlFor="mce-EMAIL">
+													Email
+													<span className="asterisk">*</span>
+												</label>
+												<Field
+													type="email"
+													name="EMAIL"
+													className="required email"
+													id="mce-EMAIL"
+													placeholder="Email"
+												/>
+												{errors && decoratedErrors['EMAIL']}
 											</div>
-										))}
+										);
+									}
+									// -------------------------------------------
+									}
 									{hasSubmitted && <div className="response">Form has been submitted!</div>}
 								</div>
 							</div>
