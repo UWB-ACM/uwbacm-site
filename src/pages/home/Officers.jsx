@@ -100,8 +100,8 @@ const Officers = () => (
 				<Officer
 					name="Patrick O'Brien"
 					position="Content Strategist"
-					desc="Patrick is a Junior at UWB studying Applied Computing and Interactive Media Design. In his 
-					spare time he enjoys working towards a greater understanding of our universe."
+					desc="Patrick is a Junior at UWB studying Applied Computing and Interactive Media Design. His continuing
+					mission: understand the universe and the nature of intelligence."
 					img="pat"
 					linkedIn="patj"
 					github="cforcomputer"
