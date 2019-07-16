@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 import * as Yup from 'yup';
-import {Formik, Field} from 'formik';
+import {Formik, Field, ErrorMessage} from 'formik';
 
 const SignUpSchema = Yup.object().shape({
 	EMAIL: Yup.string()
@@ -79,24 +79,45 @@ const Signup = () => {
 											Email
 											<span className="asterisk">*</span>
 										</label>
-										<Field type="email" name="EMAIL" className="required email" id="mce-EMAIL" placeholder="Email" />
-										{errors && decoratedErrors['EMAIL']}
+										<Field
+											type="email"
+											name="EMAIL"
+											className="required email"
+											id="mce-EMAIL"
+											placeholder="Email"
+											handleBlur={errors && decoratedErrors['EMAIL']}
+										/>
+										<ErrorMessage name="EMAIL" component="div" />
 									</div>
 									<div className="mc-field-group">
 										<label htmlFor="mce-FNAME">
 											First Name
 											<span className="asterisk">*</span>
 										</label>
-										<Field type="text" name="FNAME" className="required fname" id="mce-FNAME" placeholder="e.g Anish" />
-										{errors && decoratedErrors['FNAME']}
+										<Field
+											type="text"
+											name="FNAME"
+											className="required fname"
+											id="mce-FNAME"
+											placeholder="First Name"
+											handleBlur={errors && decoratedErrors['FNAME']}
+										/>
+										<ErrorMessage name="FNAME" component="div" />
 									</div>
 									<div className="mc-field-group">
 										<label htmlFor="mce-LNAME">
 											Last Name
 											<span className="asterisk">*</span>
 										</label>
-										<Field type="text" name="LNAME" className="required lname" id="mce-LNAME" placeholder="Last Name" />
-										{errors && decoratedErrors['LNAME']}
+										<Field
+											type="text"
+											name="LNAME"
+											className="required lname"
+											id="mce-LNAME"
+											placeholder="Last Name"
+											handleBlur={errors && decoratedErrors['LNAME']}
+										/>
+										<ErrorMessage name="LNAME" component="div" />
 									</div>
 									{/* real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
 									<div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
