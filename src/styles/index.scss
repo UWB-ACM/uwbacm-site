@@ -402,70 +402,85 @@ input[type='email'] {
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	box-sizing: border-box;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+}
+input[type='text']:focus,
+select:focus,
+input[type='email']:focus {
+	border: 1px solid rgb(89, 214, 245);
 }
 
-//mailchimp
-
+// mailchimp
 #join-acm {
-	width: 100%;
-	height: 690px;
-	background: url(../images/backgrounds/form-background.jpg) no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	padding: 90px 0 50px;
 
-	#mc-embedded-subscribe {
+	#join-acm__center {
+		width: 95%;
+		max-width: 800px;
+	}
+
+	h2 {
+		text-align: left;
+	}
+
+	#mc_embed_signup .button {
 		cursor: pointer;
-		background-color: $globalBlue;
+		background-color: #0093ff;
 		color: white;
 		font-size: 1rem;
 		border: 0;
 		border-radius: 3px;
 		margin-top: 10px;
-	}
-
-	#mc-embedded-subscribe:hover {
-		transition: background-color 0.2s ease-in-out;
-		background-color: #067aff;
-	}
-
-	#mc_embed_signup .button {
 		line-height: 0px;
 		padding: 22px;
 	}
 
-	// Signup form box (white background)
+	#mc-embedded-subscribe:hover {
+		transition: background-color 0.2s ease-in-out;
+		background-color: #5fc2f0;
+	}
+
 	#mc_embed_signup {
 		background: #fff;
 		clear: left;
 		font: 14px Helvetica, Arial, sans-serif;
-
-		display: flex;
-		padding: 15px 15px 0;
-		border-top-left-radius: 10px;
-		border-top-right-radius: 10px;
-		border-bottom-left-radius: 10px;
-		border-bottom-right-radius: 10px;
-		flex-direction: column;
-		position: relative;
-		align-items: center;
-		width: 600px;
-		height: 450px;
-		border: 3px solid transparent;
-		border-bottom: none;
+		width: 800px;
+		height: 580px;
 	}
 
 	.mc-field-group {
 		margin-top: 15px;
-		width: 100%;
-		padding: 3px;
-		border-radius: 4px;
-		resize: vertical;
 	}
 
-	h2 {
+	.center-div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.indicates-required {
 		text-align: left;
+		font-size: 11px;
+		margin-right: 4%;
+	}
+
+	.mc-field-group {
+		clear: left;
+		position: relative;
+		width: 96%;
+		padding-bottom: 3%;
+		min-height: 50px;
+		margin-top: 15px;
+	}
+
+	#mc_embed_signup .asterisk {
+		color: #e85c41;
+		font-size: 150%;
+		font-weight: normal;
+		position: relative;
+		top: 5px;
 	}
 }
 
