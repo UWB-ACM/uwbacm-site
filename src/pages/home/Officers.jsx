@@ -76,6 +76,35 @@ const Officers = () => (
 			{/* Row 2s  */}
 			<div className="row row-odd">
 				<Officer
+					name="Katie Yamabe"
+					position="Secretary"
+					desc="Katie is a sophomore pursuing an undergraduate degree in Business Administration and Management at UW Bothell."
+					img="avi-katie"
+					linkedIn="kathrynyamabe"
+					github=""
+				/>
+				<Officer
+					name="Alex van Zuiden-Rylander"
+					position="Treasurer"
+					desc="Alex is a senior pursuing a degree in Computer Science and Software Engineering. His love for learning keeps him curious and constantly exploring new things."
+					img="avi-alex"
+					linkedIn="alexhvzr"
+					github="alexhvzr"
+				/>
+			</div>
+			{/* Row 3  */}
+			<div className="row">
+				{/* Officer went here/> */}
+				<Officer
+					name="Patrick O'Brien"
+					position="Content Strategist"
+					desc="Patrick is a Junior at UWB studying Applied Computing and Interactive Media Design. His continuing
+					mission: understand the universe and the nature of intelligence."
+					img="pat"
+					linkedIn="patj"
+					github="cforcomputer"
+				/>
+				<Officer
 					name="Michele Chao"
 					position="Web Developer"
 					desc="Michele is a sophomore studying Interactive Media Design at UW Bothell. She's interested in
@@ -94,17 +123,14 @@ const Officers = () => (
 					github="pratpill"
 				/>
 			</div>
-			{/* Row 3  */}
-			<div className="row">
-				{/* Officer went here/> */}
+			<div className="row row-odd">
 				<Officer
-					name="Patrick O'Brien"
-					position="Content Strategist"
-					desc="Patrick is a Junior at UWB studying Applied Computing and Interactive Media Design. His continuing
-					mission: understand the universe and the nature of intelligence."
-					img="pat"
-					linkedIn="patj"
-					github="cforcomputer"
+					name="Zach Brader"
+					position="Officer"
+					desc="Zach is a senior at the UWB studying Computer Science. He is interested in working alongside other students to help develop new skills."
+					img="avi-zach"
+					linkedIn="zachbrader"
+					github=""
 				/>
 				<Officer
 					name="Delaney Desmond"
@@ -117,25 +143,17 @@ const Officers = () => (
 					github="delaney-desmond"
 				/>
 			</div>
-			{/* <div className="row row-odd">
-				<Officer
-					name=""
-					position="Officer"
-					desc=""
-					img=""
-					linkedIn=""
-					github=""
-				/> */}
-			{/* <Officer
-					name=""
-					position="Officer"
-					desc=""
-					img=""
-					linkedIn=""
-					github=""
-				/>
-			</div> */}
 			<div className="row">
+				{/* 
+                <Officer
+					name=""
+					position="Officer"
+					desc=""
+					img=""
+					linkedIn=""
+					github=""
+				/> 
+            */}
 				{/* <Officer
 					name="Brady Pascoe"
 					position="Affiliate Officer"
