@@ -1,4 +1,5 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState, useRef} from 'react';
+import useInterval from '@restart/hooks/useInterval';
 import {Link} from 'react-router-dom';
 import AcmTransparentLogo from '../../images/logos/acm/acm-white-transparent.svg';
 import Navbar from './Navbar';
@@ -8,19 +9,16 @@ const topWords = ['UWB ACM', 'visionaries', 'diverse', 'proactive'];
 const ChangingWord = () => {
 	const [curWordIndex, setWordIndex] = useState(0);
 	const [wordCounter, setWordCounter] = useState(0);
-	useEffect(() => {
-		let timer = setTimeout(() => {
-			if (wordCounter < topWords[curWordIndex].length) {
-				setWordCounter(wordCounter + 1);
-			} else {
-				setWordIndex(curWordIndex + 1 < topWords.length ? curWordIndex + 1 : 0);
-				setWordCounter(0);
-			}
-		}, 500);
-		return () => {
-			clearTimeout(timer);
-		};
-	});
+
+	useInterval(() => {
+		if (wordCounter < topWords[curWordIndex].length) {
+			setWordCounter((prevWordCounter) => prevWordCounter + 1);
+		} else {
+			setWordIndex((prevWordIndex) => (prevWordIndex + 1 < topWords.length ? prevWordIndex + 1 : 0));
+			setWordCounter(0);
+		}
+	}, 500);
+
 	return <span id="changing-word">{topWords[curWordIndex].slice(0, wordCounter)}</span>;
 };
 

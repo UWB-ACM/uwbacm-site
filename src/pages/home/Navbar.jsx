@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
+import useGlobalListener from '@restart/hooks/useGlobalListener';
 import AcmLargeLogo from '../../images/logos/acm/acm-large-logo.jpg';
 
 const NavbarItem = ({title, link, ...props}) => (
@@ -13,23 +14,9 @@ const Navbar = ({children, headerRef}) => {
 
 	// This is an imperitave solution for this,
 	// but that's okay for this use case.
-	useEffect(() => {
-		// This is here because we need a reference to what this value is
-		// upon cleanup, which may change from now till then.
-		const headerRefCurrent = headerRef.current;
-
-		const handlerFunc = () => setScrolled(headerRefCurrent && window.pageYOffset >= headerRefCurrent.clientHeight);
-
-		if (headerRefCurrent) {
-			window.addEventListener('scroll', handlerFunc);
-		}
-
-		return () => {
-			if (headerRefCurrent) {
-				window.removeEventListener('scroll', handlerFunc);
-			}
-		};
-	}, [headerRef]);
+	useGlobalListener('scroll', () =>
+		setScrolled(headerRef.current && window.pageYOffset >= headerRef.current.clientHeight)
+	);
 
 	return (
 		<div id="quick-nav" className={'center-div ' + (scrolled ? 'scrolled' : '')}>
