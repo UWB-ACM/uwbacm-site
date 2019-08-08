@@ -1,4 +1,5 @@
-import React, {useState, useRef} from 'react';
+import React, {useState} from 'react';
+import useCallbackRef from '@restart/hooks/useCallbackRef';
 import useInterval from '@restart/hooks/useInterval';
 import {Link} from 'react-router-dom';
 import AcmTransparentLogo from '../../images/logos/acm/acm-white-transparent.svg';
@@ -24,10 +25,11 @@ const ChangingWord = () => {
 
 const Header = ({scrolled}) => {
 	// Need a reference to the header
-	const headerRef = useRef();
+	// const headerRef = useRef();
+	const [headerRef, setHeaderRef] = useCallbackRef(null);
 
 	return (
-		<div id="top-fold" className="center-div" ref={headerRef}>
+		<div id="top-fold" className="center-div" ref={setHeaderRef}>
 			<div id="top-fold__center">
 				<h1>
 					We're <ChangingWord /> <span className="flashing">|</span>
@@ -35,7 +37,7 @@ const Header = ({scrolled}) => {
 				<h2>and we prepare students for tomorrow's tech challenges.</h2>
 			</div>
 			<img id="top-fold__logo" src={AcmTransparentLogo} alt="ACM Logo" />
-			<Navbar scrolled={scrolled} headerRef={headerRef}>
+			<Navbar scrolled={scrolled} clientHeight={headerRef ? headerRef.clientHeight : 0}>
 				<Navbar.Item title="Mission" link="mission" />
 				<Navbar.Item title="Events" link="events" />
 				<Navbar.Item title="Officers" link="officers" />

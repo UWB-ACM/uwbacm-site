@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useCallback} from 'react';
 import useGlobalListener from '@restart/hooks/useGlobalListener';
 import AcmLargeLogo from '../../images/logos/acm/acm-large-logo.jpg';
 
@@ -9,14 +9,21 @@ const NavbarItem = ({title, link, ...props}) => (
 	</a>
 );
 
-const Navbar = ({children, headerRef}) => {
+const Navbar = ({children, clientHeight}) => {
 	const [scrolled, setScrolled] = useState(false);
+
+	const scrollFunc = useCallback(
+		({
+			target: {
+				defaultView: {pageYOffset}
+			}
+		}) => setScrolled(pageYOffset >= clientHeight),
+		[clientHeight]
+	);
 
 	// This is an imperitave solution for this,
 	// but that's okay for this use case.
-	useGlobalListener('scroll', () =>
-		setScrolled(headerRef.current && window.pageYOffset >= headerRef.current.clientHeight)
-	);
+	useGlobalListener('scroll', scrollFunc);
 
 	return (
 		<div id="quick-nav" className={'center-div ' + (scrolled ? 'scrolled' : '')}>
