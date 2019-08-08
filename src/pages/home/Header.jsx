@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-import useCallbackRef from '@restart/hooks/useCallbackRef';
-import useInterval from '@restart/hooks/useInterval';
+import {useCallbackRef, useInterval} from '@restart/hooks';
 import {Link} from 'react-router-dom';
 import AcmTransparentLogo from '../../images/logos/acm/acm-white-transparent.svg';
 import Navbar from './Navbar';

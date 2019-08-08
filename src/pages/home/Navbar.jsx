@@ -1,5 +1,5 @@
 import React, {useState, useCallback} from 'react';
-import useGlobalListener from '@restart/hooks/useGlobalListener';
+import {useGlobalListener} from '@restart/hooks';
 import AcmLargeLogo from '../../images/logos/acm/acm-large-logo.jpg';
 
 const NavbarItem = ({title, link, ...props}) => (
