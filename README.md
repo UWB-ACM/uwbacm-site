@@ -1,4 +1,7 @@
-# uwbacm-site [![Build Status](https://travis-ci.com/UWB-ACM/uwbacm-site.svg?branch=master)](https://travis-ci.com/UWB-ACM/uwbacm-site)
+# uwbacm-site
+
+[![Build Status](https://travis-ci.com/UWB-ACM/uwbacm-site.svg?branch=master)](https://travis-ci.com/UWB-ACM/uwbacm-site)
+[![Coverage Status](https://coveralls.io/repos/github/UWB-ACM/uwbacm-site/badge.svg?branch=master)](https://coveralls.io/github/UWB-ACM/uwbacm-site?branch=master)
 
 Homepage website for the University of Washington Bothell chapter of the Assocation for Computing Machinery.
 
