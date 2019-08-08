@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useCallback} from 'react';
 import {useCallbackRef, useInterval} from '@restart/hooks';
 import {Link} from 'react-router-dom';
 import AcmTransparentLogo from '../../images/logos/acm/acm-white-transparent.svg';
@@ -10,14 +10,16 @@ const ChangingWord = () => {
 	const [curWordIndex, setWordIndex] = useState(0);
 	const [wordCounter, setWordCounter] = useState(0);
 
-	useInterval(() => {
+	const intervalFunc = useCallback(() => {
 		if (wordCounter < topWords[curWordIndex].length) {
 			setWordCounter((prevWordCounter) => prevWordCounter + 1);
 		} else {
 			setWordIndex((prevWordIndex) => (prevWordIndex + 1 < topWords.length ? prevWordIndex + 1 : 0));
 			setWordCounter(0);
 		}
-	}, 500);
+	}, [wordCounter, curWordIndex]);
+
+	useInterval(intervalFunc, 500);
 
 	return <span id="changing-word">{topWords[curWordIndex].slice(0, wordCounter)}</span>;
 };
