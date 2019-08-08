@@ -26,7 +26,6 @@ const ChangingWord = () => {
 
 const Header = ({scrolled}) => {
 	// Need a reference to the header
-	// const headerRef = useRef();
 	const [headerRef, setHeaderRef] = useCallbackRef(null);
 
 	return (
