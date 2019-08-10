@@ -8,7 +8,7 @@ notifications:
 install:
   - yarn install
 script:
-  - yarn test --coverage
+  - yarn test --coverage --coverageReporters=text-lcov | coveralls
 before_deploy:
   - yarn build
 deploy:
