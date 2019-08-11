@@ -21,8 +21,6 @@ const Navbar = ({children, clientHeight}) => {
 		[clientHeight]
 	);
 
-	// This is an imperitave solution for this,
-	// but that's okay for this use case.
 	useGlobalListener('scroll', scrollFunc);
 
 	return (
