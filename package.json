@@ -16,6 +16,12 @@
 		"yup": "^0.27.0"
 	},
 	"devDependencies": {
+		"@commitlint/cli": "^8.1.0",
+		"@commitlint/config-conventional": "^8.1.0",
+		"@commitlint/travis-cli": "^8.1.0",
+		"@qiwi/semantic-release-gh-pages-plugin": "^1.10.5",
+		"@semantic-release/changelog": "^3.0.4",
+		"@semantic-release/git": "^7.0.16",
 		"copyfiles": "^2.1.1",
 		"coveralls": "^3.0.6",
 		"husky": "^3.0.3",
@@ -31,7 +37,8 @@
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "pretty-quick --staged"
+			"pre-commit": "pretty-quick --staged",
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
 		}
 	},
 	"eslintConfig": {
@@ -47,6 +54,14 @@
 			"last 1 chrome version",
 			"last 1 firefox version",
 			"last 1 safari version"
+		]
+	},
+	"release": {
+		"branch": "master",
+		"plugins": [
+			"@semantic-release/changelog",
+			"@semantic-release/git",
+			"@qiwi/semantic-release-gh-pages-plugin"
 		]
 	}
 }

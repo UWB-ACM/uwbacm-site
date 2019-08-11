@@ -9,13 +9,19 @@ install:
   - yarn install
 script:
   - yarn test --coverage --coverageReporters=text-lcov | coveralls
+  - commitlint-travis
 before_deploy:
   - yarn build
-deploy:
-  local_dir: 'build/'
-  provider: pages
-  skip-cleanup: true
-  github-token: $GH_TOKEN
-  keep-history: true
-  on:
-    branch: master
+# Define the release stage that runs semantic-release
+jobs:
+  include:
+    # Define the release stage that runs semantic-release
+    - stage: release
+      node_js: lts/*
+      # Advanced: optionally overwrite your default `script` step to skip the tests
+      script: skip
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - npx semantic-release
