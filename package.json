@@ -31,6 +31,14 @@
 		"eject": "react-scripts eject",
 		"format": "prettier --write \"{src,__{tests,mocks}__}/**/*.jsx\""
 	},
+	"jest": {
+		"collectCoverageFrom": [
+			"src/**/*.{js,jsx,ts,tsx}",
+			"!<rootDir>/node_modules/",
+			"!<rootDir>/src/index.js",
+			"!<rootDir>/src/serviceWorker.js"
+		]
+	},
 	"husky": {
 		"hooks": {
 			"pre-commit": "pretty-quick --staged"
