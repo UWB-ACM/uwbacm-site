@@ -1131,10 +1131,10 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
-"@restart/hooks@^0.3.9":
-  version "0.3.9"
-  resolved "https://registry.yarnpkg.com/@restart/hooks/-/hooks-0.3.9.tgz#b2849bee3faec1d3fc531fdf301f4b27649baa8e"
-  integrity sha512-6gL84qcdZHUN0V5czyMXzAbcBBpHm8H5Gwj7eqnVi6p3JzGwJ5m2at19dKE9Gv3SsU3Hv9SPDX+6zQSExCjjkQ==
+"@restart/hooks@^0.3.12":
+  version "0.3.12"
+  resolved "https://registry.yarnpkg.com/@restart/hooks/-/hooks-0.3.12.tgz#c68e6b4048d80ab51f6694cb6921bd091318f80f"
+  integrity sha512-nltMFo5JkYcnntf0Cs3Kq7jskrKeGcftAKOqbEEa74sxlx0bfO3RjBly2aiRb7hnsYJCB8/99l+acQcl2lnq1w==
 
 "@svgr/babel-plugin-add-jsx-attribute@^4.2.0":
   version "4.2.0"
