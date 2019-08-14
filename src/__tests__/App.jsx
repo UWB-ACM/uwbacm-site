@@ -1,7 +1,7 @@
 import React from 'react';
 import {render, fireEvent} from '@testing-library/react';
 
-import App from './App';
+import App from '../App';
 
 describe('UWB ACM Website', () => {
 	describe('Sponsors Page', () => {
