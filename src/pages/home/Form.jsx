@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 
 import * as Yup from 'yup';
 import {Formik, Field, ErrorMessage} from 'formik';
+import jsonp from 'jsonp';
 
 const SignUpSchema = Yup.object().shape({
 	EMAIL: Yup.string()
@@ -19,6 +20,13 @@ const SignUpSchema = Yup.object().shape({
 
 const Signup = () => {
 	const [hasSubmitted, hasSubmittedHandler] = useState(false);
+	const submittedMessages = {
+		success: 'Thank you for subscribing!',
+		error: 'An error has occurred. Please reach out to ACM via email to register.',
+		duplicate: 'You are already subscribed. Huzzah!'
+	};
+	let userMessage = '';
+
 	return (
 		<div id="join-acm" className="center-div">
 			<link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css" />
@@ -32,13 +40,31 @@ const Signup = () => {
 				}}
 				validationSchema={SignUpSchema}
 				onSubmit={(values) => {
+					/* Functionality inspired by https://github.com/gndx/react-mailchimp-form */
+					const url =
+						'https://uwbacm.us16.list-manage.com/subscribe/post?u=8773dffc3f528b0b18fd7aef8&amp;id=7a3e5f69db';
+					const data = Object.keys(values)
+						.map((key) => `${key}=${encodeURIComponent(values[key])}`)
+						.join('&');
+					const path = `${url}&${data}`;
+					const endpoint = path.replace('/post?', '/post-json?');
+					console.log('posting to the following endpoint: ' + endpoint);
 					/* Post to the survey form */
-					fetch('https://uwbacm.us16.list-manage.com/subscribe/post?u=8773dffc3f528b0b18fd7aef8&id=11b31196c4', {
-						method: 'post',
-						body: values,
-						mode: 'no-cors'
-					}).then((response) => {
+					jsonp(endpoint, {param: 'c'}, (err, response) => {
+						if (response.msg.includes('already subscribed')) {
+							/* do something better here */
+							userMessage = submittedMessages.duplicate;
+						} else if (err) {
+							userMessage = submittedMessages.error;
+						} else if (response.result !== 'success') {
+							userMessage = submittedMessages.error;
+							console.log(response);
+						} else {
+							userMessage = submittedMessages.success;
+						}
 						hasSubmittedHandler(true);
+						// struggling to populate the response message in the form's div
+						console.log('user message is: ' + userMessage);
 					});
 				}}
 			>
@@ -133,7 +159,7 @@ const Signup = () => {
 										/>
 									</div>
 									<div id="mce-responses" className="clear">
-										{hasSubmitted && <div className="response">You have been subscribed!</div>}
+										{hasSubmitted && <div className="response" id="user-response"></div>}
 									</div>
 								</div>
 							</form>
