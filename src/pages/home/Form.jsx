@@ -4,6 +4,12 @@ import * as Yup from 'yup';
 import {Formik, Field, ErrorMessage} from 'formik';
 import jsonp from 'jsonp';
 
+const SubmittedMessages = {
+	success: 'Thank you for subscribing!',
+	error: 'An error has occurred. Please reach out to ACM via email to register.',
+	duplicate: 'You are already subscribed. Huzzah!'
+};
+
 const SignUpSchema = Yup.object().shape({
 	EMAIL: Yup.string()
 		.email('Invalid email address')
@@ -20,12 +26,7 @@ const SignUpSchema = Yup.object().shape({
 
 const Signup = () => {
 	const [hasSubmitted, hasSubmittedHandler] = useState(false);
-	const submittedMessages = {
-		success: 'Thank you for subscribing!',
-		error: 'An error has occurred. Please reach out to ACM via email to register.',
-		duplicate: 'You are already subscribed. Huzzah!'
-	};
-	let userMessage = '';
+	const [userMessage, userMessageHandler] = useState('');
 
 	return (
 		<div id="join-acm" className="center-div">
@@ -48,23 +49,19 @@ const Signup = () => {
 						.join('&');
 					const path = `${url}&${data}`;
 					const endpoint = path.replace('/post?', '/post-json?');
-					console.log('posting to the following endpoint: ' + endpoint);
 					/* Post to the survey form */
 					jsonp(endpoint, {param: 'c'}, (err, response) => {
 						if (response.msg.includes('already subscribed')) {
 							/* do something better here */
-							userMessage = submittedMessages.duplicate;
+							userMessageHandler(SubmittedMessages.duplicate);
 						} else if (err) {
-							userMessage = submittedMessages.error;
+							userMessageHandler(SubmittedMessages.error);
 						} else if (response.result !== 'success') {
-							userMessage = submittedMessages.error;
-							console.log(response);
+							userMessageHandler(SubmittedMessages.error);
 						} else {
-							userMessage = submittedMessages.success;
+							userMessageHandler(SubmittedMessages.success);
 						}
 						hasSubmittedHandler(true);
-						// struggling to populate the response message in the form's div
-						console.log('user message is: ' + userMessage);
 					});
 				}}
 			>
@@ -159,7 +156,11 @@ const Signup = () => {
 										/>
 									</div>
 									<div id="mce-responses" className="clear">
-										{hasSubmitted && <div className="response" id="user-response"></div>}
+										{hasSubmitted && (
+											<div className="response" id="user-response">
+												{userMessage}
+											</div>
+										)}
 									</div>
 								</div>
 							</form>
