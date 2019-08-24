@@ -1,4 +1,5 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState, useCallback} from 'react';
+import {useCallbackRef, useInterval} from '@restart/hooks';
 import {Link} from 'react-router-dom';
 import AcmTransparentLogo from '../../images/logos/acm/acm-white-transparent.svg';
 import Navbar from './Navbar';
@@ -8,28 +9,27 @@ const topWords = ['UWB ACM', 'visionaries', 'diverse', 'proactive'];
 const ChangingWord = () => {
 	const [curWordIndex, setWordIndex] = useState(0);
 	const [wordCounter, setWordCounter] = useState(0);
-	useEffect(() => {
-		let timer = setTimeout(() => {
-			if (wordCounter < topWords[curWordIndex].length) {
-				setWordCounter(wordCounter + 1);
-			} else {
-				setWordIndex(curWordIndex + 1 < topWords.length ? curWordIndex + 1 : 0);
-				setWordCounter(0);
-			}
-		}, 500);
-		return () => {
-			clearTimeout(timer);
-		};
-	});
+
+	const intervalFunc = useCallback(() => {
+		if (wordCounter < topWords[curWordIndex].length) {
+			setWordCounter((prevWordCounter) => prevWordCounter + 1);
+		} else {
+			setWordIndex((prevWordIndex) => (prevWordIndex + 1 < topWords.length ? prevWordIndex + 1 : 0));
+			setWordCounter(0);
+		}
+	}, [wordCounter, curWordIndex]);
+
+	useInterval(intervalFunc, 500);
+
 	return <span id="changing-word">{topWords[curWordIndex].slice(0, wordCounter)}</span>;
 };
 
 const Header = ({scrolled}) => {
 	// Need a reference to the header
-	const headerRef = useRef();
+	const [headerRef, setHeaderRef] = useCallbackRef(null);
 
 	return (
-		<div id="top-fold" className="center-div" ref={headerRef}>
+		<div id="top-fold" className="center-div" ref={setHeaderRef}>
 			<div id="top-fold__center">
 				<h1>
 					We're <ChangingWord /> <span className="flashing">|</span>
@@ -37,7 +37,7 @@ const Header = ({scrolled}) => {
 				<h2>and we prepare students for tomorrow's tech challenges.</h2>
 			</div>
 			<img id="top-fold__logo" src={AcmTransparentLogo} alt="ACM Logo" />
-			<Navbar scrolled={scrolled} headerRef={headerRef}>
+			<Navbar scrolled={scrolled} clientHeight={headerRef ? headerRef.clientHeight : 0}>
 				<Navbar.Item title="Mission" link="mission" />
 				<Navbar.Item title="Events" link="events" />
 				<Navbar.Item title="Officers" link="officers" />
