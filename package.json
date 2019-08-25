@@ -18,9 +18,6 @@
 		"yup": "^0.27.0"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^8.1.0",
-		"@commitlint/config-conventional": "^8.1.0",
-		"@commitlint/travis-cli": "^8.1.0",
 		"@qiwi/semantic-release-gh-pages-plugin": "^1.10.5",
 		"@semantic-release/changelog": "^3.0.4",
 		"@semantic-release/git": "^7.0.16",
@@ -51,8 +48,7 @@
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "pretty-quick --staged",
-			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+			"pre-commit": "pretty-quick --staged"
 		}
 	},
 	"eslintConfig": {

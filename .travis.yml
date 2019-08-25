@@ -10,7 +10,6 @@ install:
 script:
   - yarn lint
   - yarn test --coverage --coverageReporters=text-lcov | coveralls
-  - commitlint-travis
 before_deploy:
   - yarn build
 # Define the release stage that runs semantic-release
