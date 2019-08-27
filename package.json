@@ -1,6 +1,5 @@
 {
 	"name": "uwbacm-site",
-	"version": "1.0.0",
 	"description": "Site for UWB ACM",
 	"private": true,
 	"dependencies": {
