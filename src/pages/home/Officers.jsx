@@ -147,7 +147,7 @@ const Officers = () => (
 				{/* 
                 <Officer
 					name=""
-					position="Officer"
+					position=""
 					desc=""
 					img=""
 					linkedIn=""

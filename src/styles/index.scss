@@ -22,7 +22,7 @@ h2 {
 }
 
 #top-fold {
-	background: url(../images/backgrounds/space-background.jpg) no-repeat;
+	background: url(../images/backgrounds/home-background.jpg) no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -210,7 +210,7 @@ a#quick-nav__center__logo {
 			margin: auto;
 		}
 		p {
-			@include para(1.25rem, 1.5rem);
+			@include para(1rem, 1.6rem);
 			margin: 10px 0;
 		}
 	}
@@ -235,7 +235,7 @@ a#quick-nav__center__logo {
 	-o-background-size: cover;
 	background-size: cover;
 	width: 100%;
-	padding: 80px 0 280px;
+	padding: 80px 0 230px;
 	flex-direction: column;
 
 	// Apply to become officer link
@@ -248,7 +248,7 @@ a#quick-nav__center__logo {
 		font-weight: bold;
 		font-size: 1.1rem;
 		background-color: white;
-		padding: 8px 16px;
+		padding: 14px 46px;
 		&:hover {
 			color: $globalBlue;
 		}
@@ -277,8 +277,8 @@ a#quick-nav__center__logo {
 	.officer {
 		display: flex;
 		padding: 15px 15px 0;
-		border-top-left-radius: 10px;
-		border-top-right-radius: 10px;
+		border-top-left-radius: 6px;
+		border-top-right-radius: 6px;
 		flex-direction: column;
 		position: relative;
 		align-items: center;
@@ -300,7 +300,7 @@ a#quick-nav__center__logo {
 		&__hidden {
 			visibility: none;
 			position: absolute;
-			padding: 15px;
+			padding: 19px;
 			box-sizing: border-box;
 			top: 100%;
 			opacity: 0;
@@ -338,8 +338,8 @@ a#quick-nav__center__logo {
 		}
 		&__avi-container {
 			box-shadow: 0 2px 15px rgba(black, 0.3);
-			width: 130px;
-			height: 130px;
+			width: 160px;
+			height: 160px;
 			border-radius: 50%;
 			background-color: white;
 			overflow: hidden;
@@ -397,7 +397,7 @@ select,
 input[type='email'] {
 	width: 100%;
 	padding: 12px 20px;
-	margin: 8px 0;
+	margin: 1px 0;
 	display: inline-block;
 	border: 1px solid #ccc;
 	border-radius: 4px;
@@ -445,7 +445,7 @@ input[type='email']:focus {
 	#mc_embed_signup {
 		background: #fff;
 		clear: left;
-		font: 14px Helvetica, Arial, sans-serif;
+		font: 24px Helvetica, Arial, sans-serif;
 		width: 800px;
 		height: 580px;
 	}
@@ -502,7 +502,8 @@ input[type='email']:focus {
 			color: white;
 		}
 		p {
-			@include para(1.1rem, 1.3rem);
+			@include para(1rem, 1.8rem);
+			padding: 20px 0px;
 			color: white;
 		}
 	}
@@ -512,7 +513,7 @@ input[type='email']:focus {
 		flex-wrap: wrap;
 		margin-top: 10px;
 		a {
-			margin-right: 15px;
+			margin-right: 18px;
 			background-color: white;
 			border-radius: 3px;
 			box-shadow: 0 2px 10px rgba(black, 0.2);
@@ -550,7 +551,8 @@ input[type='email']:focus {
 		max-width: 700px;
 	}
 	p {
-		@include para(1.1rem, 1.3rem);
+		@include para(1.1srem, 1.8rem);
+		padding-top: 20px;
 	}
 	a {
 		color: #0093ff;
