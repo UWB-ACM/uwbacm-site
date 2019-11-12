@@ -454,6 +454,15 @@ input[type='email']:focus {
 		margin-top: 15px;
 	}
 
+	.mc-field-label {
+		font-size: 20px;
+	}
+
+	.mc-field-error {
+		margin-top: 10px;
+		font-size: 16px;
+	}
+
 	.center-div {
 		display: flex;
 		justify-content: center;
@@ -502,7 +511,7 @@ input[type='email']:focus {
 			color: white;
 		}
 		p {
-			@include para(1rem, 1.8rem);
+			@include para(1rem, 1.6rem);
 			padding: 20px 0px;
 			color: white;
 		}
@@ -551,7 +560,7 @@ input[type='email']:focus {
 		max-width: 700px;
 	}
 	p {
-		@include para(1.1srem, 1.8rem);
+		@include para(1rem, 1.6rem);
 		padding-top: 20px;
 	}
 	a {
