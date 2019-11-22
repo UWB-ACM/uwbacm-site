@@ -97,23 +97,9 @@ const Signup = () => {
 									<div className="indicates-required">
 										<span className="asterisk">*</span> required
 									</div>
+
 									<div className="mc-field-group">
-										<label htmlFor="mce-EMAIL">
-											Email
-											<span className="asterisk">*</span>
-										</label>
-										<Field
-											type="email"
-											name="EMAIL"
-											className="required email"
-											id="mce-EMAIL"
-											placeholder="Email"
-											handleBlur={errors && decoratedErrors['EMAIL']}
-										/>
-										<ErrorMessage name="EMAIL" component="div" />
-									</div>
-									<div className="mc-field-group">
-										<label htmlFor="mce-FNAME">
+										<label htmlFor="mce-FNAME" className="mc-field-label">
 											First Name
 											<span className="asterisk">*</span>
 										</label>
@@ -125,10 +111,10 @@ const Signup = () => {
 											placeholder="First Name"
 											handleBlur={errors && decoratedErrors['FNAME']}
 										/>
-										<ErrorMessage name="FNAME" component="div" />
+										<ErrorMessage name="FNAME" component="div" className="mc-field-error" />
 									</div>
 									<div className="mc-field-group">
-										<label htmlFor="mce-LNAME">
+										<label htmlFor="mce-LNAME" className="mc-field-label">
 											Last Name
 											<span className="asterisk">*</span>
 										</label>
@@ -140,7 +126,22 @@ const Signup = () => {
 											placeholder="Last Name"
 											handleBlur={errors && decoratedErrors['LNAME']}
 										/>
-										<ErrorMessage name="LNAME" component="div" />
+										<ErrorMessage name="LNAME" component="div" className="mc-field-error" />
+									</div>
+									<div className="mc-field-group">
+										<label htmlFor="mce-EMAIL" className="mc-field-label">
+											Email
+											<span className="asterisk">*</span>
+										</label>
+										<Field
+											type="email"
+											name="EMAIL"
+											className="required email"
+											id="mce-EMAIL"
+											placeholder="Email"
+											handleBlur={errors && decoratedErrors['EMAIL']}
+										/>
+										<ErrorMessage name="EMAIL" component="div" className="mc-field-error" />
 									</div>
 									{/* real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
 									<div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
