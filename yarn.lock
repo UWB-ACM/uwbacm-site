@@ -1381,10 +1381,10 @@
     sync-request "^6.1.0"
     tslib "^1.10.0"
 
-"@restart/hooks@^0.3.18":
-  version "0.3.18"
-  resolved "https://registry.yarnpkg.com/@restart/hooks/-/hooks-0.3.18.tgz#2af4f0f34f2f341f2798b1dc3727db7f62c7ada7"
-  integrity sha512-pj2o4D8IETBtM3VUXbyypGapjKMchvHdn5WrJGfBj8c7dyOyx56ldgltYd+JTTS6KqbRGJVaAxN5T81D0AcZ5w==
+"@restart/hooks@^0.3.19":
+  version "0.3.19"
+  resolved "https://registry.yarnpkg.com/@restart/hooks/-/hooks-0.3.19.tgz#1b54b4a61dca6157f3bfcd4f348855187d67d51f"
+  integrity sha512-8bskLEkiDvuZztnfGN+vM56q2HQV8dyXS/Eb0nhXPx6fonii3hQLxfNVA2r5NTMbvEkwDo59bAau3idUXaGvww==
 
 "@semantic-release/changelog@^3.0.6":
   version "3.0.6"
