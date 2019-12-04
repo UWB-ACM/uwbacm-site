@@ -1365,15 +1365,15 @@
     universal-user-agent "^3.0.0"
     url-template "^2.0.8"
 
-"@qiwi/semantic-release-gh-pages-plugin@^1.14.2":
-  version "1.14.2"
-  resolved "https://registry.yarnpkg.com/@qiwi/semantic-release-gh-pages-plugin/-/semantic-release-gh-pages-plugin-1.14.2.tgz#4c29df6c7501447e8f092432d0782700f91127b6"
-  integrity sha512-f81VJRfMqSmPastPRe1I0zY0Q/VOoA6dA5meCECO7SB5HW3Xzux5BSea+G+PGQ3KZTayL27kDeK2U6BT056RTA==
+"@qiwi/semantic-release-gh-pages-plugin@^1.15.5":
+  version "1.15.5"
+  resolved "https://registry.yarnpkg.com/@qiwi/semantic-release-gh-pages-plugin/-/semantic-release-gh-pages-plugin-1.15.5.tgz#1d75e6fe2735513f9531bac0815c7688efb171af"
+  integrity sha512-gXe/0L+vXNYHWuD8p8VAkvB9/Y9px9/igNH0bGKx3GGWoK2lwR2Pl4Qe+gYNXeFy0DSFny/hfnhmdaKQAub2Dw==
   dependencies:
     "@types/git-url-parse" "^9.0.0"
     aggregate-error "^3.0.1"
     dot "^1.1.2"
-    execa "^3.2.0"
+    execa "^3.3.0"
     gh-pages "^2.1.1"
     git-url-parse "^11.1.2"
     lodash "^4.17.15"
@@ -4699,10 +4699,10 @@ execa@^2.1.0:
     signal-exit "^3.0.2"
     strip-final-newline "^2.0.0"
 
-execa@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/execa/-/execa-3.2.0.tgz#18326b79c7ab7fbd6610fd900c1b9e95fa48f90a"
-  integrity sha512-kJJfVbI/lZE1PZYDI5VPxp8zXPO9rtxOkhpZ0jMKha56AI9y2gGVC6bkukStQf0ka5Rh15BA5m7cCCH4jmHqkw==
+execa@^3.2.0, execa@^3.3.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/execa/-/execa-3.4.0.tgz#c08ed4550ef65d858fac269ffc8572446f37eb89"
+  integrity sha512-r9vdGQk4bmCuK1yKQu1KTwcT2zwfWdbdaXfCtAh+5nU/4fSX+JAb7vZGvI5naJrQlvONrEB20jeruESI69530g==
   dependencies:
     cross-spawn "^7.0.0"
     get-stream "^5.0.0"
