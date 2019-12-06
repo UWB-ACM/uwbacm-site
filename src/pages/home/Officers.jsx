@@ -80,7 +80,7 @@ const Officers = () => (
 					position="Secretary"
 					desc="Katie is a sophomore pursuing an undergraduate degree in Business Administration and Management at UW Bothell."
 					img="avi-katie"
-					linkedIn="kathrynyamabe"
+					linkedIn="kathryn-yamabe"
 					github=""
 				/>
 				<Officer
@@ -97,10 +97,10 @@ const Officers = () => (
 				{/* Officer went here/> */}
 				<Officer
 					name="Patrick O'Brien"
-					position="Content Strategist"
+					position="Officer"
 					desc="Patrick is a Junior at UWB studying Applied Computing and Interactive Media Design. His continuing
 					mission: understand the universe and the nature of intelligence."
-					img="pat"
+					img="avi-pat"
 					linkedIn="patj"
 					github="cforcomputer"
 				/>
@@ -125,26 +125,53 @@ const Officers = () => (
 			</div>
 			<div className="row row-odd">
 				<Officer
-					name="Zach Brader"
+					name="Jacob Anderson"
 					position="Officer"
-					desc="Zach is a senior at the UWB studying Computer Science. He is interested in working alongside other students to help develop new skills."
-					img="avi-zach"
-					linkedIn="zachbrader"
+					desc="Jacob is a senior in the Computer Science and Software Engineering major with a minor in 
+					Information Assurance and Cybersecurity. In his free time you can find him hiking or skiing 
+					local mountains. He's also a residential advisor for UW Bothell's on campus housing"
+					img="avi-jacob"
+					linkedIn="jacob-r-anderson/"
 					github=""
 				/>
 				<Officer
-					name="Delaney Desmond"
+					name="Gi Lee"
 					position="Officer"
-					desc="Delaney is a Senior studying Computer Science and Software Engineering, graduating December
-					2019. She hopes that she can help other STEM students with the transition from academia to
-					working in the Tech Industry."
-					img="avi-delaney"
-					linkedIn="delaneydesmond"
-					github="delaney-desmond"
+					desc="Gi is the art director for ACM who’s responsible for the overall visual aspects of an 
+					advertising upcoming events. He is majoring CSSE and is also interested in user experience."
+					img="avi-gi"
+					linkedIn="hyukgilee"
+					github="leeh54"
 				/>
 			</div>
+
 			<div className="row">
-				{/* 
+				<Officer
+					name="Tom Blanchard"
+					position="Officer"
+					desc="Tom is a senior studying Applied Computing and Interactive Media Design, graduating in Spring 2020. 
+					He's interested in Assistive Technology for folks with varying disabilities, and UX/UI design with 
+					accessibility in mind. He also loves to cook and play volleyball on his downtime."
+					img="avi-tom"
+					linkedIn="tom-blanchard-6b3b1798/"
+					github=""
+				/>
+				<Officer
+					name="Drew Kwak"
+					position="Officer"
+					desc="Drew is a senior pursuing a degree in Computer Science and Software Engineering and currently 
+					interested in cloud computing and cyber security. He loves rock climbing, photography, and scuba diving."
+					img="avi-drew"
+					linkedIn="andrew-kwak-64099b53/"
+					github=""
+				/>
+
+				<div className="officer no-hover office-dont-show" />
+			</div>
+		</div>
+
+		<div className="row">
+			{/* 
                 <Officer
 					name=""
 					position=""
@@ -154,7 +181,7 @@ const Officers = () => (
 					github=""
 				/> 
             */}
-				{/* <Officer
+			{/* <Officer
 					name="Brady Pascoe"
 					position="Affiliate Officer"
 					desc="Brady is currently a student at UW-Bothell in the CSSE program. He also works as a part-time
@@ -163,7 +190,6 @@ const Officers = () => (
 					linkedIn="brady-pascoe-3bba6b13a"
 					github="bpas247"
 				/> */}
-			</div>
 		</div>
 		<div className="officer no-hover office-dont-show" />
 	</div>
