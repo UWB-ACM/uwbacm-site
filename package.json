@@ -17,7 +17,7 @@
 		"yup": "^0.27.0"
 	},
 	"devDependencies": {
-		"@qiwi/semantic-release-gh-pages-plugin": "^1.14.2",
+		"@qiwi/semantic-release-gh-pages-plugin": "^1.15.5",
 		"@semantic-release/changelog": "^3.0.6",
 		"@semantic-release/commit-analyzer": "^6.3.3",
 		"@semantic-release/git": "^7.0.18",
