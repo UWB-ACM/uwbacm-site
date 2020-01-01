@@ -4,7 +4,7 @@
 	"private": true,
 	"dependencies": {
 		"@restart/hooks": "^0.3.19",
-		"formik": "^2.0.10",
+		"formik": "^2.1.0",
 		"jsonp": "^0.2.1",
 		"node-sass": "^4.13.0",
 		"prop-types": "^15.7.2",
