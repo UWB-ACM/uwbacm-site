@@ -17,12 +17,6 @@
 		"yup": "^0.28.0"
 	},
 	"devDependencies": {
-		"@qiwi/semantic-release-gh-pages-plugin": "^1.15.6",
-		"@semantic-release/changelog": "^3.0.6",
-		"@semantic-release/commit-analyzer": "^7.0.0",
-		"@semantic-release/git": "^7.0.18",
-		"@semantic-release/github": "^6.0.1",
-		"@semantic-release/release-notes-generator": "^7.3.5",
 		"@testing-library/jest-dom": "^4.2.4",
 		"@testing-library/react": "^9.4.0",
 		"copyfiles": "^2.1.1",
@@ -65,20 +59,6 @@
 			"last 1 chrome version",
 			"last 1 firefox version",
 			"last 1 safari version"
-		]
-	},
-	"release": {
-		"plugins": [
-			"@semantic-release/commit-analyzer",
-			"@semantic-release/release-notes-generator",
-			"@semantic-release/changelog",
-			"@semantic-release/github",
-			[
-				"@qiwi/semantic-release-gh-pages-plugin",
-				{
-					"src": "build"
-				}
-			]
 		]
 	}
 }
