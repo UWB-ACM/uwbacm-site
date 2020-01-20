@@ -19,7 +19,7 @@
 	"devDependencies": {
 		"@testing-library/jest-dom": "^5.0.0",
 		"@testing-library/react": "^9.4.0",
-		"copyfiles": "^2.1.1",
+		"copyfiles": "^2.2.0",
 		"coveralls": "^3.0.9",
 		"husky": "^4.0.10",
 		"prettier": "^1.19.1",
