@@ -5,13 +5,13 @@
     "main.js.map": "/static/js/main.6161d628.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.582887f9.js",
     "runtime-main.js.map": "/static/js/runtime-main.582887f9.js.map",
-    "static/js/2.779523a8.chunk.js": "/static/js/2.779523a8.chunk.js",
-    "static/js/2.779523a8.chunk.js.map": "/static/js/2.779523a8.chunk.js.map",
+    "static/js/2.12028836.chunk.js": "/static/js/2.12028836.chunk.js",
+    "static/js/2.12028836.chunk.js.map": "/static/js/2.12028836.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9c79cbc916724e04a117c2d9e3260479.js": "/precache-manifest.9c79cbc916724e04a117c2d9e3260479.js",
+    "precache-manifest.9921ff78633905b2d858497097e2f2c1.js": "/precache-manifest.9921ff78633905b2d858497097e2f2c1.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.f0f60bb7.chunk.css.map": "/static/css/main.f0f60bb7.chunk.css.map",
-    "static/js/2.779523a8.chunk.js.LICENSE.txt": "/static/js/2.779523a8.chunk.js.LICENSE.txt",
+    "static/js/2.12028836.chunk.js.LICENSE.txt": "/static/js/2.12028836.chunk.js.LICENSE.txt",
     "static/media/acm-large-logo.jpg": "/static/media/acm-large-logo.bb4772e3.jpg",
     "static/media/acm-white-transparent.svg": "/static/media/acm-white-transparent.a0e8cce8.svg",
     "static/media/avi-alex.jpg": "/static/media/avi-alex.8d8693eb.jpg",
@@ -53,7 +53,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.582887f9.js",
-    "static/js/2.779523a8.chunk.js",
+    "static/js/2.12028836.chunk.js",
     "static/css/main.f0f60bb7.chunk.css",
     "static/js/main.6161d628.chunk.js"
   ]
