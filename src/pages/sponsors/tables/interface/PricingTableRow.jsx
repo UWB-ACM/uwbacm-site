@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const propTypes = {
 	header: PropTypes.string.isRequired,
-	columnContent: PropTypes.arrayOf(PropTypes.node)
+	columnContent: PropTypes.arrayOf(PropTypes.node),
 };
 
 const PricingTableRow = ({header, columnContent}) => (

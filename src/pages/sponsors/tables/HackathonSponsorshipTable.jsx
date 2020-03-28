@@ -8,23 +8,23 @@ const HackathonSponsorshipTable = () => (
 				{
 					color: '#795548',
 					name: 'Copper',
-					price: '1000'
+					price: '1000',
 				},
 				{
 					color: '#FFA726',
 					name: 'Bronze',
-					price: '2,000'
+					price: '2,000',
 				},
 				{
 					color: '#9baab2',
 					name: 'Silver',
-					price: '5,000'
+					price: '5,000',
 				},
 				{
 					color: '#FFC107',
 					name: 'Gold',
-					price: '10,000'
-				}
+					price: '10,000',
+				},
 			]}
 		/>
 		<PricingTable.Subtitle>Recruitment</PricingTable.Subtitle>

@@ -15,8 +15,8 @@ const Navbar = ({children, clientHeight}) => {
 	const scrollFunc = useCallback(
 		({
 			target: {
-				defaultView: {pageYOffset}
-			}
+				defaultView: {pageYOffset},
+			},
 		}) => setScrolled(pageYOffset >= clientHeight),
 		[clientHeight]
 	);
