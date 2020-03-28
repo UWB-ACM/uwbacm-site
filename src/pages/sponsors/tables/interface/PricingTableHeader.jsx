@@ -18,9 +18,9 @@ const propTypes = {
 			/**
 			 * How much this entry costs
 			 */
-			price: PropTypes.string.isRequired
+			price: PropTypes.string.isRequired,
 		})
-	).isRequired
+	).isRequired,
 };
 
 const PricingTableHeader = ({entries}) => (

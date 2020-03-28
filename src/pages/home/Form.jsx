@@ -7,13 +7,11 @@ import jsonp from 'jsonp';
 const SubmittedMessages = {
 	success: 'Thank you for subscribing!',
 	error: 'An error has occurred. Please reach out to ACM via email to register.',
-	duplicate: 'You are already subscribed. Huzzah!'
+	duplicate: 'You are already subscribed. Huzzah!',
 };
 
 const SignUpSchema = Yup.object().shape({
-	EMAIL: Yup.string()
-		.email('Invalid email address')
-		.required('Required'),
+	EMAIL: Yup.string().email('Invalid email address').required('Required'),
 	FNAME: Yup.string()
 		.min(2, 'Must be longer than 2 characters')
 		.max(20, 'Nice try, nobody has a first name that long')
@@ -21,7 +19,7 @@ const SignUpSchema = Yup.object().shape({
 	LNAME: Yup.string()
 		.min(2, 'Must be longer than 2 characters')
 		.max(20, 'Nice try, nobody has a last name that long')
-		.required('Required')
+		.required('Required'),
 });
 
 const Signup = () => {
@@ -37,7 +35,7 @@ const Signup = () => {
 				initialValues={{
 					EMAIL: '',
 					FNAME: '',
-					LNAME: ''
+					LNAME: '',
 				}}
 				validationSchema={SignUpSchema}
 				onSubmit={(values) => {
@@ -77,7 +75,7 @@ const Signup = () => {
 									<div key={key} className="response">
 										{val}
 									</div>
-								)
+								),
 							}),
 							{}
 						);
