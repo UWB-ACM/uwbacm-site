@@ -1,25 +1,84 @@
 {
-    "name": "uwbacm-site",
-    "version": "1.0.0",
-    "description": "Site for UWB ACM",
-    "main": "gulpfile.js",
-    "scripts": {
-      "test": "gulp"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/UWB-ACM/uwbacm-site.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/uwb-acm/uwbacm-site/issues"
-    },
-    "homepage": "https://github.com/uwb-acm/uwbacm-site#readme",
-    "dependencies": {
-      "gulp": "^4.0.0",
-      "gulp-sass": "^4.0.2",
-      "sass": "^1.17.0"
-    }
-  }
-  
+	"name": "uwbacm-site",
+	"description": "Site for UWB ACM",
+	"private": true,
+	"dependencies": {
+		"@restart/hooks": "^0.3.14",
+		"formik": "^1.5.7",
+		"jsonp": "^0.2.1",
+		"node-sass": "^4.12.0",
+		"prop-types": "^15.7.2",
+		"react": "^16.10.2",
+		"react-dom": "^16.10.2",
+		"react-ga": "^2.7.0",
+		"react-helmet": "^5.2.1",
+		"react-router-dom": "^5.1.2",
+		"react-scripts": "3.2.0",
+		"yup": "^0.27.0"
+	},
+	"devDependencies": {
+		"@qiwi/semantic-release-gh-pages-plugin": "^1.10.6",
+		"@semantic-release/changelog": "^3.0.4",
+		"@semantic-release/commit-analyzer": "^6.3.0",
+		"@semantic-release/git": "^7.0.16",
+		"@semantic-release/github": "^5.5.3",
+		"@semantic-release/release-notes-generator": "^7.3.0",
+		"@testing-library/jest-dom": "^4.1.2",
+		"@testing-library/react": "^9.3.0",
+		"copyfiles": "^2.1.1",
+		"coveralls": "^3.0.7",
+		"husky": "^3.0.9",
+		"prettier": "^1.18.2",
+		"pretty-quick": "^2.0.0"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build && copyfiles -f production/** build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"lint": "prettier --check \"{src,__{tests,mocks}__}/**/*.jsx\"",
+		"format": "prettier --write \"{src,__{tests,mocks}__}/**/*.jsx\""
+	},
+	"jest": {
+		"collectCoverageFrom": [
+			"src/**/*.{js,jsx,ts,tsx}",
+			"!<rootDir>/node_modules/",
+			"!<rootDir>/src/index.js",
+			"!<rootDir>/src/serviceWorker.js"
+		]
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "pretty-quick --staged"
+		}
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"release": {
+		"plugins": [
+			"@semantic-release/commit-analyzer",
+			"@semantic-release/release-notes-generator",
+			"@semantic-release/changelog",
+			"@semantic-release/github",
+			[
+				"@qiwi/semantic-release-gh-pages-plugin",
+				{
+					"src": "build"
+				}
+			]
+		]
+	}
+}
