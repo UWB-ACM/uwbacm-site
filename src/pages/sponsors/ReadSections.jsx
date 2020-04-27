@@ -21,7 +21,7 @@ const ReadSections = () => (
 				<br />
 				For more information about our organization email us at:
 				<br />
-				<a href="mailto:acmuwbothell@gmail.com">acmuwbothell@gmail.com</a>
+				<a href="mailto:uwbacm@uw.edu">uwbacm@uw.edu</a>
 			</p>
 		</ReadSection>
 
@@ -38,8 +38,8 @@ const ReadSections = () => (
 		<ReadSection>
 			<h3>How to Sponsor</h3>
 			<p>
-				Please contact us at <a href="mailto:acmuwbothell@gmail.com">acmuwbothell@gmail.com</a> if you are interested in
-				sponsoring UWB ACM.
+				Please contact us at <a href="mailto:uwbacm@uw.edu">uwbacm@uw.edu</a> if you are interested in sponsoring UWB
+				ACM.
 			</p>
 		</ReadSection>
 
@@ -52,7 +52,7 @@ const ReadSections = () => (
 				Our team has carefully selected each sponsorship tier to accurately represent what we need to accomplish our
 				goals. However, we will be happy to work with you to build a package tailored for your organization. To get
 				started please email us at:
-				<a href="mailto:acmuwbothell@gmail.com">acmuwbothell@gmail.com</a>.
+				<a href="mailto:uwbacm@uw.edu">uwbacm@uw.edu</a>.
 			</p>
 		</ReadSection>
 		<ReadSection className="read-section--hack-images" gray>

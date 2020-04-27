@@ -12,14 +12,11 @@ script:
   - yarn test --coverage --coverageReporters=text-lcov | coveralls
 before_deploy:
   - yarn build
-# Define the release stage that runs semantic-release
-jobs:
-  include:
-    # Define the release stage that runs semantic-release
-    - stage: release
-      node_js: lts/*
-      deploy:
-        provider: script
-        skip_cleanup: true
-        script:
-          - npx semantic-release
+deploy:
+  local_dir: 'build/'
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: true
+  on:
+    branch: master
