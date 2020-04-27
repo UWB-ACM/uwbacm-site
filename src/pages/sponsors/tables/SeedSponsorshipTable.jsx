@@ -8,23 +8,23 @@ const SeedSponsorshipTable = () => (
 				{
 					color: '#795548',
 					name: 'Seed',
-					price: '1000'
+					price: '1000',
 				},
 				{
 					color: '#FFA726',
 					name: 'Sapling',
-					price: '5,000'
+					price: '5,000',
 				},
 				{
 					color: '#9baab2',
 					name: 'Tree',
-					price: '10,000'
+					price: '10,000',
 				},
 				{
 					color: '#FFC107',
 					name: 'Oak',
-					price: '15,000'
-				}
+					price: '15,000',
+				},
 			]}
 		/>
 		<PricingTable.Row header="Logo on Website" columnContent={['Small', 'Small', 'Medium', 'Large']} />
