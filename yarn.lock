@@ -1160,10 +1160,10 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
-"@restart/hooks@^0.3.22":
-  version "0.3.22"
-  resolved "https://registry.yarnpkg.com/@restart/hooks/-/hooks-0.3.22.tgz#bb7e27c832bf576f56977d0a0b8b9d8ccee877b8"
-  integrity sha512-tW0T3hP6emYNOc76/iC96rlu+f7JYLSVk/Wnn+7dj1gJUcw4CkQNLy16vx2mBLtVKsFMZ9miVEZXat8blruDHQ==
+"@restart/hooks@^0.3.23":
+  version "0.3.23"
+  resolved "https://registry.yarnpkg.com/@restart/hooks/-/hooks-0.3.23.tgz#531b487b68e54ff4be484c1e6a2cc8aa65f9447b"
+  integrity sha512-nKte/6bLyJZ/jh/U3gewTNU3SROXrvUTk54DBrk2Hsf3Ye4kkna1HAvPTISTDo2uNY6KltGBnfZsYepxDFzvOA==
   dependencies:
     lodash "^4.17.15"
     lodash-es "^4.17.15"
