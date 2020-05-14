@@ -3,7 +3,7 @@
 	"description": "Site for UWB ACM",
 	"private": true,
 	"dependencies": {
-		"@restart/hooks": "^0.3.23",
+		"@restart/hooks": "^0.3.24",
 		"formik": "^2.1.4",
 		"jsonp": "^0.2.1",
 		"node-sass": "^4.14.1",
