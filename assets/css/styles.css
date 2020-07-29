@@ -411,6 +411,12 @@ h1.title {
 /*===================================*
 0. FOOTER
 *===================================*/
+.img-fluid{
+  max-width:40%;
+
+  
+}
+
 #site-footer .top-footer {
   padding: 1.25em 0;
   background: #131313;
@@ -435,6 +441,9 @@ h1.title {
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
+  
+
+
 }
 
 #site-footer .footer-list li {
@@ -511,7 +520,7 @@ h1.title {
 }
 
 #site-footer a:hover {
-  color: #fff;
+  color: #0092cf;
 }
 
 #site-footer ul.footer-menu {
