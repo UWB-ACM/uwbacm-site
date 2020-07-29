@@ -445,27 +445,34 @@
 
   <!-- site footer -->
   <footer id="site-footer">
-    <div class="top-footer">    
+    <div class="top-footer">
       <div class="container my-md-5 my-4">
         <div class="row">
           <div class="col-lg-2">
             <div class="footer-logo mb-3">
               <a href="index.html">
+                <!-- I love the creative approach you used, however, since IE9+ you can use <img> tags to load an SVG. -->
+                <!-- If you look in the folder: assets/images/logos/acm/acm-black-transparent.svg you will that the SVG file for the logo has already been done -->
+                <!-- So all we need to do is load that code into our site where we want it, we don't need to reproduce that code every time. -->
+                <!-- We can use the <img> tag to import that SVG while still maintaining it's SVG properties. See the line of code needed below: -->
+                <!-- <img src="assets/images/logos/acm/acm-black-transparent.svg"/> -->
+                <!-- So you can get rid of lines 461 through 564 -->
+                <!-- Also: the ACM logo is much too big on mobile view. Please set a maximum height OR width on it for smaller devices. -->
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
-                  enable-background="new 0 0 360 360"  version="1.1" viewBox="0 0 360 360" class="img-fluid">
-                  <style type="text/css" >
+                  enable-background="new 0 0 360 360" version="1.1" viewBox="0 0 360 360" class="img-fluid">
+                  <!-- Inline CSS should never be used. Put all necessary CSS code in home.css if it's only being used on home page, or in styles.css if it's being used on multiple pages. -->
+                  <style type="text/css">
                     .st0 {
                       fill: #ffffff
-                      
                     }
-                
+
                     .st1 {
                       fill: none
                     }
-                    .st3{
-                      fill:#0092CF
-                    }
 
+                    .st3 {
+                      fill: #0092CF
+                    }
                   </style>
                   <g id="Layer_2">
                     <circle id="XMLID_2_" cx="180" cy="180" r="180" class="st0" />
@@ -558,7 +565,7 @@
               </a>
             </div>
             <div>
-              
+
             </div>
           </div>
           <!-- Quick Links -->
@@ -571,9 +578,11 @@
               <li><a href="contact.html"> Contact Us</a></li>
             </ul>
           </div>
+          <!-- The newsletter form needs to be connected through MailChimp in order for it work properly. Handle all the other issues with this story first then we can work on setting the form up. -->
           <!-- Newsletter -->
           <div class="col-lg-5 col-md-8 mt-lg-0 mt-5">
             <h4 class="footer-title">Get Our Newsletter!</h4>
+            <!-- Grammar mistake in the <p> tag -->
             <p class="mb-4">Our newsletter contains UWB ACM's most update information on activities and projects.
             </p>
             <form class="newsletter-form">
@@ -586,21 +595,26 @@
         </div>
       </div>
     </div>
+    <!-- What is this class 'bottom-foot'? Is it a Boostrap class or did you make it yourself? If it's unnecesary, remove it please. -->
     <div class="bottom-foot">
       <div class="container">
         <div class="row">
           <div class="col-xl-8 text-lg-left text-center mb-lg-0 mb-3">
-            <p class="copyright">©<span id="demo"></span> <script>
-              d = new Date();
-              document.getElementById("demo").innerHTML = d.getFullYear();
-              </script> UWB ACM All Rights Reserved. Design by <a
-                href="https://w3layouts.com/">W3Layouts</a></p>
+            <p class="copyright">©<span id="demo"></span>
+              <script>
+                // You don't need to create a variable called 'd'. You can directly call new Date().getFullYear()
+                d = new Date();
+                document.getElementById("demo").innerHTML = d.getFullYear();
+              </script> UWB ACM All Rights Reserved. Design by <a href="https://w3layouts.com/">W3Layouts</a></p>
           </div>
+          <!-- We want these links to open externally, please lookup how to use target = "_blank" -->
+          <!-- When you hover over the external social media icons they turn white. Please override this style and have them change to a more visible color on hover. -->
           <div class="col-lg-4 align-center text-lg-right text-center">
             <a href="https://www.facebook.com/uwbacm" class="social-item"><span class="fa fa-facebook-f"></span></a>
             <a href="https://twitter.com/hacksuwb" class="social-item"><span class="fa fa-twitter"></span></a>
+            <!-- LinkedIn should link to the new Company page that Anna created -->
             <a href="https://www.linkedin.com/in/uwbacm/" class="social-item"><span class="fa fa-linkedin"></span></a>
-            <a href="https://discord.gg/YBrxBTg" class="social-item" ><span class="fab fa-discord"></span></a>
+            <a href="https://discord.gg/YBrxBTg" class="social-item"><span class="fab fa-discord"></span></a>
             <a href="https://www.instagram.com/uwb_acm/" class="social-item"><span class="fa fa-instagram"></span></a>
           </div>
         </div>
