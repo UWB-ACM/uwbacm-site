@@ -413,8 +413,11 @@ h1.title {
 *===================================*/
 .img-fluid{
   max-width:40%;
-
+ 
   
+}
+.footer-logo{
+  text-align:center;
 }
 
 #site-footer .top-footer {
@@ -425,7 +428,7 @@ h1.title {
 #site-footer .footer-title {
   text-transform: uppercase;
   font-weight: 600;
-  margin-bottom: 1.25em;
+  margin-bottom: .25em;
   color: #fff;
   font-size: 20px;
 }
@@ -439,11 +442,10 @@ h1.title {
 #site-footer .footer-logo a {
   font-size: 1.6em;
   font-weight: 600;
+  text-align: center;
   text-transform: uppercase;
   color: #fff;
-  
-
-
+  width: 40%;
 }
 
 #site-footer .footer-list li {
