@@ -2,6 +2,7 @@
 :root {
   --para-color: #767575;
   --heading-color: #3f3d56;
+  --ACM-blue: #0092cf;  
 }
 
 html {
@@ -411,13 +412,8 @@ h1.title {
 /*===================================*
 0. FOOTER
 *===================================*/
-.img-fluid{
-  max-width:40vw;
- 
-  
-}
 .footer-logo{
-  text-align:center;
+  max-width:40vw; 
 }
 
 #site-footer .top-footer {
@@ -522,7 +518,7 @@ h1.title {
 }
 
 #site-footer a:hover {
-  color: #0092cf;
+  color: var(--ACM-blue);
 }
 
 #site-footer ul.footer-menu {
