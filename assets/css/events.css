@@ -1,0 +1,38 @@
+/* Put styles that apply ONLY to the about page here. If a style may be used across multiple pages, put it in styles.css */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+.event-list {
+    float: left;
+    margin: 40px 20px 5px 20px;
+    padding: 15px 15px;
+}
+.event-list img {
+    margin: 10px 0px 5px 0px;
+    border-radius: 50%;
+    display: block;
+    width: 200px;
+    height: 180px;
+}
+.event-list .event-caption {
+    margin: 10px 5px 0px 5px;
+    padding-left: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+hr { 
+    display: block;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    margin-left:  30%;
+    margin-right: 30%;
+    color: black;
+    border-width: 2px;
+  }
+
+
