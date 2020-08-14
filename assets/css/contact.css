@@ -1,1 +1,22 @@
 /* Put styles that apply ONLY to the contact page here. If a style may be used across multiple pages, put it in styles.css */
+:root {
+  --para-color: #767575;
+  --heading-color: #3f3d56;
+  --ACM-blue: #0092cf;
+  --ACM-DarkGrey: #484848;
+}
+
+.contact-image{
+    max-width: 40vw;
+}
+.w3l-contact3 .icon span.fa{
+    color: var(--ACM-blue);
+}
+/* -------------------------------------------------
+max-width: 480px
+---------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+    .contact-image{
+        max-width: 90vw;
+    }
+}

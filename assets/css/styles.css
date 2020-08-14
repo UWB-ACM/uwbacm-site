@@ -2,6 +2,8 @@
 :root {
   --para-color: #767575;
   --heading-color: #3f3d56;
+  --ACM-blue: #0092cf;
+  --ACM-DarkGrey: #484848;
 }
 
 html {
@@ -219,7 +221,7 @@ a.dropdown-item:active {
 header {
   padding: 25px 65px;
   transition: all 0.4s ease 0s;
-  background: none;
+  background: var(--ACM-blue);
 }
 
 header.active {
@@ -297,8 +299,8 @@ header.active {
 }
 
 header.nav-fixed {
-  padding: 10px 15px;
-  background-color: #124f8f;
+  padding: 10px 15px;   
+  background-color: var(--ACM-blue);
 }
 
 header.nav-fixed .navbar-brand img {
@@ -535,11 +537,15 @@ max-width: 1440px
 ---------------------------------------------------*/
 @media only screen and (max-width: 1440px) {
   header {
-    padding: 25px 15px;
+    padding: 15px 15px;
   }
 
   .navbar-expand-lg .nav_btn>li {
     padding: 0;
+  }
+  .navbar .navbar-brand img {
+    max-width: 75px;
+    height: auto;
   }
 }
 
@@ -552,7 +558,8 @@ max-width: 1199px
   }
 
   .navbar .navbar-brand img {
-    max-width: 109px;
+    max-width: 75px;
+    height: auto;
   }
 
   .navbar-expand-lg .btn-gradient {
@@ -581,7 +588,7 @@ max-width: 991px
   #site-header {
     padding-left: 25px;
     padding-right: 25px;
-    background: #0c3866;
+    background: var(--ACM-blue);
   }
 
   .navbar-toggler {
@@ -597,7 +604,8 @@ max-width: 991px
   }
 
   .navbar .navbar-brand img {
-    max-width: 140px;
+    max-width: 50px;
+    height: auto;
   }
 
   .navbar-toggler {
@@ -670,7 +678,7 @@ max-width: 480px
 ---------------------------------------------------*/
 @media only screen and (max-width: 480px) {
   .navbar-brand img {
-    max-width: 200px;
+    max-width: 50 px;
   }
 
   .navbar-nav {
@@ -1304,7 +1312,7 @@ figure {
 .inner-banner {
   padding: 0;
   height: 105px;
-  background-color: #124f8f;
+  background-color: #D9BA6B;
 }
 
 span.title {
@@ -1523,7 +1531,7 @@ li.breadcrumb-item {
 }
 
 li.breadcrumb-item.active {
-  color: var(--para-color);
+  color: var(--ACM-DarkGrey);
 }
 
 /*-- //breadcrumb --*/
