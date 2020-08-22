@@ -219,7 +219,7 @@ a.dropdown-item:active {
 02. HEADER
 *===================================*/
 header {
-  padding: 15px 65px;
+  padding: 2vh 2vw;
   transition: all 0.4s ease 0s;
   background: var(--ACM-blue);
 }
@@ -229,7 +229,7 @@ header.active {
 }
 
 .navbar {
-  padding: 0;
+  padding: 0px;
 }
 
 .navbar .navbar-brand {
@@ -241,7 +241,7 @@ header.active {
 }
 
 .navbar .navbar-brand img {
-  max-width: 75px;
+  max-width: 24%  ;
   transition: all 0.5s ease;
 }
 
@@ -299,12 +299,12 @@ header.active {
 }
 
 header.nav-fixed {
-  padding: 10px 15px;   
+  padding: 10px 15px;   /*never used*/
   background-color: var(--ACM-blue);
 }
 
 header.nav-fixed .navbar-brand img {
-  max-width: 75px;
+  max-width: 75px;    /*never used*/
 }
 
 /*===================================*
@@ -537,28 +537,32 @@ max-width: 1440px
 ---------------------------------------------------*/
 @media only screen and (max-width: 1440px) {
   header {
-    padding: 15px 15px;
+    padding: 1.5% 1.5%;
   }
 
   .navbar-expand-lg .nav_btn>li {
     padding: 0;
   }
   .navbar .navbar-brand img {
-    max-width: 75px;
+    max-width: 22%;
     height: auto;
   }
+  
 }
 
 /* -------------------------------------------------
 max-width: 1199px
 ---------------------------------------------------*/
 @media only screen and (max-width: 1199px) {
+  .navbar {
+  padding: 0  ;
+  }
   .navbar .navbar-brand {
     font-size: 1.25em;
   }
 
   .navbar .navbar-brand img {
-    max-width: 75px;
+    max-width: 24%;
     height: auto;
   }
 
@@ -586,9 +590,13 @@ max-width: 991px
 ---------------------------------------------------*/
 @media only screen and (max-width: 991px) {
   #site-header {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
     background: var(--ACM-blue);
+  }
+
+  .navbar {
+  padding: 1%;
   }
 
   .navbar-toggler {
@@ -601,10 +609,11 @@ max-width: 991px
 
   .navbar .navbar-brand {
     font-size: 1.6em;
+    max-width: 85%;
   }
 
   .navbar .navbar-brand img {
-    max-width: 50px;
+    max-width: 18%;
     height: auto;
   }
 
@@ -654,7 +663,7 @@ max-width: 991px
 
   header {
     height: auto;
-    padding: 10px 0;
+    padding:  0;
   }
 
   header.nav-fixed {
@@ -677,8 +686,13 @@ max-width: 767px
 max-width: 480px
 ---------------------------------------------------*/
 @media only screen and (max-width: 480px) {
+  
+  .navbar {
+  padding: 4%  ;
+  }
+
   .navbar-brand img {
-    max-width: 50 px;
+    max-width: 18%;
   }
 
   .navbar-nav {

@@ -7,20 +7,36 @@
   --ACM-blue: #0092cf;
   --ACM-DarkGrey: #484848;
 }
-/* -------------------------------------------------
-max-width: 480px
----------------------------------------------------*/
+/* -----Image-----*/
 .contact-image{
     max-width: 40vw;
 }
 .w3l-contact3 .icon span.fa{
     color: var(--ACM-blue);
 }
+/* -----Newsletter-----*/
+  #mc_embed_signup {
+    background: none;
+    clear: left;
+    font: 14px Poppins;
+    width: 100%;
+    padding-bottom: 10vh;
+  }
+  .email_button{
+    background:#005596;
+    border:none;
+    color:#FFF;
+
+  }
+  .contact-form{
+    padding: 1vh;
+
+  }
 /* -------------------------------------------------
 max-width: 480px
 ---------------------------------------------------*/
 @media only screen and (max-width: 480px) {
     .contact-image{
-        max-width: 90vw;
+        max-width: 100%;
     }
 }
