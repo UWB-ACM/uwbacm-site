@@ -304,7 +304,7 @@ header.nav-fixed {
 }
 
 header.nav-fixed .navbar-brand img {
-  max-width: 75px;    /*never used*/
+  max-width: 22%;    /*never used*/
 }
 
 /*===================================*
@@ -554,9 +554,6 @@ max-width: 1440px
 max-width: 1199px
 ---------------------------------------------------*/
 @media only screen and (max-width: 1199px) {
-  .navbar {
-  padding: 0  ;
-  }
   .navbar .navbar-brand {
     font-size: 1.25em;
   }
