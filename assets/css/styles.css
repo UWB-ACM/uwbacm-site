@@ -299,7 +299,7 @@ header.active {
 }
 
 header.nav-fixed {
-  padding: 10px 15px;   /*never used*/
+  padding: 1.5% 1.5%;   /*never used*/
   background-color: var(--ACM-blue);
 }
 
