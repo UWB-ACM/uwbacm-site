@@ -413,6 +413,10 @@ h1.title {
 /*===================================*
 0. FOOTER
 *===================================*/
+.footer-logo{
+  max-width:40vw; 
+}
+
 #site-footer .top-footer {
   padding: 1.25em 0;
   background: #131313;
@@ -421,7 +425,7 @@ h1.title {
 #site-footer .footer-title {
   text-transform: uppercase;
   font-weight: 600;
-  margin-bottom: 1.25em;
+  margin-bottom: .25em;
   color: #fff;
   font-size: 20px;
 }
@@ -435,8 +439,10 @@ h1.title {
 #site-footer .footer-logo a {
   font-size: 1.6em;
   font-weight: 600;
+  text-align: center;
   text-transform: uppercase;
   color: #fff;
+  width: 40%;
 }
 
 #site-footer .footer-list li {
@@ -513,7 +519,7 @@ h1.title {
 }
 
 #site-footer a:hover {
-  color: #fff;
+  color: var(--ACM-blue);
 }
 
 #site-footer ul.footer-menu {
