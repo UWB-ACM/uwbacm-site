@@ -299,12 +299,12 @@ header.active {
 }
 
 header.nav-fixed {
-  padding: 1.5% 1.5%;   /*never used*/
+  padding: 1.5% 1.5%;   
   background-color: var(--ACM-blue);
 }
 
 header.nav-fixed .navbar-brand img {
-  max-width: 22%;    /*never used*/
+  max-width: 22%;    
 }
 
 /*===================================*
