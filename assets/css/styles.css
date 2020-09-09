@@ -334,7 +334,7 @@ h1.title {
   left: 0;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 100px;
 }
 
 .list-currency {
@@ -414,7 +414,7 @@ h1.title {
 0. FOOTER
 *===================================*/
 .footer-logo{
-  max-width:40vw; 
+  width: 10vw;
 }
 
 #site-footer .top-footer {
@@ -536,6 +536,11 @@ h1.title {
 
 #site-footer ul.footer-menu li:first-child {
   margin-left: 0;
+}
+
+#footer-calendar {
+  width: fit-content;
+  height: fit-content;
 }
 
 /* -------------------------------------------------
@@ -683,6 +688,11 @@ max-width: 767px
   #site-footer ul.footer-menu {
     text-align: center;
   }
+  
+  .footer-logo {
+    width: 25%;
+  }
+
 }
 
 /* -------------------------------------------------
@@ -1047,13 +1057,6 @@ figure {
     padding: 50px 0;
   }
 
-  #site-footer .newsletter-form .btn {
-    padding: 13px 30px;
-    position: static;
-    width: 100%;
-    margin-top: 10px;
-  }
-
   h1.title {
     font-size: 33px;
   }
@@ -1328,7 +1331,7 @@ figure {
 
 .inner-banner {
   padding: 0;
-  height: 105px;
+  height: 1vh;
   background-color: #D9BA6B;
 }
 
@@ -1554,9 +1557,6 @@ li.breadcrumb-item.active {
 /*-- //breadcrumb --*/
 /*-- responsive --*/
 @media only screen and (max-width: 991px) {
-  .inner-banner {
-    height: 65px;
-  }
 
   .breadcrumb-padding {
     padding: 0.75rem 25px;
