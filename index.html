@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Captivate a Corporate Category Bootstrap Responsive Website Template | Home :: W3layouts</title>
+  <title>ACM at UW Bothell</title>
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap" rel="stylesheet">
 
   <!-- FontAwesome -->
@@ -27,18 +27,18 @@
   <!-- Local CSS stylesheets -->
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="../assets/css/home.css">
+  <link rel="stylesheet" href="./assets/css/home.css">
+
+  <!-- Local JS Scripts -->
+  <script src="./scripts/script.js"></script>
 </head>
 
-<!-- Inject the header and footer -->
-<script>
-  $(function(){
-    $("#injectable-header").load("./components/header.html"); 
-    $("#injectable-footer").load("./components/footer.html"); 
-  });
-</script>
+<!-- Browser doesn't support javascript -->
+<noscript>
+  <h2 class="m-2 text-center text-danger">Your browser doesn't support Javascript. Parts of the site won't load properly!</h2>
+</noscript>
 
-<body>
+<body onload="loadComponents()">
   <!-- site header -->
   <div id="injectable-header"></div>
   <!-- //site header -->
@@ -448,7 +448,7 @@
   <!-- //move top -->
 
   <!-- javascript -->
-  <script src="vendors/js/jquery-3.3.1.min.js"></script>
+  <script src="./vendors/js/jquery-3.3.1.min.js"></script>
 
   <!-- libhtbox -->
   <script src="vendors/js/lightbox-plus-jquery.min.js"></script>
