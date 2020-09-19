@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Captivate a Corporate Category Bootstrap Responsive Website Template | Home :: W3layouts</title>
+    <title>ACM at UW Bothell</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap" rel="stylesheet">
 
     <!-- FontAwesome -->
@@ -26,45 +26,21 @@
 
     <!-- Local CSS stylesheets -->
     <!-- Template CSS -->
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+
+    <!-- Local JS Scripts -->
+    <script src="./scripts/script.js"></script>
 </head>
 
-<body>
-    <!-- site header -->
-    <header id="site-header" class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="index.html">
-                <span class="fa fa-shield"></span> Captivate
-            </a>
-            <button class="navbar-toggler bg-gradient" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<!-- Browser doesn't support javascript -->
+<noscript>
+    <h2 class="m-2 text-center text-danger">Your browser doesn't support Javascript. Parts of the site won't load properly!</h2>
+</noscript>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav m-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="#demo" class="btn btn-primary btn-style">View Demo</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<body onload="loadComponents()">
+    <!-- site header -->
+    <div id="injectable-header"></div>
     <!-- //site header -->
 
     <!-- about page breadcrumns -->
@@ -94,7 +70,7 @@
                     <a href="#author" class="author"><span class="fa fa-user mr-2"></span>Alexander Smith</a>
                 </div>
                 <div class="col-lg-6">
-                    <img src="../assets/images/about1.png" class="img-fluid img-shadow" alt="about">
+                    <img src="./assets/images/about1.png" class="img-fluid img-shadow" alt="about">
                 </div>
             </div>
         </div>
@@ -146,7 +122,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 mobile-left">
-                        <img src="../assets/images/mobile.png" class="img-fluid" alt="">
+                        <img src="./assets/images/mobile.png" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-4 mobile-right">
                         <div class="row mobile-right-grids mb-lg-5 mb-4">
@@ -211,7 +187,7 @@
                 <div class="row grid-col-4 text-center mt-5">
                     <div class="team-colomn col-lg-4 col-md-6 col-sm-6">
                         <div class="team-main-6">
-                            <a href="#team-single.html"><img class="img-fluid" src="../assets/images/team1.png"
+                            <a href="#team-single.html"><img class="img-fluid" src="./assets/images/team1.png"
                                     alt=" "></a>
                             <h6><a href="#team-single.html" class="title-team-32">Sophia Madison</a></h6>
                             <p class="sm-text-32">CEO / Co-Founder</p>
@@ -227,7 +203,7 @@
                     </div>
                     <div class="team-colomn col-lg-4 col-md-6 col-sm-6 mt-md-0 mt-5">
                         <div class="team-main-6">
-                            <a href="#team-single.html"><img class="img-fluid" src="../assets/images/team2.png"
+                            <a href="#team-single.html"><img class="img-fluid" src="./assets/images/team2.png"
                                     alt=" "></a>
                             <h6><a href="#team-single.html" class="title-team-32">Oliver Atticus</a></h6>
                             <p class="sm-text-32">Entrepreneur</p>
@@ -243,7 +219,7 @@
                     </div>
                     <div class="team-colomn col-lg-4 col-md-6 col-sm-6 mt-lg-0 mt-5">
                         <div class="team-main-6">
-                            <a href="#team-single.html"><img class="img-fluid" src="../assets/images/team3.png"
+                            <a href="#team-single.html"><img class="img-fluid" src="./assets/images/team3.png"
                                     alt=" "></a>
                             <h6><a href="#team-single.html" class="title-team-32">Lucas Jacob</a></h6>
                             <p class="sm-text-32">Financial Examiner</p>
@@ -318,68 +294,7 @@
     <!-- about page form section -->
 
     <!-- site footer -->
-    <footer id="site-footer">
-        <div class="top-footer">
-            <div class="container my-md-5 my-4">
-                <div class="row">
-                    <div class="col-lg-2 ">
-                        <div class="footer-logo mb-3">
-                            <img class="img-fluid" height="auto" src="../assets/images/logos/acm/acm-color.svg"
-                                alt="ACM UWB logo">
-                        </div>
-                    </div>
-                    <!-- Quick Links -->
-                    <div class="col-lg-3 col-md-4 mt-lg-0 mt-5">
-                        <h4 class="footer-title">Quick Links</h4>
-                        <ul class="footer-list">
-                            <li><a href="../index.html"> Home</a></li>
-                            <li><a href="pages/about.html"> About UWB ACM</a></li>
-                            <li><a href="pages/events.html"> Explore Events</a></li>
-                            <li><a href="pages/projects.html"> Projects</a></li>
-                            <li><a href="pages/contact.html"> Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <!-- Newsletter -->
-                    <div class="col-lg-5 col-md-8 mt-lg-0 mt-5">
-                        <h4 class="footer-title">Get Our Newsletter!</h4>
-                        <p class="mb-4">Stay up-to-date with us by subscribing to the UWB ACM newsletter.
-                        </p>
-                        <form class="newsletter-form">
-                            <input class="input-rounded" type="text" required="" placeholder="Enter Email Address">
-                            <button type="submit" title="Subscribe" class="btn btn-primary btn-style" name="submit"
-                                value="Submit">
-                                Subscribe
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bottom-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-8 text-lg-left text-center mb-lg-0 mb-3">
-                        <p class="copyright">&#169<span id="demo"></span>
-                            <script>
-                                document.getElementById("demo").innerHTML = (new Date()).getFullYear();
-                            </script> UWB ACM. Design by <a href="https://w3layouts.com/">W3Layouts</a></p>
-                    </div>
-                    <div class="col-lg-4 align-center text-lg-right text-center">
-                        <a href="https://www.facebook.com/uwbacm" target="_blank" class="social-item"><span
-                                class="fa fa-facebook-f"></span></a>
-                        <a href="https://twitter.com/hacksuwb" arget="_blank" class="social-item"><span
-                                class="fa fa-twitter"></span></a>
-                        <a href="https://www.linkedin.com/organization-guest/company/uwb-acm-club" target="_blank"
-                            class="social-item"><span class="fa fa-linkedin"></span></a>
-                        <a href="https://discord.gg/YBrxBTg" target="_blank" class="social-item"><span
-                                class="fab fa-discord"></span></a>
-                        <a href="https://www.instagram.com/uwb_acm/" target="_blank" class="social-item"><span
-                                class="fa fa-instagram"></span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div id="injectable-footer"></div>
     <!-- //site footer -->
 
     <!-- move top -->
@@ -408,18 +323,18 @@
     <!-- //move top -->
 
     <!-- javascript -->
-    <script src="../vendors/js/jquery-3.3.1.min.js"></script>
+    <script src="./vendors/js/jquery-3.3.1.min.js"></script>
 
     <!-- libhtbox -->
-    <script src="../vendors/js/lightbox-plus-jquery.min.js"></script>
+    <script src="./vendors/js/lightbox-plus-jquery.min.js"></script>
 
     <!-- particles -->
-    <script src='../vendors/js/particles.min.js'></script>
-    <script src="../vendors/js/script.js"></script>
+    <script src='./vendors/js/particles.min.js'></script>
+    <script src="./vendors/js/script.js"></script>
     <!-- //particles -->
 
     <!-- owl carousel -->
-    <script src="../vendors/js/owl.carousel.js"></script>
+    <script src="./vendors/js/owl.carousel.js"></script>
     <script>
         $(document).ready(function () {
             var owl = $('.owl-carousel');
@@ -453,7 +368,7 @@
     <!-- disable body scroll which navbar is in active -->
 
     <!-- bootstrap -->
-    <script src="../vendors/js/bootstrap.min.js"></script>
+    <script src="./vendors/js/bootstrap.min.js"></script>
 
 </body>
 
