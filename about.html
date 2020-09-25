@@ -1,488 +1,402 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>ACM at UW Bothell</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/7c07804932.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/7c07804932.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Local CSS stylesheets -->
     <!-- Template CSS -->
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/about.css" />
 
     <!-- Local JS Scripts -->
     <script src="./scripts/script.js"></script>
-</head>
+  </head>
 
-<!-- Browser doesn't support javascript -->
-<noscript>
-    <h2 class="m-2 text-center text-danger">Your browser doesn't support Javascript. Parts of the site won't load properly!</h2>
-</noscript>
+  <!-- Browser doesn't support javascript -->
+  <noscript>
+    <h2 class="m-2 text-center text-danger">
+      Your browser doesn't support Javascript. Parts of the site won't load
+      properly!
+    </h2>
+  </noscript>
 
-<body onload="loadComponents()">
+  <body onload="loadComponents()">
     <!-- site header -->
     <div id="injectable-header"></div>
     <!-- //site header -->
 
     <!-- about page breadcrumns -->
-    <section class="inner-banner">
-
-    </section>
+    <section class="inner-banner"></section>
     <nav aria-label="breadcrumb">
-        <ol class="breadcrumb breadcrumb-padding">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">About us</li>
-        </ol>
+      <ol class="breadcrumb breadcrumb-padding">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">About us</li>
+      </ol>
     </nav>
     <!-- //about page breadcrumbs -->
 
-
-     <!-- about page ACM History-->
-     <section class="w3l-uwb-acm-history">
-        <div class="container">
-            <div class="row about-content">
-                <div class="col-lg-6 info-acm mb-lg-0 mb-5 align-center">
-                    <h1>What is ACM?</h1>
-                    <p class="mt-md-4 mt-3"> ACM is the largest international computing organization.
-                        Well stablished in the tech industry, it provide its members with diverse
-                        learning opportunities.
-                    </p>
-                    <h1>UWB ACM</h1>
-                    <p class="mt-md-4 mt-3"> The Association for Computing Machinery (ACM) Chapter at
-                        UW Bothell was first founded in 1997, and through each iteration, it has 
-                        implemented great changes and improvements. The current chapter was 
-                        re-established in Fall 2017, hoping to facilitate collaboration among students
-                        with a focus on fostering professional and educational development in the field
-                        of computer science.
-                    </p>
-
-                </div>
-                <div class="col-lg-6">
-                    <img src="\assets\images\UWB_ACM_Team.jpg" alt="" class="uwb-acm-team img-fluid">
-                  </div>
-            </div>
+    <!-- about page ACM History-->
+    <section class="w3l-uwb-acm-history">
+      <div class="container">
+        <div class="row about-content">
+          <div class="col-lg-6 info-acm mb-lg-0 mb-5 align-center">
+            <h1>What is ACM?</h1>
+            <p class="mt-md-4 mt-3">
+              ACM is the largest international computing organization. Well
+              stablished in the tech industry, it provide its members with
+              diverse learning opportunities.
+            </p>
+            <h1>UWB ACM</h1>
+            <p class="mt-md-4 mt-3">
+              The Association for Computing Machinery (ACM) Chapter at UW
+              Bothell was first founded in 1997, and through each iteration, it
+              has implemented great changes and improvements. The current
+              chapter was re-established in Fall 2017, hoping to facilitate
+              collaboration among students with a focus on fostering
+              professional and educational development in the field of computer
+              science.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="\assets\images\UWB_ACM_Team.jpg"
+              alt=""
+              class="uwb-acm-team img-fluid"
+            />
+          </div>
         </div>
+      </div>
     </section>
     <!-- //about page section1-->
 
     <!-- about page team section -->
     <section class="w3l-team-main-6">
-        <!-- /team-grids -->
-        <div class="team-content">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
-                        <h4 class="section-title">Current Officers</h4>
-                        <p class="text-center">Executive Team 2020 - 2021</p>
-
-                    </div>
-                </div>
-                <div class="row grid-col-4 text-center mt-5">
-                    <div class="team-colomn col-lg-4 col-md-6 col-sm-6">
-                        <div class="team-main-6">
-                            <a href="#team-single.html"><img class="rounded-circle img-thumbnail img-fluid" 
-                                src="assets\images\ryanRussell.png" alt=" "></a>
-                            <h6>Ryan Russell</h6>
-                            <p class="sm-text-32">President</p>
-                            <div class="social-teams mt-2">
-                                <a href="https://www.linkedin.com/in/ryanrussell00/" target="_blank"><span class="fa fa-linkedin"
-                                        aria-hidden="true"></span></a>
-                                <a href="https://github.com/RyanRussell00" target="_blank"><span class="fa fa-github"
-                                            aria-hidden="true"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-colomn col-lg-4 col-md-6 col-sm-6 mt-md-0 mt-5">
-                        <div class="team-main-6">
-                            <a href="#team-single.html"><img class="rounded-circle img-thumbnail img-fluid"
-                                 src="assets\images\angelaFerro.png" alt=" "></a>
-                            <h6><a href="#team-single.html" class="title-team-32">Angela Ferro Capera</a></h6>
-                            <p class="sm-text-32">Vice President</p>
-                            <div class="social-teams mt-2">
-                                <a href="https://www.linkedin.com/in/angela-ferro-capera/" target="_blank"><span class="fa fa-linkedin"
-                                    aria-hidden="true"></span></a>
-                                <a href="https://github.com/angelafc001" target="_blank" ><span class="fa fa-github"
-                                     aria-hidden="true"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-colomn col-lg-4 col-md-6 col-sm-6 mt-lg-0 mt-5">
-                        <div class="team-main-6">
-                            <a href="#team-single.html"><img class="rounded-circle img-thumbnail img-fluid"
-                                src="assets\images\cameronUfland.png" alt=" "></a>
-                            <h6><a href="#team-single.html" class="title-team-32">Cameron Ufland</a></h6>
-                            <p class="sm-text-32">Secretary</p>
-
-                            <div class="social-teams mt-2">
-                                <a href="https://www.linkedin.com/in/cdufland " target="_blank"><span class="fa fa-linkedin"
-                                    aria-hidden="true"></span></a>
-                                <a href="https://github.com/cdufland" target="_blank"><span class="fa fa-github"
-                                     aria-hidden="true"></span></a>
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="team-colomn col-lg-4 col-md-6 col-sm-6">
-                        <div class="team-main-6">
-                            <a href="#team-single.html"><img class="rounded-circle img-thumbnail img-fluid" 
-                                src="assets\images\anish.png" alt=" "></a>
-                            <h6><a href="#team-single.html" class="title-team-32">Anish Prasad</a></h6>
-                            <p class="sm-text-32">Chief Technology Officer</p>
-                            <div class="social-teams mt-2">
-                                <a href="https://www.linkedin.com/in/anish-n-prasad" target="_blank"><span class="fa fa-linkedin"
-                                    aria-hidden="true"></span></a>
-                                <a href="https://github.com/anishprasad01" target="_blank"><span class="fa fa-github"
-                                     aria-hidden="true"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-colomn col-lg-4 col-md-6 col-sm-6 mt-md-0 mt-5">
-                        <div class="team-main-6">
-                            <a href="#team-single.html"><img class="rounded-circle img-thumbnail img-fluid"
-                                 src="assets\images\taylor.png" alt=" "></a>
-                            <h6><a href="#team-single.html" class="title-team-32">Taylor Cumings</a></h6>
-                            <p class="sm-text-32">Chief Technology Officer</p>
-                            <div class="social-teams mt-2">
-                                <a href="#url" target="_blank">
-                                    <span class="fa fa-linkedin"
-                                    aria-hidden="true"></span></a>
-                                <a href="#url"><span class="fa fa-github"
-                                     aria-hidden="true"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-colomn col-lg-4 col-md-6 col-sm-6 mt-lg-0 mt-5">
-                        <div class="team-main-6">
-                            <a href="#team-single.html"><img class="rounded-circle img-thumbnail img-fluid"
-                                src="assets\images\annajennings.png" alt=" "></a>
-                            <h6><a href="#team-single.html" class="title-team-32">Anna Jennings</a></h6>
-                            <p class="sm-text-32">Marketing Coordinator</p>
-
-                            <div class="social-teams mt-2">
-                                <a href="https://www.linkedin.com/in/anna-j-jennings/" target="_blank"><span class="fa fa-linkedin"
-                                    aria-hidden="true"></span></a>
-                                <a href="https://github.com/annajj13" target="_blank"><span class="fa fa-github"
-                                     aria-hidden="true"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-colomn col-lg-4 col-md-6 col-sm-6 mx-auto">
-                        <div class="team-main-6">
-                            <a href="#team-single.html"><img class="rounded-circle img-thumbnail img-fluid" 
-                                src="assets\images\shane.png" alt=" "></a>
-                            <h6><a href="#team-single.html" class="title-team-32">Shane Clark</a></h6>
-                            <p class="sm-text-32">Treasurer</p>
-                            <div class="social-teams mt-2">
-                                <a href="https://www.linkedin.com/in/shane-clark-6b911b144/" target="_blank"><span class="fa fa-linkedin"
-                                    aria-hidden="true"></span></a>
-                                <a href="https://github.com/shanec7" targe="_blank"><span class="fa fa-github"
-                                     aria-hidden="true"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-colomn col-lg-4 col-md-6 col-sm-6 mt-lg-0 mt-5 mx-auto">
-                        <div class="team-main-6 ">
-                            <a href="#team-single.html"><img class="rounded-circle img-thumbnail img-fluid"
-                                src="assets\images\erica.png" alt=" "></a>
-                            <h6><a href="#team-single.html" class="title-team-32">Erica Ferguson</a></h6>
-                            <p class="sm-text-32">Funds Coordinator</p>
-                            <div class="social-teams mt-2">
-                                <a href="url" target="_blank"><span class="fa fa-linkedin"
-                                    aria-hidden="true"></span></a>
-                                <a href="#url"><span class="fa fa-github"
-                                     aria-hidden="true"></span></a>
-                            </div>
-                        </div>
-                    </div>                  
-                </div>
+      <!-- /team-grids -->
+      <div class="team-content">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
+              <h4 class="section-title">Current Officers</h4>
+              <p class="text-center">Executive Team 2020 - 2021</p>
             </div>
+          </div>
+          <div class="row grid-col-4 text-center mt-5">
+            <div class="team-colomn col-lg-4 col-md-6 col-sm-6">
+              <div class="team-main-6">
+                <a href="#team-single.html"
+                  ><img
+                    class="rounded-circle img-thumbnail img-fluid"
+                    src="assets\images\ryanRussell.png"
+                    alt=" "
+                /></a>
+                <h6>Ryan Russell</h6>
+                <p class="sm-text-32">President</p>
+                <div class="social-teams mt-2">
+                  <a
+                    href="https://www.linkedin.com/in/ryanrussell00/"
+                    target="_blank"
+                    ><span class="fa fa-linkedin" aria-hidden="true"></span
+                  ></a>
+                  <a href="https://github.com/RyanRussell00" target="_blank"
+                    ><span class="fa fa-github" aria-hidden="true"></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="team-colomn col-lg-4 col-md-6 col-sm-6 mt-md-0 mt-5">
+              <div class="team-main-6">
+                <a href="#team-single.html"
+                  ><img
+                    class="rounded-circle img-thumbnail img-fluid"
+                    src="assets\images\angelaFerro.png"
+                    alt=" "
+                /></a>
+                <h6>
+                  <a href="#team-single.html" class="title-team-32"
+                    >Angela Ferro Capera</a
+                  >
+                </h6>
+                <p class="sm-text-32">Vice President</p>
+                <div class="social-teams mt-2">
+                  <a
+                    href="https://www.linkedin.com/in/angela-ferro-capera/"
+                    target="_blank"
+                    ><span class="fa fa-linkedin" aria-hidden="true"></span
+                  ></a>
+                  <a href="https://github.com/angelafc001" target="_blank"
+                    ><span class="fa fa-github" aria-hidden="true"></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="team-colomn col-lg-4 col-md-6 col-sm-6 mt-lg-0 mt-5">
+              <div class="team-main-6">
+                <a href="#team-single.html"
+                  ><img
+                    class="rounded-circle img-thumbnail img-fluid"
+                    src="assets\images\cameronUfland.png"
+                    alt=" "
+                /></a>
+                <h6>
+                  <a href="#team-single.html" class="title-team-32"
+                    >Cameron Ufland</a
+                  >
+                </h6>
+                <p class="sm-text-32">Secretary</p>
+
+                <div class="social-teams mt-2">
+                  <a
+                    href="https://www.linkedin.com/in/cdufland "
+                    target="_blank"
+                    ><span class="fa fa-linkedin" aria-hidden="true"></span
+                  ></a>
+                  <a href="https://github.com/cdufland" target="_blank"
+                    ><span class="fa fa-github" aria-hidden="true"></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="team-colomn col-lg-4 col-md-6 col-sm-6">
+              <div class="team-main-6">
+                <a href="#team-single.html"
+                  ><img
+                    class="rounded-circle img-thumbnail img-fluid"
+                    src="assets\images\anish.png"
+                    alt=" "
+                /></a>
+                <h6>
+                  <a href="#team-single.html" class="title-team-32"
+                    >Anish Prasad</a
+                  >
+                </h6>
+                <p class="sm-text-32">Chief Technology Officer</p>
+                <div class="social-teams mt-2">
+                  <a
+                    href="https://www.linkedin.com/in/anish-n-prasad"
+                    target="_blank"
+                    ><span class="fa fa-linkedin" aria-hidden="true"></span
+                  ></a>
+                  <a href="https://github.com/anishprasad01" target="_blank"
+                    ><span class="fa fa-github" aria-hidden="true"></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="team-colomn col-lg-4 col-md-6 col-sm-6 mt-md-0 mt-5">
+              <div class="team-main-6">
+                <a href="#team-single.html"
+                  ><img
+                    class="rounded-circle img-thumbnail img-fluid"
+                    src="assets\images\taylor.png"
+                    alt=" "
+                /></a>
+                <h6>
+                  <a href="#team-single.html" class="title-team-32"
+                    >Taylor Cumings</a
+                  >
+                </h6>
+                <p class="sm-text-32">Chief Technology Officer</p>
+                <div class="social-teams mt-2">
+                  <a href="#url" target="_blank">
+                    <span class="fa fa-linkedin" aria-hidden="true"></span
+                  ></a>
+                  <a href="#url"
+                    ><span class="fa fa-github" aria-hidden="true"></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="team-colomn col-lg-4 col-md-6 col-sm-6 mt-lg-0 mt-5">
+              <div class="team-main-6">
+                <a href="#team-single.html"
+                  ><img
+                    class="rounded-circle img-thumbnail img-fluid"
+                    src="assets\images\annajennings.png"
+                    alt=" "
+                /></a>
+                <h6>
+                  <a href="#team-single.html" class="title-team-32"
+                    >Anna Jennings</a
+                  >
+                </h6>
+                <p class="sm-text-32">Marketing Coordinator</p>
+
+                <div class="social-teams mt-2">
+                  <a
+                    href="https://www.linkedin.com/in/anna-j-jennings/"
+                    target="_blank"
+                    ><span class="fa fa-linkedin" aria-hidden="true"></span
+                  ></a>
+                  <a href="https://github.com/annajj13" target="_blank"
+                    ><span class="fa fa-github" aria-hidden="true"></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="team-colomn col-lg-4 col-md-6 col-sm-6 mx-auto">
+              <div class="team-main-6">
+                <a href="#team-single.html"
+                  ><img
+                    class="rounded-circle img-thumbnail img-fluid"
+                    src="assets\images\shane.png"
+                    alt=" "
+                /></a>
+                <h6>
+                  <a href="#team-single.html" class="title-team-32"
+                    >Shane Clark</a
+                  >
+                </h6>
+                <p class="sm-text-32">Treasurer</p>
+                <div class="social-teams mt-2">
+                  <a
+                    href="https://www.linkedin.com/in/shane-clark-6b911b144/"
+                    target="_blank"
+                    ><span class="fa fa-linkedin" aria-hidden="true"></span
+                  ></a>
+                  <a href="https://github.com/shanec7" targe="_blank"
+                    ><span class="fa fa-github" aria-hidden="true"></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="team-colomn col-lg-4 col-md-6 col-sm-6 mt-lg-0 mt-5 mx-auto"
+            >
+              <div class="team-main-6">
+                <a href="#team-single.html"
+                  ><img
+                    class="rounded-circle img-thumbnail img-fluid"
+                    src="assets\images\erica.png"
+                    alt=" "
+                /></a>
+                <h6>
+                  <a href="#team-single.html" class="title-team-32"
+                    >Erica Ferguson</a
+                  >
+                </h6>
+                <p class="sm-text-32">Funds Coordinator</p>
+                <div class="social-teams mt-2">
+                  <a href="url" target="_blank"
+                    ><span class="fa fa-linkedin" aria-hidden="true"></span
+                  ></a>
+                  <a href="#url"
+                    ><span class="fa fa-github" aria-hidden="true"></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- /team-grids -->
+      </div>
+      <!-- /team-grids -->
     </section>
     <!-- //about page team section -->
-
 
     <!-- about page section2-->
     <section class="w3l-about">
-        <div class="container">
-            <div class="row about-content">
-                <div class="col-lg-6 info mb-lg-0 mb-5 align-center">
-                    <h1>We are ACM</h1>
-                    <p class="mt-md-4 mt-3"> Would you like to become an officer at UWB ACM?
-                        We would love to learn about your ideas and fresh perspectives.
-                        We hire new officers every quarter. The next applications will be open
-                        in Winter quarter 2021.</p>
-                        <a class="btn btn-primary btn-style mr-2" href="https://forms.gle/M8brz36rTapQ3QjH7" target="_blank">Apply to become an officer!</a>
-                </div>
-                
-                <div class="col-lg-6">
-                    <img src="assets/images/logos/acm/acm-large-logo.jpg" alt="" class="rounded-circle img-fluid w-75">
-                  </div>
-            </div>
+      <div class="container">
+        <div class="row about-content">
+          <div class="col-lg-6 info mb-lg-0 mb-5 align-center">
+            <h1>We are ACM</h1>
+            <p class="mt-md-4 mt-3">
+              Would you like to become an officer at UWB ACM? We would love to
+              learn about your ideas and fresh perspectives. We hire new
+              officers every quarter. The next applications will be open in
+              Winter quarter 2021.
+            </p>
+            <a
+              class="btn btn-primary btn-style mr-2"
+              href="https://forms.gle/M8brz36rTapQ3QjH7"
+              target="_blank"
+              >Apply to become an officer!</a
+            >
+          </div>
+
+          <div class="col-lg-6">
+            <img
+              src="assets/images/logos/acm/acm-large-logo.jpg"
+              alt=""
+              class="rounded-circle img-fluid w-75"
+            />
+          </div>
         </div>
+      </div>
     </section>
     <!-- //about page section2-->
-
-    <!-- /mobile section --->
-    <section class="w3l-uwb-acm-history">
-        <div class="mobile-info">
-            <!-- /mobile-info-->
-            <div class="container">
-                <div class="row mobile-info-inn mx-lg-0">
-                    <div class="col-lg-4 mobile-right">
-                        <div class="row mobile-right-grids mb-lg-5 mb-4">
-                            <div class="col-2 mobile-right-icon">
-                                <div class="mobile-icon">
-                                    <span class="fa fa-html5"></span>
-                                </div>
-                            </div>
-                            <div class="col-10 mobile-right-info">
-                                <h6><a href="#url">For Designers</a></h6>
-                                <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
-                                    adipisicing elit.</p>
-                            </div>
-                        </div>
-                        <div class="row mobile-right-grids mb-lg-5 mb-4">
-                            <div class="col-2 mobile-right-icon">
-                                <div class="mobile-icon">
-                                    <span class="fa fa-gamepad"></span>
-                                </div>
-                            </div>
-                            <div class="col-10 mobile-right-info">
-                                <h6><a href="#url">For Developers</a></h6>
-                                <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
-                                    adipisicing elit.</p>
-                            </div>
-                        </div>
-                        <div class="row mobile-right-grids">
-                            <div class="col-2 mobile-right-icon">
-                                <div class="mobile-icon">
-                                    <span class="fa fa-id-badge"></span>
-                                </div>
-                            </div>
-                            <div class="col-10 mobile-right-info">
-                                <h6><a href="#url">For Business</a></h6>
-                                <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
-                                    adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mobile-left">
-                        <img src="./assets/images/mobile.png" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-lg-4 mobile-right">
-                        <div class="row mobile-right-grids mb-lg-5 mb-4">
-                            <div class="col-2 mobile-right-icon">
-                                <div class="mobile-icon">
-                                    <span class="fa fa-css3"></span>
-                                </div>
-                            </div>
-                            <div class="col-10 mobile-right-info">
-                                <h6><a href="#url">For Designers</a></h6>
-                                <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
-                                    adipisicing elit.</p>
-                            </div>
-                        </div>
-                        <div class="row mobile-right-grids mb-lg-5 mb-4">
-                            <div class="col-2 mobile-right-icon">
-                                <div class="mobile-icon">
-                                    <span class="fa fa-keyboard-o"></span>
-                                </div>
-                            </div>
-                            <div class="col-10 mobile-right-info">
-                                <h6><a href="#url">For Developers</a></h6>
-                                <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
-                                    adipisicing elit.</p>
-                            </div>
-                        </div>
-                        <div class="row mobile-right-grids">
-                            <div class="col-2 mobile-right-icon">
-                                <div class="mobile-icon">
-                                    <span class="fa fa-recycle"></span>
-                                </div>
-                            </div>
-                            <div class="col-10 mobile-right-info">
-                                <h6><a href="#url">For Business</a></h6>
-                                <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
-                                    adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- //mobile-info-->
-        </div>
-    </section>
-    <!-- //mobile section --->
-
-    <!-- about page team section -->
-    <section class="w3l-team-main-6">
-        <!-- /team-grids -->
-        <div class="team-content">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
-                        <h4 class="section-title">We have an expert team</h4>
-                        <p class="text-center">Lorem ipsum dolor, sit amet consectet et adipis icing elit. Ab commodi
-                            iure
-                            minus
-                            laboriosam placeat quia, dolorem animi. Eveniet repudiandae, iure et.</p>
-                    </div>
-                </div>
-                <div class="row grid-col-4 text-center mt-5">
-                    <div class="team-colomn col-lg-4 col-md-6 col-sm-6">
-                        <div class="team-main-6">
-                            <a href="#team-single.html"><img class="img-fluid" src="./assets/images/team1.png"
-                                    alt=" "></a>
-                            <h6><a href="#team-single.html" class="title-team-32">Sophia Madison</a></h6>
-                            <p class="sm-text-32">CEO / Co-Founder</p>
-                            <div class="social-teams mt-2">
-                                <a class="facebook" href="#url"><span class="fa fa-facebook"
-                                        aria-hidden="true"></span></a>
-                                <a class="twitter" href="#url"><span class="fa fa-twitter"
-                                        aria-hidden="true"></span></a>
-                                <a class="insta" href="#url"><span class="fa fa-instagram"
-                                        aria-hidden="true"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-colomn col-lg-4 col-md-6 col-sm-6 mt-md-0 mt-5">
-                        <div class="team-main-6">
-                            <a href="#team-single.html"><img class="img-fluid" src="./assets/images/team2.png"
-                                    alt=" "></a>
-                            <h6><a href="#team-single.html" class="title-team-32">Oliver Atticus</a></h6>
-                            <p class="sm-text-32">Entrepreneur</p>
-                            <div class="social-teams mt-2">
-                                <a class="facebook" href="#url"><span class="fa fa-facebook"
-                                        aria-hidden="true"></span></a>
-                                <a class="twitter" href="#url"><span class="fa fa-twitter"
-                                        aria-hidden="true"></span></a>
-                                <a class="insta" href="#url"><span class="fa fa-instagram"
-                                        aria-hidden="true"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-colomn col-lg-4 col-md-6 col-sm-6 mt-lg-0 mt-5">
-                        <div class="team-main-6">
-                            <a href="#team-single.html"><img class="img-fluid" src="./assets/images/team3.png"
-                                    alt=" "></a>
-                            <h6><a href="#team-single.html" class="title-team-32">Lucas Jacob</a></h6>
-                            <p class="sm-text-32">Financial Examiner</p>
-
-                            <div class="social-teams mt-2">
-                                <a class="facebook" href="#url"><span class="fa fa-facebook"
-                                        aria-hidden="true"></span></a>
-                                <a class="twitter" href="#url"><span class="fa fa-twitter"
-                                        aria-hidden="true"></span></a>
-                                <a class="insta" href="#url"><span class="fa fa-instagram"
-                                        aria-hidden="true"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /team-grids -->
-    </section>
-    <!-- //about page team section -->
-
-    <!-- about page form section -->
-    <section class="forms-29">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
-                    <h4 class="section-title">Want to work with us?</h4>
-                    <p class="text-center">Lorem ipsum dolor, sit amet consectet et adipis icing elit. Ab commodi iure
-                        minus
-                        laboriosam placeat quia, dolorem animi. Eveniet repudiandae, iure et.</p>
-                </div>
-            </div>
-            <div class="form-main-cont-29 mt-5">
-                <div class="content-29-form d-grid">
-                    <form action="#" method="post">
-                        <div class="forms-29-form">
-                            <div class="form-group">
-                                <label class="input__label">Your name</label>
-                                <div class="input-icon position-relative">
-                                    <span class="fa fa-user-o"></span>
-                                    <input type="text" name="name" class="input__style" placeholder="First Name"
-                                        required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="input__label">Your Email</label>
-                                <div class="input-icon position-relative">
-                                    <span class="fa fa-envelope-open-o"></span>
-                                    <input type="email" name="email" class="input__style" placeholder="Your email"
-                                        required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="inputTemplate" class="input__label">Select Category</label>
-                                <div class="input-icon position-relative">
-                                    <span class="fa fa-get-pocket"></span>
-                                    <select id="inputTemplate" class="input__style">
-                                        <option selected="">Choose...</option>
-                                        <option>I'm a Desinger</option>
-                                        <option>I'm a Developer</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-style mt-2">Lets Talk</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <!-- about page form section -->
 
     <!-- site footer -->
     <div id="injectable-footer"></div>
     <!-- //site footer -->
 
     <!-- move top -->
-    <button onclick="topFunction()" id="movetop" class="bg-primary" title="Go to top">
-        <span class="fa fa-angle-up"></span>
+    <button
+      onclick="topFunction()"
+      id="movetop"
+      class="bg-primary"
+      title="Go to top"
+    >
+      <span class="fa fa-angle-up"></span>
     </button>
 
     <script>
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-            scrollFunction()
-        };
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("movetop").style.display = "block";
-            } else {
-                document.getElementById("movetop").style.display = "none";
-            }
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById("movetop").style.display = "block";
+        } else {
+          document.getElementById("movetop").style.display = "none";
         }
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     </script>
     <!-- //move top -->
 
@@ -493,47 +407,45 @@
     <script src="./vendors/js/lightbox-plus-jquery.min.js"></script>
 
     <!-- particles -->
-    <script src='./vendors/js/particles.min.js'></script>
+    <script src="./vendors/js/particles.min.js"></script>
     <script src="./vendors/js/script.js"></script>
     <!-- //particles -->
 
     <!-- owl carousel -->
     <script src="./vendors/js/owl.carousel.js"></script>
     <script>
-        $(document).ready(function () {
-            var owl = $('.owl-carousel');
-            owl.owlCarousel({
-                margin: 10,
-                nav: true,
-                loop: false,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    767: {
-                        items: 2
-                    },
-                    1000: {
-                        items: 3
-                    }
-                }
-            })
-        })
+      $(document).ready(function () {
+        var owl = $(".owl-carousel");
+        owl.owlCarousel({
+          margin: 10,
+          nav: true,
+          loop: false,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            767: {
+              items: 2,
+            },
+            1000: {
+              items: 3,
+            },
+          },
+        });
+      });
     </script>
 
     <!-- disable body scroll which navbar is in active -->
     <script>
-        $(function () {
-            $('.navbar-toggler').click(function () {
-                $('body').toggleClass('noscroll');
-            })
+      $(function () {
+        $(".navbar-toggler").click(function () {
+          $("body").toggleClass("noscroll");
         });
+      });
     </script>
     <!-- disable body scroll which navbar is in active -->
 
     <!-- bootstrap -->
     <script src="./vendors/js/bootstrap.min.js"></script>
-
-</body>
-
+  </body>
 </html>
