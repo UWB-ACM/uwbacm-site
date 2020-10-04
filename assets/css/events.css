@@ -1,12 +1,5 @@
 /* Put styles that apply ONLY to the about page here. If a style may be used across multiple pages, put it in styles.css */
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: space-between;
-}
 .hover-effect img:hover{
     -moz-box-shadow: 0 0 10px #A9A9A9;
     -webkit-box-shadow: 0 0 10px #A9A9A9;    
