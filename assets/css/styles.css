@@ -122,7 +122,7 @@ a:hover {
 .section-title {
   font-weight: bold;
   font-size: 2em;
-  margin-bottom: 1em;
+  /*margin-bottom: 1em; */
   padding-bottom: 0.6em;
   position: relative;
   text-align: center;
@@ -133,8 +133,8 @@ a:hover {
   background-color: var(--heading-color);
   margin: 0 auto;
   bottom: 0;
-  content: "";
-  height: 2px;
+  /*content: "";
+  height: 2px; */
   left: 0;
   position: absolute;
   right: 0;
@@ -154,8 +154,8 @@ a:hover {
 .section-title-left::before {
   background-color: var(--heading-color);
   bottom: 0;
-  content: "";
-  height: 2px;
+  /*content: "";
+  height: 2px; */
   left: 0;
   position: absolute;
   width: 80px;
@@ -834,7 +834,7 @@ h6 {
 
 /*-- //about --*/
 /*-- blog --*/
-.blog-grids h3 a {
+.blog-grids h3 {
   font-size: 20px;
   line-height: 25px;
   font-weight: 600;

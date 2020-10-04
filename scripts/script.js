@@ -1,11 +1,11 @@
 function loadComponents() {
-    loadHeader();
-    loadFooter();
+  loadHeader();
+  loadFooter();
 }
 
 function loadHeader() {
-    var x = document.getElementById("injectable-header");
-    x.innerHTML = `
+  var x = document.getElementById("injectable-header");
+  x.innerHTML = `
     <header id="site-header">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="./index.html">
@@ -27,6 +27,9 @@ function loadHeader() {
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
@@ -37,9 +40,9 @@ function loadHeader() {
 }
 
 function loadFooter() {
-    var x = document.getElementById("injectable-footer");
-    var todayYear = new Date().getFullYear();
-    x.innerHTML = `<footer id="site-footer">
+  var x = document.getElementById("injectable-footer");
+  var todayYear = new Date().getFullYear();
+  x.innerHTML = `<footer id="site-footer">
   <div class="top-footer">
     <div class="container my-md-5 my-4">
       <div class="row">
@@ -54,6 +57,7 @@ function loadFooter() {
           <ul class="footer-list">
             <li><a href="./index.html"> Home</a></li>
             <li><a href="./about.html"> About UWB ACM</a></li>
+            <li><a href="./events.html"> Events</a></li>
             <li><a href="./contact.html"> Contact Us</a></li>
           </ul>
         </div>
