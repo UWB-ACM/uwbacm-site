@@ -1,0 +1,79 @@
+/* Put styles that apply ONLY to the about page here. If a style may be used across multiple pages, put it in styles.css */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+.hover-effect img:hover{
+    -moz-box-shadow: 0 0 10px #A9A9A9;
+    -webkit-box-shadow: 0 0 10px #A9A9A9;    
+}
+
+hr { 
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: black;
+    border-width: 2px;
+}
+
+.container-al-center { text-align: center; }
+
+div.gallery-item {
+    position: relative;   
+    display: inline-flexbox;
+    width: 300px;
+    height: 200px;
+    padding: 0;
+}
+  
+div.gallery-item .image {
+    opacity: 1;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);  
+}
+  
+.gallery-item .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.gallery-item:hover .image {
+    opacity: 0.4;
+    color: #A9A9A9;
+}
+.gallery-item:hover .middle { opacity: 1; }
+.gallery-item .text, .text-color-black { color:black; }
+.bg-grey { background-color: #f0f1f2; }
+
+.ttm-comment {
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ttm-profile img {
+    border-radius: 50%;
+    border: 4px solid white;
+    width: 150px;
+}
+.hkt-description {
+    text-align: justify;
+    color: black;
+}
+.hkt-image img {
+    width: 250px;
+    height: auto;
+    border: 4px solid white;   
+}
