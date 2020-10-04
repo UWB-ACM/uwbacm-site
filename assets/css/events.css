@@ -1,7 +1,4 @@
 /* Put styles that apply ONLY to the about page here. If a style may be used across multiple pages, put it in styles.css */
-p, div {
-    font-size: 20px;
-}
 
 .container {
     display: flex;
