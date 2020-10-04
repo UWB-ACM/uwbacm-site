@@ -2,11 +2,11 @@
 // https://codepen.io/yukki/pen/rmmKjM
 
 
-$(function() {
+$(function () {
   /*===================================*
-	01. MENU JS
-	*===================================*/
-  $(window).on("scroll", function() {
+  01. MENU JS
+  *===================================*/
+  $(window).on("scroll", function () {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 80) {
@@ -17,14 +17,14 @@ $(function() {
   });
 
   //Main navigation Active Class Add Remove
-  $(".navbar-toggler").on("click", function() {
+  $(".navbar-toggler").on("click", function () {
     $("header").toggleClass("active");
   });
-  $(document).on("ready", function() {
+  $(document).on("ready", function () {
     if ($(window).width() > 991) {
       $("header").removeClass("active");
     }
-    $(window).on("resize", function() {
+    $(window).on("resize", function () {
       if ($(window).width() > 991) {
         $("header").removeClass("active");
       }
@@ -32,8 +32,8 @@ $(function() {
   });
 
   /*===================================*
-	02. BACKGROUND ANIMATION JS
-	*===================================*/
+  02. BACKGROUND ANIMATION JS
+  *===================================*/
   var $particles_js = $("#banner-bg-effect");
   if ($particles_js.length > 0) {
     particlesJS(

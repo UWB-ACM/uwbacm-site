@@ -329,7 +329,7 @@ h1.title {
 
 .banner-effect {
   bottom: 0;
-  height: 100%;
+  height: auto;
   left: 0;
   position: absolute;
   right: 0;
@@ -599,6 +599,8 @@ max-width: 991px
     padding-left: 5%;
     padding-right: 5%;
     background: var(--ACM-blue);
+    position: relative;
+    z-index: 999;
   }
 
   .navbar {

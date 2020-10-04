@@ -1,3 +1,8 @@
+// Close hamburger menu when click elsewhere
+$(document).on('click', function () {
+  return $('.collapse').collapse('hide');
+});
+
 function loadComponents() {
   loadHeader();
   loadFooter();
