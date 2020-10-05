@@ -1,0 +1,9 @@
+/* Put styles that apply ONLY to the about page here. If a style may be used across multiple pages, put it in styles.css */
+:root {
+  /*default */
+  --para-color: #767575;
+  --heading-color: #3f3d56;
+  /*ACM colors */
+  --ACM-blue: #0092cf;
+  --ACM-DarkGrey: #484848;
+}
