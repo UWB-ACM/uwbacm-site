@@ -1,6 +1,6 @@
 // Close hamburger menu when click elsewhere
-$(document).on('click', function () {
-  return $('.collapse').collapse('hide');
+$(document).on("click", function () {
+  return $(".collapse").collapse("hide");
 });
 
 function loadComponents() {
@@ -36,6 +36,9 @@ function loadHeader() {
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://forms.gle/VykNAXBPRWtQzuKCA">Become an Officer</a>
             </li>
           </ul>
         </div>
