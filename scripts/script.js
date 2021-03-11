@@ -8,6 +8,9 @@ function loadComponents() {
   loadFooter();
 }
 
+// Dynamically injects the header into div with id "injectable-header"
+// Issues will arise with links and images since their paths are relative, meaning each page may have
+// a different relative path to the requested page/image/resource.
 function loadHeader() {
   var x = document.getElementById("injectable-header");
   x.innerHTML = `
@@ -32,13 +35,13 @@ function loadHeader() {
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="events.html">Events</a>
+              <a class="nav-link" href="https://uwb.presence.io/events/acm">Events</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://forms.gle/VykNAXBPRWtQzuKCA">Become an Officer</a>
+              <a class="nav-link disabled" href="">Hiring Closed Until Fall 2021</a>
             </li>
           </ul>
         </div>
@@ -47,6 +50,9 @@ function loadHeader() {
     `;
 }
 
+// Dynamically injects the footer into div with id "injectable-footer"
+// Issues will arise with links and images since their paths are relative, meaning each page may have
+// a different relative path to the requested page/image/resource.
 function loadFooter() {
   var x = document.getElementById("injectable-footer");
   var todayYear = new Date().getFullYear();
@@ -65,7 +71,7 @@ function loadFooter() {
           <ul class="footer-list">
             <li><a href="./index.html"> Home</a></li>
             <li><a href="./about.html"> About UWB ACM</a></li>
-            <li><a href="./events.html"> Events</a></li>
+            <li><a href="https://uwb.presence.io/events/acm"> Events</a></li>
             <li><a href="./contact.html"> Contact Us</a></li>
           </ul>
         </div>
@@ -75,22 +81,24 @@ function loadFooter() {
   <div class="bottom-footer">
     <div class="container">
       <div class="row">
-        <div class="col-xl-8 text-lg-left text-center mb-lg-0 mb-3">
+        <div class="col-lg-4 align-center text-lg-left text-center">
+          <a href="https://www.facebook.com/uwbacm" target="_blank" class="social-item"><span
+              class="fa fa-facebook-f fa-2x"></span></a>
+          <a href="https://twitter.com/hacksuwb" arget="_blank" class="social-item"><span
+              class="fa fa-twitter fa-2x"></span></a>
+          <a href="https://www.linkedin.com/organization-guest/company/uwb-acm-club" target="_blank"
+            class="social-item"><span class="fa fa-linkedin fa-2x"></span></a>
+          <a href="https://discord.gg/YBrxBTg" target="_blank" class="social-item"><span
+              class="fab fa-discord fa-2x"></span></a>
+          <a href="https://www.instagram.com/uwb_acm/" target="_blank" class="social-item"><span
+              class="fa fa-instagram fa-2x"></span></a>
+        </div>
+        <div class="col-xl-8 text-lg-right text-center mb-lg-0 my-3">
           <p class="copyright">&#169<span id="demo"></span><small>
             ${todayYear}
-            The ACM at The University of Washington, Bothell. Template by <a href="https://w3layouts.com/" target="_blank">W3Layouts</a></small></p>
-        </div>
-        <div class="col-lg-4 align-center text-lg-right text-center">
-          <a href="https://www.facebook.com/uwbacm" target="_blank" class="social-item"><span
-              class="fa fa-facebook-f"></span></a>
-          <a href="https://twitter.com/hacksuwb" arget="_blank" class="social-item"><span
-              class="fa fa-twitter"></span></a>
-          <a href="https://www.linkedin.com/organization-guest/company/uwb-acm-club" target="_blank"
-            class="social-item"><span class="fa fa-linkedin"></span></a>
-          <a href="https://discord.gg/YBrxBTg" target="_blank" class="social-item"><span
-              class="fab fa-discord"></span></a>
-          <a href="https://www.instagram.com/uwb_acm/" target="_blank" class="social-item"><span
-              class="fa fa-instagram"></span></a>
+            The ACM at The University of Washington, Bothell. </p>
+            <br> 
+            <p class="text-muted">Template by <a class="text-decoration-none" href="https://w3layouts.com/" target="_blank">W3Layouts</a></small></p>
         </div>
       </div>
     </div>
