@@ -1,3 +1,8 @@
+const DISCORD_INVITE_LINK = "https://discord.gg/Bg9vZvBP9A"; 
+const LINKEDIN_INVITE_LINK = "https://www.linkedin.com/company/uwb-acm-club/mycompany/"; 
+const INSTAGRAM_INVITE_LINK = "https://www.instagram.com/uwb_acm/"; 
+const FACEBOOK_INVITE_LINK = "https://www.facebook.com/uwbacm/"; 
+
 // Close hamburger menu when click elsewhere
 $(document).on("click", function () {
   return $(".collapse").collapse("hide");
@@ -61,18 +66,28 @@ function loadFooter() {
     <div class="container my-md-5 my-4">
       <div class="row">
         <div class="col-lg-6">
-          <div class="footer-logo mb-3 mx-auto">
+          <div class="footer-logo mb-3 mx-auto" >
             <img src="assets/images/logos/acm/acm-color.svg" alt="ACM UWB logo">
           </div>
         </div>
         <!-- Quick Links -->
-        <div class="col-lg-6 mx-auto mx-1">
+        <div class="col-lg-3 mx-auto mx-1">
           <h4 class="footer-title">Quick Links</h4>
           <ul class="footer-list">
             <li><a href="./index.html"> Home</a></li>
             <li><a href="./about.html"> About UWB ACM</a></li>
             <li><a href="https://uwb.presence.io/events/acm"> Events</a></li>
             <li><a href="./contact.html"> Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Quick Links -->
+        <div class="col-lg-3 mx-auto mx-1">
+          <h4 class="footer-title">Connect With Us</h4>
+          <ul class="footer-list">
+            <li><a href="${DISCORD_INVITE_LINK}" target="_blank">Discord</a></li>
+            <li><a href="${LINKEDIN_INVITE_LINK}" target="_blank">Linkedin</a></li>
+            <li><a href="${INSTAGRAM_INVITE_LINK}" target="_blank">Instagram</a></li>
+            <li><a href="${FACEBOOK_INVITE_LINK}" target="_blank">Facebook</a></li>
           </ul>
         </div>
       </div>
