@@ -41,7 +41,7 @@ function loadHeader() {
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="">Hiring Closed Until Fall 2021</a>
+              <a class="nav-link" href="hiring.html">Join Us</a>
             </li>
           </ul>
         </div>
