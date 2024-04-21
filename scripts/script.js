@@ -43,12 +43,16 @@ function loadHeader() {
             <li class="nav-item">
               <a class="nav-link" href="hiring.html">Join Us</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="alumni.html">Alumni</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
     `;
 }
+
 
 // Dynamically injects the footer into div with id "injectable-footer"
 // Issues will arise with links and images since their paths are relative, meaning each page may have
