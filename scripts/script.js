@@ -32,7 +32,7 @@ function loadHeader() {
         </button>
   
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav m-auto">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
             </li>
