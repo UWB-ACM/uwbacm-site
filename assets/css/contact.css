@@ -36,11 +36,45 @@
     padding: 1% 0;
     padding-bottom: 3%;
   }
+
+.linkContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkButton {
+  background-color: #007BFF;
+  color: white;
+  width: 500px;
+  height: 60px;
+  border-radius: 15px;
+  font-size: 32px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.ghostBox {
+  width: 500px;
+  height: 60px;
+  margin-right: 10px;
+}
+
 /* -------------------------------------------------
 max-width: 480px
 ---------------------------------------------------*/
 @media only screen and (max-width: 480px) {
+
     .contact-image{
         max-width: 100%;
     }
+
+    .linkButton {
+      width: 300px;
+      height: 50px;
+      font-size: 20px;
+      margin-left: 10px;
+    }
+
 }
