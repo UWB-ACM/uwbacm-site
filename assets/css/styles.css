@@ -2029,3 +2029,30 @@ strong.info {
   border-radius: 10px;
   padding: 20px;
 }
+
+/* Define a class for the container */
+.column-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 35px auto;
+  gap: 5%;
+}
+
+/* Apply flex-wrap property to wrap columns */
+.column-container > div {
+  flex: 0 0 calc(50% - 5%);
+  max-width: 400px; /* Adjust as needed */
+}
+
+/* Media query to change layout on smaller screens */
+@media screen and (max-width: 1000px) {
+  .column-container {
+    flex-direction: column; /* Change direction to stack columns */
+    align-items: center; /* Align columns to center */
+  }
+  
+  .column-container > div {
+    width: 100%; /* Make columns take full width on smaller screens */
+    margin-bottom: 20px; /* Add some spacing between stacked columns */
+  }
+}
