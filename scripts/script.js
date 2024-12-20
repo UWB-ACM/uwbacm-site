@@ -16,6 +16,13 @@ function loadComponents() {
 // Dynamically injects the header into div with id "injectable-header"
 // Issues will arise with links and images since their paths are relative, meaning each page may have
 // a different relative path to the requested page/image/resource.
+
+/*
+No events for the summer. Empty presence.io link is disengaging for user.
+<li class="nav-item">
+  <a class="nav-link" href="https://uwb.presence.io/events/acm">Events</a>
+</li>
+*/
 function loadHeader() {
   var x = document.getElementById("injectable-header");
   x.innerHTML = `
@@ -38,9 +45,6 @@ function loadHeader() {
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://uwb.presence.io/events/acm">Events</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -80,7 +84,7 @@ function loadFooter() {
           <ul class="footer-list">
             <li><a href="./index.html"> Home</a></li>
             <li><a href="./about.html"> About UWB ACM</a></li>
-            <li><a href="https://uwb.presence.io/events/acm"> Events</a></li>
+            <li>More events in Fall 2024</li>
             <li><a href="./contact.html"> Contact Us</a></li>
           </ul>
         </div>
